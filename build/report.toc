@@ -1,50 +1,26 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivación: El Déficit de la Memoria Relacional en la Era Digital}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Descripción y Alcance del Proyecto}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Estructura de la memoria}{2}{section.1.4}%
-\contentsline {chapter}{\numberline {2}¿Cómo estructurar la memoria?}{4}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Escribiendo la memoria}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Primeros pasos}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Empezando con la memoria en sí}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}El caso concreto de los PFM}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Reglas y recomendaciones}{9}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Componentes de la plantilla}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Columnas}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Ecuaciones}{10}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Modo en párrafo}{10}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Ecuaciones en bloque}{11}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Elementos flotantes}{12}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Código fuente}{13}{subsection.4.3.1}%
-\contentsline {subsubsection}{Código dentro del propio párrafo}{13}{subsubsection*.9}%
-\contentsline {subsubsection}{Bloques de código}{13}{subsubsection*.10}%
-\contentsline {subsubsection}{Código directamente desde fichero}{14}{subsubsection*.11}%
-\contentsline {subsubsection}{Etiquetando bloques de código}{16}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {4.3.2}Figuras}{16}{subsection.4.3.2}%
-\contentsline {subsubsection}{Subfiguras}{17}{subsubsection*.14}%
-\contentsline {subsection}{\numberline {4.3.3}Tablas}{18}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Enlaces de hipertexto}{19}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fórmulas matemáticas}{19}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Glosario}{19}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}¿Cuándo y cómo especificar términos?}{20}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Definiendo los términos del glosario}{20}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Notas}{23}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Referencias cruzadas}{23}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Referencias bibliográficas}{24}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}¿Cómo creamos nuevas referencias?}{25}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}¿De qué manera puedo citar las referencias?}{25}{subsection.4.9.2}%
-\contentsline {subsection}{\numberline {4.9.3}Más información}{26}{subsection.4.9.3}%
-\contentsline {section}{\numberline {4.10}Referencias cruzadas}{26}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Referencias a recursos externos}{26}{section.4.11}%
-\contentsline {chapter}{\numberline {5}Licencia}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {A}¿Cómo ampliar la plantilla?}{28}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Escuelas y títulos}{29}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}Escuelas}{29}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Titulaciones}{29}{section.Alph2.2}%
-\contentsline {subsection}{\numberline {B.2.1}E.T.S. de Ingeniería Agronómica, Alimentaria y de Biosistemas}{29}{subsection.Alph2.2.1}%
-\contentsline {subsection}{\numberline {B.2.2}E.T.S. de Ingeniería y Diseño Industrial}{30}{subsection.Alph2.2.2}%
-\contentsline {subsection}{\numberline {B.2.3}E.T.S. de Ingeniería de Sistemas Informáticos}{30}{subsection.Alph2.2.3}%
+\contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Descripción y Alcance del Proyecto}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objetivos}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Estructura de la memoria}{1}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Estado del Arte y Fundamentos Tecnológicos}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Gestión de la Inteligencia Relacional: Más Allá del CRM}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Paradigmas de Diseño de Producto en la Era de la IA}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tecnologías para el Desarrollo de Aplicaciones Nativas iOS}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Análisis Comparativo}{2}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Desarrollo del Proyecto}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Metodología y Entorno de Desarrollo}{3}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Gestión Ágil del Proyecto con GitHub Projects (Git Flow + Kanban)}{3}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Estrategia de Ramificación y Control de Versiones}{3}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Estructura de Repositorios en la Organización}{3}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Especificación de Requisitos de Software}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Diseño de la Arquitectura del Sistema}{3}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Fases de la Implementación}{4}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{4}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Verificación y Resultados}{5}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{6}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{6}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{6}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{6}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{33}{section*.21}%
-\contentsline {section}{Siglas}{33}{section*.22}%
