@@ -258,6 +258,7 @@
 %
 \RequirePackage{titlesec}
 
+
 \titlespacing*{\chapter}{0pt}{0pt}{25pt}
 \titleformat{\chapter}%
     {\fontsize{30}{30}}%
@@ -268,7 +269,7 @@
 
 \titlespacing*{\section}{0pt}{1ex plus .5ex minus .2ex}{.8ex plus .3ex}
 \titleformat{\section}%
-    {}{\sffamily\huge\thesection.}{0.6em}{\sffamily\huge}
+    {}{\sffamily\LARGE\thesection.}{0.6em}{\sffamily\LARGE}
 \titleformat{\subsection}%
     {}{\sffamily\Large\thesubsection.}{0.6em}{\sffamily\Large}
 \titleformat{\subsubsection}%
