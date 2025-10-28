@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  28 OCT 2025 19:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  28 OCT 2025 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1551,54 +1551,54 @@ LaTeX Info: Redefining \% on input line 1.
 
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
-[2] (./chapter1-intro/aa-chapter1-intro.tex
+[2] (./chapter1-intro/chapter1-intro.tex
 Capítulo 1.
-(./chapter1-intro/motivacion.tex) (./chapter1-intro/descripcion-alcance.tex)
-(./chapter1-intro/objetivos.tex) (./chapter1-intro/estructura-memoria.tex))
-(./chapter2-fundamentos/aa-chapter2-fundamentos.tex
+(./chapter1-intro/1-motivacion.tex) (./chapter1-intro/2-descripcion-alcance.tex
+) (./chapter1-intro/3-objetivos.tex) (./chapter1-intro/4-estructura-memoria.tex
+)) (./chapter2-fundamentos/chapter2-fundamentos.tex
 
 [1
 
 
 ]
 Capítulo 2.
-(./chapter2-fundamentos/gestion-inteligencia-relacional.tex
+(./chapter2-fundamentos/1-gestion-inteligencia-relacional.tex
 Overfull \hbox (6.83247pt too wide) in paragraph at lines 4--4
 |[]\TU/Helvetica(0)/m/n/20.74 Gestión de la Inteligencia Relacional: Más Allá
  []
 
-) (./chapter2-fundamentos/paradigmas-diseno-producto.tex)
-(./chapter2-fundamentos/tecnologias-ios.tex)
-(./chapter2-fundamentos/analisis-comparativo.tex))
-(./chapter3-desarrollo/aa-chapter3-desarrollo.tex
+) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex)
+(./chapter2-fundamentos/3-tecnologias-ios.tex)
+(./chapter2-fundamentos/4-analisis-comparativo.tex))
+(./chapter3-desarrollo/chapter3-desarrollo.tex
 
 [2
 
 ]
 Capítulo 3.
-(./chapter3-desarrollo/metodologia-entorno.tex)
-(./chapter3-desarrollo/especificacion-requisitos.tex)
-(./chapter3-desarrollo/diseno-arquitectura.tex)
-(./chapter3-desarrollo/fases-implementacion.tex)
-(./chapter3-desarrollo/despliegue-lanzamiento.tex
+(./chapter3-desarrollo/1-metodologia-entorno.tex)
+(./chapter3-desarrollo/2-especificacion-requisitos.tex)
+(./chapter3-desarrollo/3-diseno-arquitectura.tex)
+(./chapter3-desarrollo/4-fases-implementacion.tex)
+(./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
 [3
 
-])) (./chapter4-resultados/aa-chapter4-resultados.tex
+])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 [4]
 Capítulo 4.
-) (./chapter5-conclusiones/aa-chapter5-conclusiones.tex
+) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
 [5
 
 ]
 Capítulo 5.
-(./chapter5-conclusiones/conclusiones-generales.tex)
-(./chapter5-conclusiones/aplicacion-conocimientos.tex)
-(./chapter5-conclusiones/lineas-trabajo-futuro.tex))
+(./chapter5-conclusiones/1-conclusiones-generales.tex)
+(./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
+(./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
 [6
 
@@ -1638,15 +1638,15 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 65DDCF1698E08468BD7CF934BB8C8F59;4662.
+(rerunfilecheck)             Checksum: 4A0DCE486C7DA16CEBCA3C2B4B570740;4693.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  41948 strings out of 473832
- 819679 string characters out of 5729480
- 1885137 words of memory out of 5000000
+ 819815 string characters out of 5729480
+ 1885173 words of memory out of 5000000
  64390 multiletter control sequences out of 15000+600000
  565893 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

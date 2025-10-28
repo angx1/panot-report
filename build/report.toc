@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Descripción y Alcance del Proyecto}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Objetivos}{1}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Estructura de la memoria}{1}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Estado del Arte y Fundamentos Tecnológicos}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Estado de la Técnica y Fundamentos Tecnológicos}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Gestión de la Inteligencia Relacional: Más Allá del CRM}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Paradigmas de Diseño de Producto en la Era de la IA}{2}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Tecnologías para el Desarrollo de Aplicaciones Nativas iOS}{2}{section.2.3}%
