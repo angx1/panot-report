@@ -19,6 +19,7 @@ unix:
 	-cd $(BUILD_DIR) && biber $(MAIN_TEX)
 	-cd $(BUILD_DIR) && xelatex -interaction nonstopmode -file-line-error $(MAIN_TEX).tex
 	cd $(BUILD_DIR) && xelatex -interaction nonstopmode -file-line-error $(MAIN_TEX).tex
+	cp $(BUILD_DIR)/$(MAIN_TEX).pdf ./$(MAIN_TEX).pdf
 	
 win:
 	@echo off
@@ -33,6 +34,8 @@ win:
 	biber $(MAIN_TEX)
 	xelatex -interaction nonstopmode -file-line-error \"$$MainTex.tex\"; \
 	xelatex -interaction nonstopmode -file-line-error \"$$MainTex.tex\"; \
+	Set-Location -Path ..; \
+	Copy-Item -Path \"$$BuildDir\$$MainTex.pdf\" -Destination \".\$$MainTex.pdf\" -Force; \
 	}
 	
 clean:
