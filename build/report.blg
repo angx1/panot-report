@@ -1,16 +1,16 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'report.blg'
-[33] biber-darwin:340> INFO - === Mon Nov  3, 2025, 20:30:44
-[41] Biber.pm:420> INFO - Reading 'report.bcf'
+[34] biber-darwin:340> INFO - === Mon Nov  3, 2025, 20:37:05
+[42] Biber.pm:420> INFO - Reading 'report.bcf'
 [76] Biber.pm:994> INFO - Found 1 citekeys in bib section 0
 [83] Biber.pm:4463> INFO - Processing section 0
-[88] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[89] bibtex.pm:1713> INFO - LaTeX decoding ...
-[90] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[93] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[93] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[93] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[93] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[93] bbl.pm:779> INFO - Output to report.bbl
-[93] Biber.pm:131> WARN - I didn't find a database entry for 'doumas2022theory' (section 0)
-[93] Biber.pm:133> INFO - WARNINGS: 1
+[87] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[88] bibtex.pm:1713> INFO - LaTeX decoding ...
+[89] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[92] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[92] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[92] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[92] bbl.pm:676> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[92] bbl.pm:779> INFO - Output to report.bbl
+[92] Biber.pm:131> WARN - I didn't find a database entry for 'doumas2022theory' (section 0)
+[92] Biber.pm:133> INFO - WARNINGS: 1

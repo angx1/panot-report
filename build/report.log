@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  3 NOV 2025 20:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  3 NOV 2025 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1591,24 +1591,28 @@ LaTeX Info: Redefining \% on input line 23.
 
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
-[6]) (./chapter2-fundamentos/3-tecnologias-ios.tex
+[6]) (./chapter2-fundamentos/3-privacidad-eficiencia-diseno.tex
 
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
-[7]
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+[7]) (./chapter2-fundamentos/4-tecnologias-ios.tex
+
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+[8]
 
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
-[8]
+[9]
 
-LaTeX Info: Redefining \. on input line 93.
-LaTeX Info: Redefining \% on input line 93.
-[9]) (./chapter2-fundamentos/4-contexto-tecnologico.tex))
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+[10]) (./chapter2-fundamentos/5-contexto-tecnologico.tex))
 (./chapter3-desarrollo/chapter3-desarrollo.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[10]
+[11]
 Capítulo 3.
 (./chapter3-desarrollo/1-metodologia-entorno.tex)
 (./chapter3-desarrollo/2-especificacion-requisitos.tex)
@@ -1616,17 +1620,17 @@ Capítulo 3.
 (./chapter3-desarrollo/4-fases-implementacion.tex)
 (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
-[11
+[12
 
 ])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[12]
+[13]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[13
+[14
 
 ]
 Capítulo 5.
@@ -1634,7 +1638,7 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[14
+[15
 
 ]
 
@@ -1642,7 +1646,7 @@ LaTeX Warning: Empty bibliography on input line 67.
 
 (./report.gls) (./report.acr)
 
-[15
+[16
 
 
 ]
@@ -1656,7 +1660,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[16
+[17
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1675,7 +1679,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 44D647F0A98C0E6A40F2FD024700297A;4526.
+(rerunfilecheck)             Checksum: 504EDEA00AAC72106066C507A7DDFC92;4842.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                report
@@ -1686,12 +1690,12 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42180 strings out of 473832
- 824715 string characters out of 5729480
- 1957046 words of memory out of 5000000
- 64618 multiletter control sequences out of 15000+600000
+ 42188 strings out of 473832
+ 825174 string characters out of 5729480
+ 1957373 words of memory out of 5000000
+ 64623 multiletter control sequences out of 15000+600000
  567473 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,11n,107p,2414b,32880s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (24 pages).
+Output written on report.pdf (25 pages).
