@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  28 OCT 2025 20:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  3 NOV 2025 20:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,10 +743,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip88
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 389.
-Package hyperref Info: Option `plainpages' set `false' on input line 389.
-Package hyperref Info: Option `unicode' set `true' on input line 389.
-Package hyperref Info: Option `colorlinks' set `true' on input line 389.
+Package hyperref Info: Option `breaklinks' set `true' on input line 390.
+Package hyperref Info: Option `plainpages' set `false' on input line 390.
+Package hyperref Info: Option `unicode' set `true' on input line 390.
+Package hyperref Info: Option `colorlinks' set `true' on input line 390.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count350
 \lst@gtempboxa=\box66
@@ -1237,11 +1237,11 @@ File: glossaries-extra-abbrstyles.def 2025/03/04 v1.57 (NLCT)
 \glo@main@file=\write5
 \openout5 = `report.glo'.
 
-Package glossaries Info: Writing glossary file report.glo on input line 703.
+Package glossaries Info: Writing glossary file report.glo on input line 704.
 \glo@acronym@file=\write6
 \openout6 = `report.acn'.
 
-Package glossaries Info: Writing glossary file report.acn on input line 703.
+Package glossaries Info: Writing glossary file report.acn on input line 704.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1563,18 +1563,52 @@ Capítulo 1.
 ]
 Capítulo 2.
 (./chapter2-fundamentos/1-gestion-inteligencia-relacional.tex
-Overfull \hbox (6.83247pt too wide) in paragraph at lines 4--4
-|[]\TU/Helvetica(0)/m/n/20.74 Gestión de la Inteligencia Relacional: Más Allá
- []
-
-) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex)
-(./chapter2-fundamentos/3-tecnologias-ios.tex)
-(./chapter2-fundamentos/4-analisis-comparativo.tex))
-(./chapter3-desarrollo/chapter3-desarrollo.tex
 
 [2
 
 ]
+
+LaTeX Warning: Citation 'doumas2022theory' on page 3 undefined on input line 27
+.
+
+
+LaTeX Warning: Citation 'doumas2022theory' on page 3 undefined on input line 33
+.
+
+
+
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+[3]
+
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+[4]) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex
+
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+[5]
+
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+[6]) (./chapter2-fundamentos/3-tecnologias-ios.tex
+
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+[7]
+
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+[8]
+
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+[9]) (./chapter2-fundamentos/4-contexto-tecnologico.tex))
+(./chapter3-desarrollo/chapter3-desarrollo.tex
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[10]
 Capítulo 3.
 (./chapter3-desarrollo/1-metodologia-entorno.tex)
 (./chapter3-desarrollo/2-especificacion-requisitos.tex)
@@ -1582,17 +1616,17 @@ Capítulo 3.
 (./chapter3-desarrollo/4-fases-implementacion.tex)
 (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
-[3
+[11
 
 ])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[4]
+[12]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[5
+[13
 
 ]
 Capítulo 5.
@@ -1600,7 +1634,7 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[6
+[14
 
 ]
 
@@ -1608,7 +1642,7 @@ LaTeX Warning: Empty bibliography on input line 67.
 
 (./report.gls) (./report.acr)
 
-[7
+[15
 
 
 ]
@@ -1622,7 +1656,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[8
+[16
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1637,19 +1671,27 @@ L3 programming layer <2025-01-18>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4A0DCE486C7DA16CEBCA3C2B4B570740;4693.
+(rerunfilecheck)             Checksum: 44D647F0A98C0E6A40F2FD024700297A;4526.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41948 strings out of 473832
- 819815 string characters out of 5729480
- 1885173 words of memory out of 5000000
- 64390 multiletter control sequences out of 15000+600000
- 565893 words of font info for 107 fonts, out of 8000000 for 9000
+ 42180 strings out of 473832
+ 824715 string characters out of 5729480
+ 1957046 words of memory out of 5000000
+ 64618 multiletter control sequences out of 15000+600000
+ 567473 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,11n,107p,2414b,32880s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (16 pages).
+Output written on report.pdf (24 pages).

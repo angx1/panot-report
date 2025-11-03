@@ -1,6 +1,102 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% TECNOLOGÍAS PARA EL DESARROLLO DE APLICACIONES NATIVAS iOS
+% TECNOLOGÍAS PARA EL DESARROLLO DE APLICACIONES iOS
 
-\section{Tecnologías para el Desarrollo de Aplicaciones Nativas iOS}
+\section{Tecnologías para el Desarrollo de Aplicaciones para iOS}
 
-[Escribir aqui las tecnologías para el desarrollo de aplicaciones nativas iOS]
+\subsection{Desarrollo Nativo}
+
+El desarrollo nativo de aplicaciones para iOS se basa en un ecosistema integrado de lenguajes, 
+herramientas y frameworks diseñados y mantenidos por Apple para garantizar la calidad, seguridad y consistencia de las aplicaciones 
+en sus dispositivos.
+
+Dos lenguajes de programación principales conforman el núcleo del desarrollo nativo: \textit{Swift} y 
+\textit{Objective-C}. \textit{Swift}, introducido en 2014, es el lenguaje moderno y recomendado para 
+nuevos proyectos, ofreciendo tipado estático, gestión automática de memoria mediante referencia contadora 
+(\textit{ARC}) y una sintaxis expresiva que mejora la seguridad y la productividad del desarrollador. 
+\textit{Objective-C} es el lenguaje tradicional usado por Apple, sigue siendo compatible y se utiliza principalmente en 
+proyectos legados o para integración con frameworks de bajo nivel.
+
+El entorno de desarrollo integrado por excelencia es \textit{Xcode}, el IDE oficial y exclusivo para iOS. 
+Xcode proporciona todas las herramientas necesarias para el flujo completo de desarrollo: editor de código, 
+depurador, simulador de dispositivos y utilidades como \textit{Interface Builder} para el diseño visual 
+de interfaces, \textit{Instruments} para análisis de rendimiento, y gestión de certificados y perfiles 
+de aprovisionamiento imprescindibles en el proceso de firma y distribución de aplicaciones.
+
+En cuanto a la construcción de la interfaz de usuario, existen dos frameworks principales: 
+\textit{SwiftUI} y \textit{UIKit}. \textit{SwiftUI}, presentado en 2019, representa el enfoque 
+declarativo y moderno donde la interfaz se define desde código Swift utilizando un paradigma 
+funcional y reactivo. Por su parte, \textit{UIKit} es el framework tradicional fundamentado en un 
+enfoque imperativo y el patrón Modelo-Vista-Controlador (MVC), manteniendo hoy en día una presencia 
+relevante tanto en desarrollos existentes como en escenarios que requieren un control más 
+directo del sistema.
+
+Apple incorpora también diversas herramientas adicionales usadas frecuentemente en el desarrollo de aplicaciones 
+para iOS. Por un lado, \textit{CocoaPods} y \textit{Swift Package Manager} (SPM) que permiten la gestión de dependencias 
+externas. Por otro lado, \textit{Core Data} y \textit{CloudKit} que facilitan la persistencia de datos local y 
+sincronización en la nube respectivamente. O, por otro lado, \textit{Combine}, que es un framework introducido 
+junto con SwiftUI que permite la gestión de flujos de datos asíncronos.
+
+La combinación de estos lenguajes, herramientas y frameworks permite la creación de aplicaciones 
+iOS de alto rendimiento y experiencia de usuario optimizada, garantizando compatibilidad, seguridad 
+y aprovechamiento completo de las capacidades nativas del sistema operativo y el hardware de Apple.
+
+\subsection{Frameworks Multiplataforma}
+
+Además del desarrollo nativo, existen varios frameworks multiplataforma que permiten desarrollar aplicaciones 
+para iOS junto con otras plataformas (principalmente Android) desde una base de código compartida.
+{\small
+\begin{itemize}
+    \item \textit{React Native}, desarrollado por Meta, permite crear aplicaciones móviles utilizando JavaScript y React. 
+    El framework utiliza un puente nativo que comunica el código JavaScript con componentes nativos de cada plataforma, 
+    permitiendo acceso a APIs nativas mientras se comparte la mayor parte de la lógica de negocio.
+    
+    \item \textit{Expo}, construido sobre React Native, proporciona un conjunto de herramientas y servicios que simplifican 
+    el desarrollo, incluyendo un runtime unificado, APIs listas para usar y un sistema de compilación en la nube. Expo 
+    reduce significativamente la complejidad de configuración del proyecto y facilita el despliegue, aunque con algunas 
+    limitaciones en el acceso a funcionalidades nativas avanzadas.
+    
+    \item \textit{Flutter}, desarrollado por Google, utiliza el lenguaje \textit{Dart} y un motor de renderizado propio que 
+    compila a código nativo. Flutter construye la interfaz de usuario desde cero en cada plataforma, evitando la 
+    necesidad de componentes nativos del sistema operativo y proporcionando mayor consistencia visual entre plataformas.
+\end{itemize}
+}
+Otras alternativas multiplataforma incluyen \textit{Xamarin} (ahora \textit{.NET MAUI}) que utiliza C\# y .NET, 
+\textit{Ionic} que combina tecnologías web (HTML, CSS, JavaScript) con capacidades nativas mediante \textit{Cordova}, 
+y \textit{Unity} para aplicaciones que requieren capacidades gráficas avanzadas, esencialmente, videojuegos.
+
+La elección entre desarrollo nativo y multiplataforma depende de factores como requisitos de rendimiento, necesidad 
+de acceso a funcionalidades nativas avanzadas, tiempo de desarrollo, mantenimiento a largo plazo o recursos del equipo.
+
+\subsection{Proceso de Desarrollo y Distribución}
+
+El ciclo de vida de una aplicación iOS desde el desarrollo hasta su distribución sigue un proceso estructurado:
+
+\begin{enumerate}
+    \item \textit{Desarrollo}: Durante esta fase, el código se compila y ejecuta en simuladores iOS o dispositivos físicos mediante 
+    perfiles de desarrollo.
+    
+    \item \textit{Pruebas internas}: Para pruebas internas, las aplicaciones, una vez compiladas, es posible su distribución mediante 
+    \textit{TestFlight}, plataforma que permite a desarrolladores invitar hasta 10.000 beta testers externos sin 
+    necesidad de certificados adicionales.
+    
+    \item \textit{Archive}: El proceso de \textit{Archive} genera un paquete de distribución de la aplicación (\textit{.ipa}) optimizado 
+    y firmado con los certificados de distribución \footnote{Los certificados de distribución son credenciales digitales emitidas por 
+    Apple que permiten identificar y autenticar al desarrollador, garantizando que la aplicación proviene de una fuente confiable y 
+    verificada. Son esenciales para firmar digitalmente las aplicaciones antes de su distribución en la App Store.}.
+    Esta versión archivada puede subirse a \textit{App Store Connect}, portal web de Apple para gestión de aplicaciones, donde se 
+    configura información de la aplicación, capturas de pantalla, descripciones y metadatos requeridos para la publicación.
+    
+    \item \textit{App Review}: Una vez hecha la petición de subida, este proceso de revisión de Apple verifica que el producto cumple con 
+    las directrices de la App Store, incluyendo seguridad, privacidad, calidad técnica y contenido. Una vez aprobada, la aplicación 
+    está disponible para distribución pública o privada según la configuración establecida.
+    
+    \item \textit{Distribución}: La distribución puede realizarse mediante tres canales principales:
+    {\small
+    \begin{itemize}
+        \item \textbf{App Store}: Para usuarios finales a través de la tienda oficial de Apple.
+        \item \textbf{Distribución empresarial (\textit{Enterprise})}: Permite a las organizaciones internas distribuir aplicaciones privadas a sus empleados, fuera de la App Store.
+        \item \textbf{Distribución ad-hoc}: Permite instalar la aplicación en un número limitado de dispositivos específicos, identificados mediante perfiles de aprovisionamiento
+        \footnote{Los perfiles de aprovisionamiento son archivos que vinculan a un desarrollador y su aplicación con una cuenta de desarrollador, dispositivos y servicios autorizados}.
+    \end{itemize}
+    }
+\end{enumerate}

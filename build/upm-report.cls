@@ -289,6 +289,7 @@
 % TODO Cambiar los tipos de letra según la guía de estilos de la escuela
 %\setmainfont{TeX Gyre PagellaX}
 \setmainfont{Source Serif 4}
+
 \setsansfont{Helvetica}
 \setmonofont{Menlo}
 
