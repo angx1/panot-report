@@ -5,40 +5,31 @@
 
 \subsection{Desarrollo Nativo}
 
-El desarrollo nativo de aplicaciones para iOS se basa en un ecosistema integrado de lenguajes, 
-herramientas y frameworks diseñados y mantenidos por Apple para garantizar la calidad, seguridad y consistencia de las aplicaciones 
-en sus dispositivos.
+El desarrollo nativo para iOS consiste en crear aplicaciones utilizando específicamente las herramientas, 
+lenguajes y frameworks proporcionados por Apple para la plataforma. Este enfoque permite aprovechar al máximo 
+las capacidades del sistema operativo iOS y de los dispositivos de Apple, garantizando un rendimiento óptimo y 
+acceso completo a todas las funcionalidades del sistema.
 
-Dos lenguajes de programación principales conforman el núcleo del desarrollo nativo: \textit{Swift} y 
-\textit{Objective-C}. \textit{Swift}, introducido en 2014, es el lenguaje moderno y recomendado para 
-nuevos proyectos, ofreciendo tipado estático, gestión automática de memoria mediante referencia contadora 
-(\textit{ARC}) y una sintaxis expresiva que mejora la seguridad y la productividad del desarrollador. 
-\textit{Objective-C} es el lenguaje tradicional usado por Apple, sigue siendo compatible y se utiliza principalmente en 
-proyectos legados o para integración con frameworks de bajo nivel.
+El lenguaje de programación predominante en el desarrollo nativo para iOS es \textit{Swift}, introducido por 
+Apple en 2014 como sucesor de \textit{Objective-C}. Swift es un lenguaje moderno, seguro y de alto rendimiento 
+que combina características de programación orientada a objetos y funcional, diseñado específicamente para ser 
+más intuitivo y menos propenso a errores que su predecesor. Aunque \textit{Objective-C} se sigue manteniendo en proyectos 
+legados o de alto riesgo de migración.
 
-El entorno de desarrollo integrado por excelencia es \textit{Xcode}, el IDE oficial y exclusivo para iOS. 
-Xcode proporciona todas las herramientas necesarias para el flujo completo de desarrollo: editor de código, 
-depurador, simulador de dispositivos y utilidades como \textit{Interface Builder} para el diseño visual 
-de interfaces, \textit{Instruments} para análisis de rendimiento, y gestión de certificados y perfiles 
-de aprovisionamiento imprescindibles en el proceso de firma y distribución de aplicaciones.
+La herramienta principal para el desarrollo nativo es \textit{Xcode}, el entorno de desarrollo integrado (IDE) 
+oficial de Apple. Xcode proporciona un editor de código, compilador, depurador, simulador de iOS, herramientas 
+de gestión de interfaces y un sistema completo de gestión de proyectos. Además, incluye \textit{Interface Builder} 
+para diseñar interfaces de usuario de forma visual e \textit{Instruments} para análisis de rendimiento y detección 
+de fugas de memoria.
 
-En cuanto a la construcción de la interfaz de usuario, existen dos frameworks principales: 
-\textit{SwiftUI} y \textit{UIKit}. \textit{SwiftUI}, presentado en 2019, representa el enfoque 
-declarativo y moderno donde la interfaz se define desde código Swift utilizando un paradigma 
-funcional y reactivo. Por su parte, \textit{UIKit} es el framework tradicional fundamentado en un 
-enfoque imperativo y el patrón Modelo-Vista-Controlador (MVC), manteniendo hoy en día una presencia 
-relevante tanto en desarrollos existentes como en escenarios que requieren un control más 
-directo del sistema.
-
-Apple incorpora también diversas herramientas adicionales usadas frecuentemente en el desarrollo de aplicaciones 
-para iOS. Por un lado, \textit{CocoaPods} y \textit{Swift Package Manager} (SPM) que permiten la gestión de dependencias 
-externas. Por otro lado, \textit{Core Data} y \textit{CloudKit} que facilitan la persistencia de datos local y 
-sincronización en la nube respectivamente. O, por otro lado, \textit{Combine}, que es un framework introducido 
-junto con SwiftUI que permite la gestión de flujos de datos asíncronos.
-
-La combinación de estos lenguajes, herramientas y frameworks permite la creación de aplicaciones 
-iOS de alto rendimiento y experiencia de usuario optimizada, garantizando compatibilidad, seguridad 
-y aprovechamiento completo de las capacidades nativas del sistema operativo y el hardware de Apple.
+Para la construcción de interfaces de usuario, Apple proporciona dos frameworks principales: \textit{UIKit}, el 
+framework tradicional basado en programación imperativa y eventos, y \textit{SwiftUI}, introducido en 2019, que 
+utiliza un paradigma declarativo y permite crear interfaces de manera más moderna y eficiente. SwiftUI facilita 
+el desarrollo de interfaces adaptativas y reactivas, aunque UIKit sigue siendo ampliamente utilizado, especialmente 
+en proyectos existentes o cuando se requiere mayor control sobre el comportamiento de la interfaz. El desarrollo 
+nativo también permite el uso directo de \textit{Cocoa Touch}, la capa de frameworks de iOS que incluye servicios 
+fundamentales como \textit{Core Data} para persistencia de datos, \textit{Core ML} para modelos de lenguaje, 
+\textit{Core Location} para servicios de ubicación, y acceso completo a las APIs del sistema operativo.
 
 \subsection{Frameworks Multiplataforma}
 
