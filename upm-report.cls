@@ -20,6 +20,7 @@
 \RequirePackage{graphicx}  % Mejoras sobre el paquete graphics
 \RequirePackage{hologo}  % Para poner logos relacionados con LaTeX
 \RequirePackage{ifthen}  % Para poder usar condicionales en la clase
+\RequirePackage{indentfirst}  % Sangría en el primer párrafo después de títulos
 \RequirePackage{pdflscape}  % Posibilidad de páginas en apaisado
 \RequirePackage{xcolor}  % Mejoras sobre el paquete color
 \RequirePackage{algorithm}
@@ -288,7 +289,10 @@
 \RequirePackage{microtype} % Mejoras tipográficas generales
 % TODO Cambiar los tipos de letra según la guía de estilos de la escuela
 %\setmainfont{TeX Gyre PagellaX}
-\setmainfont{Source Serif 4}
+\setmainfont{Source Serif 4}[
+  BoldFont=Source Serif 4 Bold,
+  BoldItalicFont=Source Serif 4 Bold Italic
+]
 
 \setsansfont{Helvetica}
 \setmonofont{Menlo}
@@ -358,13 +362,13 @@
 %
 \setlength{\parskip}{1em}
 \linespread{1.2}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{1.5em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Estilo de los enumerados y listados
 %
 \RequirePackage{enumitem}
-\setlist[itemize,enumerate]{left=0pt..1em}
+\setlist[itemize,enumerate]{left=1.5em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Configuración para PDF e hipervínculos
