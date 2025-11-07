@@ -72,13 +72,14 @@ la optimización de recursos computacionales desde las primeras etapas del desar
 puedan gestionar su carga de trabajo utilizando la menor cantidad de recursos posibles sin comprometer la funcionalidad 
 ni la experiencia de usuario. A diferencia de la optimización reactiva, que se aplica una vez que el sistema ya está 
 en producción, la eficiencia por diseño requiere considerar aspectos de rendimiento, escalabilidad y consumo de recursos 
-desde la fase de diseño arquitectónico.
+desde las fases de análisis y diseño arquitectónico.
 
-El principio fundamental que guía la eficiencia por diseño en ingeniería de software fue enunciado por Donald Knuth 
-en su obra \textit{The Art of Computer Programming}: \textit{"La optimización prematura es la causa de todos los males"} 
-[INCLUIR CITACIÓN]. Este principio establece que, aunque la eficiencia es un objetivo importante, debe lograrse 
-mediante un enfoque equilibrado que priorice primero la funcionalidad y la claridad del código, para posteriormente 
-optimizar de manera iterativa aquellos componentes que realmente requieren mejoras de rendimiento.
+En su libro \textit{Clean Architecture}, Robert C. Martin [INCLUIR CITA] aborda esta cuestión desde una perspectiva más fundacional, 
+enfatizando la importancia de promover la eficiencia a largo plazo mediante el diseño de sistemas flexibles y mantenibles, a través de la 
+separación de la lógica de negocio y los detalles técnicos. Esto se consigue con un diseño de capas donde las dependencias siempre 
+apuntan hacia el interior, de modo que los cambios en aspectos técnicos, es decir, en capas más centrales, no impacten en las capas superiores de 
+principios y reglas del sistema. De esta manera, se favorece la creación de sistemas eficientes y sostenibles, capaces de mantener su 
+funcionalidad y adaptabilidad en el tiempo.
 
 En la práctica, las empresas de software modernas implementan el principio de eficiencia por diseño mediante diversas 
 estrategias arquitectónicas. Por ejemplo, la adopción de arquitecturas serverless y funciones como servicio (FaaS) permite 
@@ -107,13 +108,13 @@ computacionales sobre datos cifrados sin necesidad de descifrarlos previamente. 
 cifrado tradicional, donde los datos deben descifrarse antes de ser procesados, el cifrado homomórfico 
 permite que un servidor o servicio externo procese información cifrada y devuelva resultados también 
 cifrados, manteniendo la confidencialidad de los datos en todo momento. Este enfoque es especialmente 
-relevante en sistemas que utilizan modelos de lenguaje en entornos sanitarios [AÑADIR CITA AL TRABAJO DE MIGUEL], 
-ya que permite enviar datos sensibles sobre pacientes cifrados a servicios de procesamiento de lenguaje natural 
+relevante en sistemas que utilizan modelos de lenguaje en entornos como el sanitario [AÑADIR CITA AL TRABAJO DE MIGUEL], 
+ya que permitiría enviar datos sensibles cifrados sobre pacientes a servicios de procesamiento de lenguaje natural 
 sin que el proveedor del servicio pueda acceder al contenido real de la información.
 
 Sin embargo, el cifrado totalmente homomórfico presenta limitaciones prácticas significativas en términos 
 de rendimiento y eficiencia computacional ya que este tipo de operaciones requieren de modelos pre-entrenados con datos homomórficamente cifrados. 
-Por esta razón, su aplicación en sistemas desplegados con modelos de lenguaje sigue siendo un área de investigación activa, 
+Por esta razón, su aplicación en sistemas desplegados sigue siendo un área de investigación activa, 
 aunque existen implementaciones experimentales que demuestran su viabilidad para casos de uso específicos.
 
 Además del cifrado homomórfico, otras estrategias de preservación de la privacidad en sistemas con modelos de 
@@ -122,10 +123,7 @@ para el procesamiento, la \textit{ofuscación} de información sensible mediante
 pseudonimización, y el \textit{procesamiento local} cuando es posible, utilizando modelos de lenguaje más 
 pequeños ejecutados directamente en el dispositivo del usuario para evitar la transmisión de datos a servicios externos.
 
-En el caso de la eficiencia en sistemas que utilizan modelos de lenguaje, es necesario considerar dos dimensiones principales: el coste 
-computacional y el tiempo de respuesta.
-
-Una estrategia arquitectónica fundamental para optimizar la eficiencia en estos sistemas es la adopción de 
+En el caso de la eficiencia en este tipo de sistemas, una estrategia arquitectónica fundamental es la adopción de 
 \textit{arquitecturas serverless} y \textit{Funciones como Servicio} (FaaS), que permiten ejecutar procesamiento 
 de modelos de lenguaje de manera escalable y bajo demanda. Los servicios serverless eliminan la necesidad de 
 mantener servidores activos de forma continua, permitiendo que la infraestructura se active únicamente cuando 
@@ -135,11 +133,11 @@ Google Cloud Functions o Azure Functions permiten ejecutar funciones que invocan
 
 Además de la arquitectura serverless, la \textit{elección del modelo de lenguaje adecuado} constituye un factor 
 crítico para optimizar la eficiencia en sistemas que procesan lenguaje natural. La selección del modelo debe 
-equilibrar tres pilares fundamentales: la \textit{eficiencia computacional}, el \textit{coste económico} 
+equilibrar tres dimensiones fundamentales: la \textit{eficiencia computacional}, el \textit{coste económico} 
 y el \textit{tiempo de respuesta}. Modelos de lenguaje más grandes y complejos, como GPT-5 Codex de OpenAI o Claude 4.5 Sonnet de Anthropic, 
 ofrecen capacidades superiores de comprensión y generación de lenguaje, pero conllevan un mayor coste computacional. 
-Por el contrario, modelos más pequeños y optimizados, como Gemma 3n E4B de Google o Ministral 3B de Mistral, suponen un coste computacional 
-menor, pero no ofrecen las mismas capacidades que los primeros.
+Por el contrario, modelos más pequeños y optimizados, como Gemma 3n E4B de Google o Ministral 3B de Mistral, aunque suponen un coste computacional 
+menor, no ofrecen las mismas capacidades que los primeros.
 
 [insertar tabla de costes de de los modelos mencionados en coste por nº de tokens de input]
 

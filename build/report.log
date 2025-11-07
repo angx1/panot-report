@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  6 NOV 2025 20:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  7 NOV 2025 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1595,8 +1595,8 @@ LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 [6]
 
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
 [7]) (./chapter2-fundamentos/3-privacidad-eficiencia-diseno.tex
 
 LaTeX Info: Redefining \. on input line 21.
@@ -1607,45 +1607,60 @@ LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
 [9]
 
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
 [10]
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
 [11]
 
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
 [12]
 
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
-[13]) (./chapter2-fundamentos/4-tecnologias-ios.tex
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+[13]) (./chapter2-fundamentos/4-contexto-tecnologico.tex
 
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 [14]
-Overfull \hbox (4.05177pt too wide) in paragraph at lines 25--33
-\TU/SourceSerif4(0)/m/n/12 principales: \TU/SourceSerif4(0)/m/it/12 UIKit\TU/So
-urceSerif4(0)/m/n/12 , el framework tradicional basado en programación imperati
-va y even-
+
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+[15]
+Overfull \hbox (0.8708pt too wide) in paragraph at lines 85--87
+[]\TU/SourceSerif4(0)/b/n/12 Sincronización en tiempo real\TU/SourceSerif4(0)/m
+/n/12 : \TU/SourceSerif4(0)/m/it/12 Supabase \TU/SourceSerif4(0)/m/n/12 ofrece 
+capacidades de suscripción a cam-
  []
 
 
 
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
-[15]
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+[16]
 
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
-[16]) (./chapter2-fundamentos/5-contexto-tecnologico.tex))
-(./chapter3-desarrollo/chapter3-desarrollo.tex
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
+[17]
+
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+[18]
+
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+[19]
+
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+[20])) (./chapter3-desarrollo/chapter3-desarrollo.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[17]
+[21]
 Capítulo 3.
 (./chapter3-desarrollo/1-metodologia-entorno.tex)
 (./chapter3-desarrollo/2-especificacion-requisitos.tex)
@@ -1653,17 +1668,17 @@ Capítulo 3.
 (./chapter3-desarrollo/4-fases-implementacion.tex)
 (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
-[18
+[22
 
 ])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[19]
+[23]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[20
+[24
 
 ]
 Capítulo 5.
@@ -1671,7 +1686,7 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[21
+[25
 
 ]
 
@@ -1679,7 +1694,7 @@ LaTeX Warning: Empty bibliography on input line 58.
 
 (./report.gls) (./report.acr)
 
-[22
+[26
 
 
 ]
@@ -1693,7 +1708,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[23
+[27
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1709,7 +1724,7 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 504EDEA00AAC72106066C507A7DDFC92;4842.
+(rerunfilecheck)             Checksum: 231E0E0F70C837345447CAC6247DB51C;4473.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                report
@@ -1720,12 +1735,12 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42230 strings out of 473832
- 826661 string characters out of 5729480
- 1971953 words of memory out of 5000000
- 64655 multiletter control sequences out of 15000+600000
- 567529 words of font info for 124 fonts, out of 8000000 for 9000
+ 42206 strings out of 473832
+ 825890 string characters out of 5729480
+ 1971571 words of memory out of 5000000
+ 64635 multiletter control sequences out of 15000+600000
+ 565973 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,12n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (31 pages).
+Output written on report.pdf (35 pages).
