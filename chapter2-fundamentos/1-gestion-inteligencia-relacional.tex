@@ -1,7 +1,7 @@
 
 \section{Gestión de la Inteligencia Relacional}
 
-Los sistemas CRM convencionales, si bien útiles en entornos corporativos para la gestión masiva de clientes, presentan 
+Los sistemas \acrshort{crm} convencionales, si bien útiles en entornos corporativos para la gestión masiva de clientes, presentan 
 limitaciones significativas cuando se trata de capturar la complejidad inherente a las relaciones humanas. Estos sistemas 
 operan principalmente con información descontextualizada, almacenando datos de contacto de manera estática y registrando 
 interacciones sin considerar su evolución temporal ni el contexto en el que ocurren.
@@ -17,28 +17,22 @@ Para comprender el alcance de la Inteligencia Relacional, es necesario enmarcar 
 de la Inteligencia Artificial y analizar cómo se diferencia con los paradigmas tradicionales.
 
 La diferencia fundamental entre la Inteligencia Relacional y los paradigmas tradicionales de IA radica en que, mientras estos últimos 
-operan mediante asociaciones estadísticas entre patrones de entrada y salida —optimizando funciones de pérdida sobre grandes volúmenes 
+operan principalmente mediante la aproximación estadística de distribuciones de datos y patrones —optimizando funciones de pérdida sobre grandes volúmenes 
 de datos descontextualizados—, la Inteligencia Relacional se fundamenta en la construcción y manipulación de representaciones 
-estructurales de relaciones que permiten la generalización cruzada y la inferencia analógica\footnote{Transmisión de conocimientos de una situación a otra}. 
+estructurales de relaciones que permiten la generalización cruzada y la \gls{inferencia-analogica}. 
 La Inteligencia Relacional captura la estructura relacional subyacente que puede transferirse entre dominios aparentemente no relacionados, 
 tal como ocurre en el razonamiento humano, creando un contexto de conocimiento más amplio y generalizable o especfíco para un dominio en concreto.
 
 La investigación en Inteligencia Relacional demuestra capacidades que van más allá del aprendizaje estadístico tradicional. 
- [INTRODUCIR CITACIÓN PAPER] muestran cómo un modelo computacional puede aprender representaciones relacionales 
-estructuradas y realizar generalización de cero disparos\footnote{Escenario de aprendizaje automático en el que se entrena un modelo de IA para reconocer y categorizar 
-objetos o conceptos sin haber visto ningún ejemplo de esas categorías o conceptos de antemano} entre dominios completamente diferentes, como la transferencia de 
+En 2022, se publicó un estudio de la Universidad de Edimburgo\cite{doumas2022theory} en el que se muestra cómo un modelo computacional puede aprender representaciones relacionales 
+estructuradas y realizar \gls{generalizacion-de-cero-disparos} entre dominios completamente diferentes, como la transferencia de 
 conocimiento entre videojuegos. Esta capacidad de generalización permite que el sistema aprenda a reconocer y comprender relaciones 
 entre entidades en contextos completamente diferentes.
 
 Traspasando la analogía de los videojuegos al contexto de PANOT, la Inteligencia Relacional como se menciona en \cite{doumas2022theory} permite que el sistema
 aprenda a reconocer y comprender patrones relacionales estructurados entre personas, eventos y contextos, más allá de las asociaciones estadísticas superficiales. 
-En lugar de simplemente almacenar datos estáticos de contactos, PANOT puede construir representaciones relacionales dinámicas que capturan la estructura subyacente 
+En lugar de simplemente almacenar datos estáticos de contactos, el sistema de PANOT puede construir representaciones relacionales dinámicas que capturan la estructura subyacente 
 de las relaciones humanas —como la evolución temporal de intereses comunes, la frecuencia contextual de interacciones, o los cambios en preferencias y circunstancias vitales—. 
-
-Por ejemplo, el sistema puede reconocer que ciertos patrones de comunicación efectivos en relaciones profesionales pueden generalizarse a nuevas relaciones profesionales, 
-o que cambios detectados en el contexto de una relación personal pueden aplicarse para comprender dinámicas similares en otras relaciones. Esta generalización relacional 
-es lo que permite que PANOT evolucione continuamente cada contacto, reflejando no solo quién es esa persona en términos estáticos, sino cómo ha evolucionado y continúa 
-evolucionando la relación según el contexto temporal y situacional. 
 
 Para ilustrar este proceso, consideremos un ejemplo práctico del flujo de procesamiento relacional en PANOT:
 
@@ -70,7 +64,6 @@ mediante relaciones semánticas representadas en formato \texttt{JSON}:
 
 \begin{lstlisting}[
     basicstyle=\ttfamily\scriptsize,
-    frame=single,
     breaklines=true,
     breakatwhitespace=false,
     keepspaces=true,
@@ -79,22 +72,26 @@ mediante relaciones semánticas representadas en formato \texttt{JSON}:
     tabsize=2
 ]
 {
-  "ha-cambiado-preferencia": {
-      "preferencia" : "trabajo-remoto"
+  "personal": {
+    "necesidad_actual": "búsqueda de vivienda",
+    "preferencia_ubicación": "cerca de la nueva oficina",
+    "estado_emocional": "emocionada"
   },
-  "interés-común": {
-      "entidades" : [ "Usuario", "María" ],
-      "tema": [ "diseño", "startup-tecnológica", "diseño-colaborativo" ]
+  "profesional": {
+    "rol": "diseñadora",
+    "empresa": "startup tecnológica",
+    "intereses": ["trabajo remoto"],
+    "estado": "transición laboral reciente"
   },
-  "contexto-temporal-situacional": { 
-      "evento" : "almuerzo-informal", 
-      "estado" : "transición-profesional"
+  "relación": {
+    "última_interacción": "almuerzo informal",
+    "intereses_comunes": ["diseño colaborativo", "proyectos futuros"],
+    "dinámica": "receptiva a colaboración"
   }
 }
 \end{lstlisting}
 
-
-\textit{Output:} PANOT actualiza dinámicamente el contacto de María, generando múltiples outputs contextuales:
+\textit{Output:} PANOT actualiza dinámicamente el contexto de María, integrando la nueva información estructurada directamente en su perfil relacional:
 
 {\small
 \begin{itemize}
@@ -102,16 +99,20 @@ mediante relaciones semánticas representadas en formato \texttt{JSON}:
     \setlength{\parsep}{0pt}
     \setlength{\topsep}{0pt}
     \setlength{\partopsep}{0pt}
-    \item \textit{Actualización automática del perfil}: se añade ``Diseñadora en startup tecnológica'' como situación laboral actual y se marca ``Trabajo remoto'' como preferencia. Se registra también el cambio de estado como una nueva etapa profesional.
-    \item \textit{Recordatorio contextual}: en la ficha de María se crea podría crear un recordatorio automático para preguntar sobre la búsqueda de piso en futuras interacciones.
-    \item \textit{Recomendaciones de conversación}: el sistema podría sugerir, si el usuario lo desea, abordar temas de ``diseño colaborativo'' y ``startups tecnológicas'' en próximas reuniones, reforzando el interés común detectado en el \texttt{JSON}.
+    \item \textit{Contexto Personal}: Se actualiza el estado vital reflejando la necesidad activa de ``búsqueda de vivienda'' y su preferencia de ubicación, además de capturar el estado emocional positivo asociado al cambio.
+    \item \textit{Contexto Profesional}: Se modifica la información laboral para incluir el nuevo rol de ``diseñadora en startup tecnológica'' y se añade el ``trabajo remoto'' como un interés profesional clave en esta etapa.
+    \item \textit{Contexto de la Relación}: Se enriquece la dinámica de la relación registrando los ``proyectos de diseño colaborativo'' como un nuevo eje de interés común y actualizando el estado de la relación hacia una posible colaboración futura.
 \end{itemize}
 }
 
 Así, el contacto de María dentro de la base de datos de PANOT quedaría como un conjunto de nodos interconectados que representan 
 eventos, gustos, situaciones, necesidades, etc. abstrayéndo el complejo contexto de la relación en una representación más simplificada.
 
-[introducir figura de grafo de Maria]
+\begin{figure}
+    \centering
+        \includegraphics[width=1\textwidth]{figures/grafo-contexto-maria.png}
+    \caption{\label{fig:fig-gf-maria} Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional }
+\end{figure}
 
 \subsection{Arquitecturas Similares: Grafos Contextuales en Sistemas de Agentes}
 
@@ -144,11 +145,11 @@ La eficiencia superior de las estructuras de grafo para la memoria de los agente
 acceso a datos relacionales y el modelo de navegación por grafos. En las bases de datos relacionales, recuperar información sobre 
 relaciones entre entidades requiere realizar múltiples operaciones que pueden cruzar tablas diferentes, lo cual implica escanear 
 índices y realizar comparaciones entre grandes volúmenes de datos. La complejidad de estas operaciones crece exponencialmente con el número 
-de relaciones involucradas, resultando en tiempos de consulta que pueden ser O(n log n) o peor cuando se requieren múltiples uniones de tablas 
+de relaciones involucradas, resultando en tiempos de consulta que pueden ser $\mathcal{O}(n \log n)$ o peor cuando se requieren múltiples uniones de tablas 
 anidadas. 
 
 Por el contrario, en una estructura de grafo, acceder a los vecinos directos de un nodo —es decir, recuperar todas las relaciones 
-de una entidad— es una operación de complejidad O(1) en promedio, ya que las conexiones están almacenadas directamente como parte de la 
+de una entidad— es una operación de complejidad $\mathcal{O}(1)$ en promedio, ya que las conexiones están almacenadas directamente como parte de la 
 estructura del nodo mediante listas de adyacencia o estructuras similares. Esta diferencia es crítica para sistemas de agentes que requieren 
 acceso frecuente y rápido a información relacional.
 

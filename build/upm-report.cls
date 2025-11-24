@@ -703,7 +703,6 @@
 % Desactivamos de forma global la s del plural de los acrónimos
 \setabbreviationstyle{long-short}
 \renewcommand*{\glspluralsuffix}{}
-
 \makeglossaries
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

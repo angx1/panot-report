@@ -10,7 +10,7 @@ con el framework \textit{Expo} React Native, un backend entermente gestionado po
 \textit{Stripe} para la integración con pasarelas de pago y \textit{PostHog} para el análisis de métricas de éxito y seguimiento de uso de 
 funcionalidades.
 
-\subsection{Desarrollo de la aplicación móvil}
+\subsection{Capa del cliente móvil}
 
 Para el desarrollo de la aplicación móvil PANOT se ha seleccionado \textit{Expo}, un framework construido sobre 
 \textit{React Native} que simplifica significativamente el proceso de desarrollo de aplicaciones multiplataforma. 
@@ -51,7 +51,7 @@ Se analizaron las siguientes alternativas tecnológicas para el desarrollo del c
     \textit{Dart}, lo que habría alargado inevitablemente el tiempo de desarrollo del proyecto.
 \end{itemize}
 
-\subsection{Persistencia de datos y gestión local}
+\subsection{Capa de datos y persistencia local}
 
 Uno de los requisitos fundamentales de PANOT es garantizar la funcionalidad de la aplicación incluso en ausencia 
 de conectividad a Internet, permitiendo a los usuarios capturar interacciones y gestionar sus relaciones de manera continua 
@@ -97,7 +97,7 @@ Esta arquitectura local-first no solo garantiza la funcionalidad offline, sino q
 al proporcionar respuestas instantáneas sin depender de la latencia de red, mientras mantiene la consistencia de datos a través 
 de la sincronización automática en segundo plano.
 
-\subsection{Gestión de servicios externos mediante API Gateway}
+\subsection{Capa de servicios externos}
 
 Además de proporcionar la infraestructura de base de datos y autenticación, \textit{Supabase} se ha utilizado como plataforma 
 de backend completo para gestionar todas las conexiones con servicios externos mediante su arquitectura de \textit{Edge Functions}, 
@@ -110,7 +110,7 @@ siguiente flujo de procesamiento:
 
 \begin{enumerate}
     \item \textbf{Entrada de solicitud en el edge gateway}: El gateway actúa como relay que enruta el tráfico, gestiona los 
-    headers de autenticación, valida tokens JWT y aplica reglas de enrutamiento y control de tráfico.
+    headers de autenticación, valida los tokens JWT (JSON Web Tokens) y aplica reglas de enrutamiento y control de tráfico.
     
     \item \textbf{Aplicación de autenticación y políticas}: El gateway (o la función) valida los JWTs de Supabase, aplica 
     rate limiting y centraliza las comprobaciones de seguridad antes de ejecutar el código, garantizando que solo solicitudes 
@@ -214,7 +214,7 @@ informadas basadas en datos reales, teniendo en cuenta qué aspectos de la aplic
 
 Para llevar a cabo este análisis de uso de funcionalidades y comprensión del comportamiento de los usuarios, 
 se ha integrado una capa de observabilidad con \textit{PostHog}, una plataforma de análisis de productos de código 
-abierto que proporciona la capacidad de hacer un seguimiento de eventos una vez la aplicación está en manos del usuario.
+abierto que proporciona lwa capacidad de hacer un seguimiento de eventos una vez la aplicación está en manos del usuario.
 
 La selección de \textit{PostHog} se fundamenta en su compatibilidad con React Native y Expo, su modelo de código abierto que 
 permite desplegar la plataforma de forma autohospedada si se requiere mayor control sobre los datos, y su enfoque específico en 
@@ -231,7 +231,7 @@ inicios de sesión o actualizaciones de la aplicación.
 
 Como alternativas se consideraron \textit{Mixpanel}, que ofrece herramientas avanzadas para el análisis de productos y retención de 
 usuarios con un SDK robusto para React Native, y \textit{Amplitude}, una plataforma líder en análisis de productos que proporciona 
-capacidades avanzadas de análisis de cohortes y embudos [AÑADIR EXPLICACION DE AMBAS??]. Sin embargo, ambas alternativas presentan modelos de precios más restrictivos 
+capacidades avanzadas de \gls{analisis-cohorte} y \gls{embudos}. Sin embargo, ambas alternativas presentan modelos de precios más restrictivos 
 en sus planes gratuitos comparado con \textit{PostHog}, y requieren una configuración más compleja para su integración con Expo. 
 También se evaluó \textit{Google Analytics}, una solución gratuita y ampliamente utilizada, pero su enfoque está más orientado al 
 análisis de tráfico web que al análisis de producto específico para aplicaciones móviles.

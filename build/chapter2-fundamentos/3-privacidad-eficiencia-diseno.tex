@@ -20,7 +20,7 @@ que establece la obligación de implementar medidas técnicas y organizativas ap
 protección de datos desde el diseño y por defecto.
 
 La Agencia Española de Protección de Datos (AEPD), en su \textit{Guía de Privacidad desde el Diseño} 
-[INSERTAR CITACIÓN], identifica siete principios fundacionales que deben guiar el desarrollo de 
+\cite{aepd2019privacidad}, identifica siete principios fundacionales que deben guiar el desarrollo de 
 sistemas que procesan datos personales:
 
 \begin{enumerate}
@@ -74,7 +74,7 @@ ni la experiencia de usuario. A diferencia de la optimización reactiva, que se 
 en producción, la eficiencia por diseño requiere considerar aspectos de rendimiento, escalabilidad y consumo de recursos 
 desde las fases de análisis y diseño arquitectónico.
 
-En su libro \textit{Clean Architecture}, Robert C. Martin [INCLUIR CITA] aborda esta cuestión desde una perspectiva más fundacional, 
+En su libro \textit{Clean Architecture}, Robert C. Martin \cite{martin2017clean} aborda esta cuestión desde una perspectiva más fundacional, 
 enfatizando la importancia de promover la eficiencia a largo plazo mediante el diseño de sistemas flexibles y mantenibles, a través de la 
 separación de la lógica de negocio y los detalles técnicos. Esto se consigue con un diseño de capas donde las dependencias siempre 
 apuntan hacia el interior, de modo que los cambios en aspectos técnicos, es decir, en capas más centrales, no impacten en las capas superiores de 
@@ -108,7 +108,7 @@ computacionales sobre datos cifrados sin necesidad de descifrarlos previamente. 
 cifrado tradicional, donde los datos deben descifrarse antes de ser procesados, el cifrado homomórfico 
 permite que un servidor o servicio externo procese información cifrada y devuelva resultados también 
 cifrados, manteniendo la confidencialidad de los datos en todo momento. Este enfoque es especialmente 
-relevante en sistemas que utilizan modelos de lenguaje en entornos como el sanitario [AÑADIR CITA AL TRABAJO DE MIGUEL], 
+relevante en sistemas que utilizan modelos de lenguaje en entornos como el sanitario \cite{tfg-mgsicilia}, 
 ya que permitiría enviar datos sensibles cifrados sobre pacientes a servicios de procesamiento de lenguaje natural 
 sin que el proveedor del servicio pueda acceder al contenido real de la información.
 
@@ -162,14 +162,14 @@ frente a accesos no autorizados y cumplir con las restricciones legales sobre da
 
 A nivel de infraestructura, se ha utilizado Supabase como plataforma de backend como ya se explicará en puntos posteriores. 
 Supabase tiene la particularidad de autogestionar estas medidas de seguridad a través de dos mecanismos: 
-Por un lado, todos los datos se encriptan en reposo mediante AES-256 y en tránsito mediante TLS (Transport Layer Security), 
+Por un lado, todos los datos se encriptan en reposo mediante \gls{aes-256} y en tránsito mediante \gls{transport-layer-security}, 
 garantizando la protección de la información en todas las etapas del ciclo de vida. Y por otro lado, Supabase proporciona 
-Row Level Security (RLS) y Column Level Security (CLS), permitiendo un control granular del acceso a los datos a nivel de 
+\gls{row-level-security} y \gls{column-level-security}, permitiendo un control granular del acceso a los datos a nivel de 
 fila y columna, lo que asegura que cada usuario solo pueda acceder a sus propios datos y a nada más. Supabase además cumple 
-con estándares de seguridad como SOC 2 Type 2 [incluir citación o explicación de estándares], proporcionando una base de cumplimiento normativo adicional. 
+con estándares de seguridad como \gls{soc-2-type-2}, proporcionando una base de cumplimiento normativo adicional. 
 
 La aplicación de los principios de eficiencia por diseño en PANOT se ha materializado mediante la adopción de una 
-metodología de desarrollo inspirada en el enfoque \textit{Lean Startup} propuesto por Eric Ries [CITAR EL LIBRO]. 
+metodología de desarrollo inspirada en el enfoque \textit{Lean Startup} propuesto por Eric Ries \cite{ries2011lean}. 
 Este marco metodológico, fundamentado en el ciclo iterativo \textit{Construir-Medir-Aprender}, establece que el 
 desarrollo de productos debe priorizar la entrega de valor con el menor coste posible, en el menor tiempo posible, 
 manteniendo la máxima calidad en las funcionalidades principales y mínimas necesarias para cumplir con las expectativas del usuario final
