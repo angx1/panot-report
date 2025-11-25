@@ -1,8 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% METODOLOGÍA Y ENTORNO DE DESARROLLO
-
-
-
 \section{Filosofía y Metodología de Desarrollo}
 
 El desarrollo de PANOT se ha planteado desde una perspectiva que prioriza la validación empírica y la eficiencia en 
@@ -24,9 +19,87 @@ guíe la evolución futura de la plataforma.
 
 \subsection{Enfoque Lean}
 
-[TFG representa la fase de "Construir" (Build) dentro del ciclo Construir-Medir-Aprender y no un desarrollo en cascada tradicional]
+Para el desarrollo del sistema, como ya hemos comentado, se ha descartado la adopción de modelos tradicionales en cascada e incluso de 
+marcos ágiles rígidos como Scrum, en favor de una filosofía fundamentada en los principios de \textit{Lean Software Development}. Respondiendo así 
+a la necesidad inherente de gestionar la alta incertidumbre que los productos de características similares a PANOT suponen.
+
+Esta decisión cobra especial relevancia al considerar la naturaleza unipersonal del equipo de desarrollo. 
+Mientras que metodologías como Scrum imponen una sobrecarga de gestión mediante reuniones y artefactos 
+diseñados para la coordinación grupal, el enfoque Lean permite aplicar el principio de \gls{optimizar-todo}, eliminando 
+la burocracia innecesaria. Esto maximiza el ancho de banda cognitivo disponible para tareas de ingeniería y diseño, permitiendo 
+mantener un flujo de entrega continuo sin las interrupciones artificiales de los \textit{sprints} temporales.
+
+Bajo esta premisa, el trabajo presentado en esta memoria no debe entenderse como un producto final inmutable, sino como la materialización de 
+la fase \textit{Construir} del ciclo \gls{construir-medir-aprender}. El \acrshort{mvp} de PANOT actuará como el artefacto necesario para validar 
+la hipótesis de \textit{Inteligencia Relacional} elimanando todo el desarrollo superfluo que no contribuya a esta validación, cumpliendo así con 
+el principio Lean de \gls{eliminar-desperdicio}.
+
+Así mismo, el éxito del proyecto no se cuantifica mediante el número de funcionalidades entregadas o el cumplimiento estricto de un cronograma 
+predictivo, sino a través de la capacidad del sistema para generar \textit{Aprendizaje Validado}. El objetivo técnico es instrumentar la aplicación 
+(capa de observabilidad) para que, en iteraciones futuras, sea posible medir con datos reales el compromiso del usuario y la utilidad de la propuesta.
 
 \subsection{Metodología y Flujo de Desarrollo}
 
-[Explicar metodología GitFlow, sistema de ramas, organización de github, proyecto de github con tablero kanban
-y el flujo con ejemplo de la implementación]
+Para organizar de manera robusta y estable la carga de trabajo de proyecto, se ha optado por la adopción de la metodología de ramificación \textit{GitFlow}.
+Este modelo se fundamenta en la segregación de responsabilidades, estableciendo dos ramas longevas principales: \texttt{main}, que contiene exclusivamente 
+código estable de producción, y \texttt{development}, que actúa como entorno de integración.
+
+El desarrollo de nuevas características se realiza de manera aislada en ramas efímeras (\texttt{feature/*}), que solo se fusionan con la rama de integración 
+tras ser completadas y validadas (ver figura \ref{fig:gitflow-diagram}). Esta estrategia garantiza la estabilidad del sistema al evitar que el código en desarrollo comprometa la funcionalidad base.
+
+\begin{figure}
+    \centering
+        \includegraphics[width=1\textwidth]{figures/gitflow-diagram.png}
+    \caption{Diagrama orientativo de la estrategia de ramificación. 
+    (1) \textbf{Aislamiento}: Creación de una rama efímera (\textit{feature}) a partir de desarrollo para trabajar en un \textit{Issue} específico. 
+    (2) \textbf{Implementación}: Desarrollo de la funcionalidad mediante \textit{commits} atómicos. 
+    (3) \textbf{Integración}: Fusión de la rama mediante un \textit{Pull Request} validado, cerrando el ciclo de desarrollo. 
+    (4) \textbf{Release}: Promoción del código estable desde desarrollo a la rama principal (\textit{main}) para su despliegue en producción.}
+    \label{fig:gitflow-diagram}
+\end{figure}
+
+Para la orquestación de las tareas, se ha utilizado GitHub Projects, implementando un tablero Kanban automatizado que permite visualizar el flujo de valor y 
+limitar el trabajo en curso. La trazabilidad entre la planificación y la ejecución se articula mediante dos artefactos clave:
+
+\begin{itemize}
+    \item \textbf{Issues:} Representan las unidades de trabajo o requisitos del sistema. Cada \textit{Issue} posee un identificador único \(\#Nº\) y, 
+    para organizar la granularidad del proyecto, se ha establecido una jerarquía de dos niveles:
+    \begin{itemize}
+        \item \textbf{[Epic] Issues:} Representan las grandes funcionalidades o módulos del sistema (Features).
+        \item \textbf{FR (Functional Requirements):} Actúan como sub-tareas atómicas vinculadas a un Epic, definiendo requisitos concretos implementables en una sola iteración.
+    \end{itemize}
+
+    \item \textbf{Pull Requests (PRs):} Constituyen el mecanismo de control de calidad y fusión de código. Una vez finalizado el desarrollo en una rama 
+    \texttt{feature/*}, se abre un PR hacia \texttt{development}. En el contexto de este proyecto, el PR cumple una doble función: actúa como una etapa 
+    de revisión de código obligatoria —permitiendo verificar diferencias (\textit{diffs}) y detectar errores antes de la integración— y 
+    sirve como disparador automático para cerrar los \textit{Issues} asociados, garantizando así la trazabilidad completa entre el 
+    requisito definido y el código implementado.
+\end{itemize}
+
+
+Finalmente, estas tareas transitan por el tablero Kanban siguiendo un flujo de estados que refleja el ciclo de vida del desarrollo:
+
+\begin{itemize}
+    \item \textbf{Backlog}: Contiene el conjunto de \textit{Issues} pendientes de implementación. Dado que el alcance del proyecto 
+    se ha limitado estrictamente al \acrshort{mvp}, todas las tareas presentes en esta columna se consideran críticas y obligatorias 
+    para el funcionamiento del sistema, habiéndose descartado previamente cualquier funcionalidad accesoria.
+    
+    \item \textbf{In Progress}: Indica la tarea que se está codificando activamente en ese momento. Siguiendo la filosofía Lean de \gls{eliminar-desperdicio} 
+    por cambio de contexto, se mantiene un límite de trabajo en curso (WIP) estricto de una única tarea simultánea.
+    
+    \item \textbf{In Review}: Estado en el que la funcionalidad ha sido completada y existe un \textit{Pull Request} abierto. Actúa como 
+    fase de control de calidad y auto-revisión de las diferencias de código (\textit{diff}) antes de su integración.
+    
+    \item \textbf{Done}: Agrupa las tareas finalizadas cuyo código ha sido validado y fusionado (\textit{merged}) exitosamente en la rama 
+    \texttt{develop}, cerrando así el \textit{Issue} asociado y marcando la entrega de valor.
+\end{itemize}
+
+\begin{figure}
+    \centering
+        \includegraphics[width=0.95\textwidth]{figures/tablero-kanban.png}
+    \caption{Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de trabajo en curso (WIP) 
+    configurado a 1 en la columna \textit{In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el 
+    desperdicio asociado al cambio de contexto.}
+    \label{fig:tablero-kanban}
+\end{figure}
+
