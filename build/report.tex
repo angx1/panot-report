@@ -4,6 +4,8 @@
     degree=61CI,%
 ]{upm-report}
 
+\setcounter{tocdepth}{1} % para ver si se incluyen subsecciones o no cambiar el depthde 1 a 2
+
 \newcommand{\elvi}[2][inline]{\color{violet} [EAD]: #2\color{black}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -46,13 +48,13 @@
 %
 % Añadir aquí las entradas del glosario y acrónimos necesarios para el proyecto
 \newglossaryentry{inferencia-analogica}{
-        name=inferencia analógica,
+        name=Inferencia Analógica,
         description={
             Transmisión de conocimientos de una situación a otra.
         }
 }
 \newglossaryentry{generalizacion-de-cero-disparos}{
-        name=generalización de cero disparos,
+        name=Generalización de Cero Disparos,
         description={
             Escenario de aprendizaje automático en el que se entrena un modelo de IA para reconocer y categorizar 
             objetos o conceptos sin haber visto ningún ejemplo de esas categorías o conceptos de antemano.
@@ -103,7 +105,7 @@
 }
 
 \newglossaryentry{analisis-cohorte}{
-        name=Análisis de cohorte,
+        name=Análisis de Cohorte,
         description={
             Técnica de análisis de datos que divide a un grupo de individuos en subgrupos basados en características comunes 
             y observa cómo evolucionan estos individuos a lo largo del tiempo.
@@ -128,7 +130,7 @@
 }
 
 \newglossaryentry{eliminar-desperdicio}{
-        name=Eliminar desperdicio,
+        name=Eliminar Desperdicio,
         description={
             Principio de Lean Development que se basa en eliminar cualquier esfuerzo o característica que no genere valor para el usuario.
         }
@@ -138,6 +140,22 @@
         name=Optimizar el Todo,
         description={
             Principio de Lean Development que se basa en la idea de enfocarse en mejorar el proceso completo en lugar de solo partes aisladas.
+        }
+}
+
+\newglossaryentry{api-gateway}{
+        name=API Gateway,
+        description={
+            Patrón de diseño que actúa como punto de entrada único (entry point) para un sistema distribuido, encargándose de 
+            desacoplar al cliente de la implementación interna mediante la gestión centralizada del enrutamiento, la seguridad y la composición de protocolos.
+        }
+}
+
+\newglossaryentry{pci-dss}{
+        name=PCI DSS,
+        description={
+            Standard de seguridad que recoge una serie de normas obligatorias para cualquier organización que procese, acepte, 
+            almacene o transite datos de tarjetas de crédito.
         }
 }
 
@@ -151,6 +169,41 @@ longplural={Customer Relationship Management}
 description={Producto Mínimo Viable},
 longplural={Productos Mínimos Viables}
 ]{mvp}{MVP}{Producto Mínimo Viable}
+
+\newacronym[
+description={Gestión de Relaciones Personales},
+longplural={Gestión de Relaciones Personales}
+]{prm}{PRM}{Gestión de Relaciones Personales}
+
+\newacronym[
+description={Interfaz de Programación de Aplicaciones},
+longplural={Interfaces de Programación de Aplicaciones}
+]{api}{API}{Interfaz de Programación de Aplicaciones}
+
+\newacronym[
+description={Kit de Desarrollo de Software},
+longplural={Kits de Desarrollo de Software}
+]{sdk}{SDK}{Kit de Desarrollo de Software}
+
+\newacronym[
+description={Inteligencia Artificial},
+longplural={Inteligencias Artificiales}
+]{ia}{IA}{Inteligencia Artificial}
+
+\newacronym[
+description={Work In Progress},
+longplural={Work In Progress}
+]{wip}{WIP}{Work In Progress}
+
+\newacronym[
+description={JSON Web Token},
+longplural={JSON Web Tokens}
+]{jwt}{JWT}{JSON Web Token}
+
+
+
+
+
 
 
 \begin{document}

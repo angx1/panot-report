@@ -2,7 +2,7 @@
 
 El desarrollo de PANOT se ha planteado desde una perspectiva que prioriza la validación empírica y la eficiencia en 
 la entrega de valor, alejándose de los enfoques tradicionales de planificación predictiva en cascada. Dado el carácter 
-innovador de la propuesta —la gestión de la inteligencia relacional mediante IA—, el proyecto se enfrenta a un alto 
+innovador de la propuesta —la gestión de la inteligencia relacional mediante \acrshort{ia} —, el proyecto se enfrenta a un alto 
 grado de incertidumbre, no tanto en la viabilidad técnica, sino en la validación del producto por parte del usuario final.
 
 Para mitigar este riesgo, se ha adoptado una filosofía fundamentada en los principios de \textit{Lean Startup} \cite{ries2011lean}
@@ -85,7 +85,7 @@ Finalmente, estas tareas transitan por el tablero Kanban siguiendo un flujo de e
     para el funcionamiento del sistema, habiéndose descartado previamente cualquier funcionalidad accesoria.
     
     \item \textbf{In Progress}: Indica la tarea que se está codificando activamente en ese momento. Siguiendo la filosofía Lean de \gls{eliminar-desperdicio} 
-    por cambio de contexto, se mantiene un límite de trabajo en curso (WIP) estricto de una única tarea simultánea.
+    por cambio de contexto, se mantiene un límite de trabajo en curso (\gls{wip}) estricto de una única tarea simultánea.
     
     \item \textbf{In Review}: Estado en el que la funcionalidad ha sido completada y existe un \textit{Pull Request} abierto. Actúa como 
     fase de control de calidad y auto-revisión de las diferencias de código (\textit{diff}) antes de su integración.
@@ -97,9 +97,10 @@ Finalmente, estas tareas transitan por el tablero Kanban siguiendo un flujo de e
 \begin{figure}
     \centering
         \includegraphics[width=0.95\textwidth]{figures/tablero-kanban.png}
-    \caption{Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de trabajo en curso (WIP) 
+    \caption{Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls{wip}
     configurado a 1 en la columna \textit{In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el 
     desperdicio asociado al cambio de contexto.}
+
     \label{fig:tablero-kanban}
 \end{figure}
 

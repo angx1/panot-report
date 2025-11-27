@@ -1,10 +1,10 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional }}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional }}{6}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{25}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de trabajo en curso (WIP) configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{26}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{26}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
