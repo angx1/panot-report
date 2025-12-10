@@ -160,12 +160,12 @@ PANOT está diseñado como una aplicación personal donde el usuario gestiona y 
 En este contexto, la privacidad no requiere ocultar información al usuario propietario y governador del dato, sino protegerlos 
 frente a accesos no autorizados y cumplir con las restricciones legales sobre datos especialmente sensibles dentro de lo que es posible. 
 
-A nivel de infraestructura, se ha utilizado Supabase como plataforma de backend como ya se explicará en puntos posteriores. 
-Supabase tiene la particularidad de autogestionar estas medidas de seguridad a través de dos mecanismos: 
+A nivel de infraestructura, se ha utilizado \textit{Supabase} como plataforma de backend como ya se explicará en puntos posteriores. 
+\textit{Supabase} tiene la particularidad de autogestionar estas medidas de seguridad a través de dos mecanismos: 
 Por un lado, todos los datos se encriptan en reposo mediante \gls{aes-256} y en tránsito mediante el protocolo \gls{transport-layer-security}, 
-garantizando la protección de la información en todas las etapas del ciclo de vida. Y por otro lado, Supabase proporciona 
+garantizando la protección de la información en todas las etapas del ciclo de vida. Y por otro lado, \textit{Supabase} proporciona 
 \gls{row-level-security} y \gls{column-level-security}, permitiendo un control granular del acceso a los datos a nivel de 
-fila y columna, lo que asegura que cada usuario solo pueda acceder a sus propios datos y a nada más. Supabase además cumple 
+fila y columna, lo que asegura que cada usuario solo pueda acceder a sus propios datos y a nada más. \textit{Supabase} además cumple 
 con estándares de seguridad como \gls{soc-2-type-2}, proporcionando una base de cumplimiento normativo adicional. 
 
 La aplicación de los principios de eficiencia por diseño en PANOT se ha materializado mediante la adopción de una 

@@ -13,11 +13,10 @@
 \glsgroupheading{J}\relax \glsresetentrylist %
 \glossentry{jwt}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
-\glsgroupheading{M}\relax \glsresetentrylist %
+\glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{mvp}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24\delimN 25}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{27}}}\glsgroupskip
-\glsgroupheading{P}\relax \glsresetentrylist %
+		\setentrycounter[]{page}\glsnumberformat{27\delimN 28}}}%
 \glossentry{prm}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %

@@ -76,7 +76,7 @@ estructurada:
 } 
 
 El sistema construye una representación relacional estructurada que conecta estas entidades (usuario-contacto)
-mediante relaciones semánticas representadas en formato \texttt{JSON}:
+mediante relaciones semánticas. A modo ilustrativo, esta sería la representación en formato \texttt{JSON}:
 
 \begin{lstlisting}[
     basicstyle=\ttfamily\scriptsize,
@@ -122,12 +122,18 @@ mediante relaciones semánticas representadas en formato \texttt{JSON}:
 }
 
 Así, el contacto de María dentro de la base de datos de PANOT quedaría como un conjunto de nodos interconectados que representan 
-eventos, gustos, situaciones, necesidades, etc. abstrayéndo el complejo contexto de la relación en una representación más simplificada.
+eventos, gustos, situaciones, necesidades, etc. —Ver \ref{fig:fig-gf-maria}— abstrayéndo el complejo contexto de la relación en una representación más simplificada.
 
 \begin{figure}
-    \centering
-        \includegraphics[width=1\textwidth]{figures/grafo-contexto-maria.png}
-    \caption{\label{fig:fig-gf-maria} Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional }
+	\centering
+	\begin{subfigure}{.82\textwidth}
+		 \includegraphics[width=\textwidth]{figures/grafo-contexto-maria.png}
+	\end{subfigure}
+	\vfill
+	\begin{subfigure}{.82\textwidth}
+		\includegraphics[width=\textwidth]{figures/grafo-contexto-maria-simplificado.png}
+	\end{subfigure}
+	 \caption{\label{fig:fig-gf-maria} Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional. En el grafo de arriba con nodos CONTEXTO y en el de más abajo sin ellos.}
 \end{figure}
 
 \subsection{Arquitecturas Similares: Grafos Contextuales en Sistemas de Agentes}
@@ -178,5 +184,5 @@ En el contexto de PANOT, el grafo relacional que representa cada contacto y sus 
 un sistema agéntico: ambos proporcionan una estructura que permite acceso eficiente a información relevante, razonamiento sobre relaciones 
 complejas y actualización dinámica del conocimiento. Esta arquitectura permite que PANOT no solo almacene información sobre contactos, sino 
 que también pueda realizar inferencias relacionales, generalizar patrones entre relaciones y adaptarse continuamente a la evolución de las 
-interacciones humanas, aunque veremos más adelante que el enfoque de PANOT es algo diferente.
+interacciones humanas.
 

@@ -17,7 +17,7 @@ permitiendo someter a prueba las hipótesis conceptuales detalladas en el capít
 guíe la evolución futura de la plataforma. 
 
 
-\subsection{Enfoque Lean}
+\subsection{Enfoque Lean} \label{sec:enfoque-lean}
 
 Para el desarrollo del sistema, como ya hemos comentado, se ha descartado la adopción de modelos tradicionales en cascada e incluso de 
 marcos ágiles rígidos como Scrum, en favor de una filosofía fundamentada en los principios de \textit{Lean Software Development}. Respondiendo así 
@@ -45,7 +45,7 @@ Este modelo se fundamenta en la segregación de responsabilidades, estableciendo
 código estable de producción, y \texttt{development}, que actúa como entorno de integración.
 
 El desarrollo de nuevas características se realiza de manera aislada en ramas efímeras (\texttt{feature/*}), que solo se fusionan con la rama de integración 
-tras ser completadas y validadas (ver figura \ref{fig:gitflow-diagram}). Esta estrategia garantiza la estabilidad del sistema al evitar que el código en desarrollo comprometa la funcionalidad base.
+tras ser completadas y validadas —Ver \ref{fig:gitflow-diagram}—. Esta estrategia garantiza la estabilidad del sistema al evitar que el código en desarrollo comprometa la funcionalidad base.
 
 \begin{figure}
     \centering
@@ -100,7 +100,6 @@ Finalmente, estas tareas transitan por el tablero Kanban siguiendo un flujo de e
     \caption{Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls{wip}
     configurado a 1 en la columna \textit{In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el 
     desperdicio asociado al cambio de contexto.}
-
     \label{fig:tablero-kanban}
 \end{figure}
 

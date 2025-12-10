@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  27 NOV 2025 08:17
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  10 DEC 2025 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1603,26 +1603,28 @@ LaTeX Info: Redefining \% on input line 89.
 [4]
 File: figures/grafo-contexto-maria.png Graphic file (type bmp)
 <figures/grafo-contexto-maria.png>
+File: figures/grafo-contexto-maria-simplificado.png Graphic file (type bmp)
+<figures/grafo-contexto-maria-simplificado.png>
 
 
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
 [5]
 
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
 [6]
 
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
 [7]) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex
 
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 [8]) (./chapter2-fundamentos/3-privacidad-eficiencia-diseno.tex
 
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
 [9]
 
 LaTeX Info: Redefining \. on input line 35.
@@ -1708,22 +1710,25 @@ LaTeX Info: Redefining \% on input line 86.
 [26]
 File: figures/tablero-kanban.png Graphic file (type bmp)
 <figures/tablero-kanban.png>
-) (./chapter3-desarrollo/2-especificacion-requisitos.tex)
-(./chapter3-desarrollo/3-diseno-arquitectura.tex)
+) (./chapter3-desarrollo/2-especificacion-requisitos.tex
+
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
+[27]) (./chapter3-desarrollo/3-diseno-arquitectura.tex)
 (./chapter3-desarrollo/4-fases-implementacion.tex
 
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
-[27]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex))
+[28]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex))
 (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[28]
+[29]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[29
+[30
 
 ]
 Capítulo 5.
@@ -1731,26 +1736,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[30
+[31
 
 ]
 
-[31
+[32
 
 
 ] (./report.gls
 
-[32
+[33
 
 ]) (./report.acr
 
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
-[33])
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+[34])
 
 LaTeX Info: Redefining \. on input line 220.
 LaTeX Info: Redefining \% on input line 220.
-[34]
+[35]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -1761,7 +1766,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[35
+[36
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1773,18 +1778,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 3EAD5C06A27C7AD808BE527D95EF5FC2;4722.
+(rerunfilecheck)             Checksum: F1FA7FEDFAE5464741ECB2EFE8FF4E61;4722.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43084 strings out of 473832
- 846592 string characters out of 5729480
- 1979415 words of memory out of 5000000
- 65507 multiletter control sequences out of 15000+600000
- 565965 words of font info for 116 fonts, out of 8000000 for 9000
+ 43114 strings out of 473832
+ 847487 string characters out of 5729480
+ 1980534 words of memory out of 5000000
+ 65535 multiletter control sequences out of 15000+600000
+ 565973 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,12n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (44 pages).
+Output written on report.pdf (45 pages).

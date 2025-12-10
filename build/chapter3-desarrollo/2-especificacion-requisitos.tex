@@ -1,12 +1,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESPECIFICACIÓN DE REQUISITOS DE SOFTWARE
 
-\section{Definición del MVP y Especificación de Requisitos}
+\section{Definición del PMV y Especificación de Requisitos}
 
+Siguiendo el marco teórico expuesto por \textit{Eric Ries} \cite{ries2011lean} el desarrollo de PANOT se fundamenta en la identificación y validación de \textit{Asunciones de Salto Fe}.
+Estas son las premisas de mayor incertidumbre y riesgo que, de resultar falsas, invalidarían la totalidad del proyecto.
 
+Las dos asunciones fundamentales en este marco son:
 
-\subsection{Hipótesis de Valor y Alcance}
+{\small
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \item \textbf{Hipótesis de Valor:} Determina si un producto o servicio proporciona valor real a los usuarios una vez que lo utilizan. 
+    Se valida analizando la retención y el uso voluntario y respondería a la pregunta: \textit{¿El usuario percibe suficiente utilidad en el 
+    sistema como para incorporarlo a su vida diaria?}
+
+    \item \textbf{Hipótesis de Crecimiento:} Determina cómo los nuevos usuarios descubrirán el producto o servicio. Se valida analizando 
+    los motores de crecimiento (viral, pegajoso o remunerado). Responde a la pregunta: \textit{¿Existe un mecanismo sostenible para adquirir 
+    nuevos usuarios y escalar el producto?}
+\end{itemize}
+}
+
+A modo aclarativo, el esfuerzo de ingeniería de este Proyecto Fin de Grado se ha focalizado en la validación de la \textit{Hipótesis de Valor}, dejando
+la validación de la \textit{Hipótesis de Crecimiento} para estados futuros del ciclo de vida de la aplicación.
+
+\subsection{Hipótesis de Valor}
+
+Teniendo en cuenta lo anterior, el artefacto para validar la \textit{Hipótesis de Valor} es un \gls{mvp} que representa la versión mínima funcional de PANOT. 
+La hipótesis concreta es que los usuarios adoptarán el sistema porque resuelve la carga cognitiva y el esfuerzo manual que supone mantener relaciones 
+personales. Esta hipótesis general se desglosa en tres premisas clave:
+
+{\small
+\begin{enumerate}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \item \textbf{Valor de la Inmediatez:} Se asume que los usuarios serán constantes en el registro de información 
+    solo si el esfuerzo requerido y la fricción son cercanos a cero. La captura por voz ofrece un valor superior a la entrada de texto tradicional al permitir 
+    registrar interacciones en movimiento y sin necesidad de una atención visual exhaustiva.
+    
+    \item \textbf{Valor de la Mantenibilidad Pasiva:} Se asume que los usuarios perciben valor en un sistema que mantiene actualizada la información 
+    de sus contactos (cambios de trabajo, mudanzas, gustos) de forma autónoma, liberándoles de la tarea administrativa de editar fichas 
+    de contacto manualmente.
+    
+    \item \textbf{Valor de la Memoria Aumentada:} Se asume que los usuarios obtienen utilidad real al disponer de resúmenes contextuales 
+    precisos antes de una interacción, mejorando así la calidad de sus relaciones sociales gracias a una "memoria externa" que procesa el contexto del contacto por ellos.
+\end{enumerate}
+}
 
 \subsection{Requisitos Funcionales}
 
-\subsection{Requisitos No Funcionales}
+\subsection{Requisitos No Funcionales} 
