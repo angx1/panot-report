@@ -25,6 +25,8 @@
 \RequirePackage{xcolor}  % Mejoras sobre el paquete color
 \RequirePackage{algorithm}
 \RequirePackage{algpseudocode}
+\RequirePackage{colortbl}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Valores constantes

@@ -104,11 +104,8 @@ de backend completo para gestionar todas las conexiones con servicios externos m
 que actúa como un \gls{api-gateway} centralizado. Esta decisión arquitectónica se alinea directamente con los principios de seguridad 
 y eficiencia por diseño establecidos en el proyecto.
 
-Las \textit{Edge Functions} de \textit{Supabase} son funciones serverless escritas en TypeScript y ejecutadas en un runtime basado en \textit{Deno}, 
-distribuidas globalmente en edge nodes cercanos a los usuarios. La arquitectura de gateway implementada por \textit{Supabase} sigue el 
-siguiente flujo de procesamiento:
-
-[INCLUIR IMAGEN DE LA ARQUITECTURA DE EDGE FUNCTIONS]
+Las \textit{Edge Functions} de \textit{Supabase} son funciones serverless escritas en TypeScript y ejecutadas en un runtime basado en \textit{Deno}. 
+Estas funciones son distribuidas y replicadas globalmente en servidores para reducir así la latencia en función del posicionamiento geográfico del usuario. 
 
 \begin{enumerate}
     \item \textbf{Entrada de solicitud en el edge gateway}: El \gls{api-gateway} actúa como relay que enruta el tráfico, gestiona los 
