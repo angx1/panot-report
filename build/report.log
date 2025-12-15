@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  14 DEC 2025 20:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  15 DEC 2025 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1621,60 +1621,58 @@ LaTeX Info: Redefining \% on input line 89.
 [4]
 File: figures/grafo-contexto-maria.png Graphic file (type bmp)
 <figures/grafo-contexto-maria.png>
-File: figures/grafo-contexto-maria-simplificado.png Graphic file (type bmp)
-<figures/grafo-contexto-maria-simplificado.png>
 
 
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 [5]
 
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 [6]
 
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
 [7]) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex
 
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 [8]) (./chapter2-fundamentos/3-privacidad-eficiencia-diseno.tex
 
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-[9]
-
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
-[10]
-
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
-[11]
-
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
-[12]
-
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
-[13]
-
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
-[14]) (./chapter2-fundamentos/4-contexto-tecnologico.tex
-
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
+[9]
+
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+[10]
+
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+[11]
+
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+[12]
+
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+[13]
+
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+[14]) (./chapter2-fundamentos/4-contexto-tecnologico.tex
+
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
 [15]
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
 [16]
 
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
 [17]
 Overfull \hbox (0.8708pt too wide) in paragraph at lines 85--87
 []\TU/SourceSerif4(0)/b/n/12 Sincronización en tiempo real\TU/SourceSerif4(0)/m
@@ -1684,24 +1682,24 @@ capacidades de suscripción a cam-
 
 
 
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
 [18]
 
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 [19]
 
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
 [20]
 
 LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
 [21]
 
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
 [22])) (./chapter3-desarrollo/chapter3-desarrollo.tex
 
 LaTeX Info: Redefining \. on input line 1.
@@ -1733,29 +1731,65 @@ File: figures/tablero-kanban.png Graphic file (type bmp)
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
 [27]
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-[28]
-
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
-[29]
-Underfull \hbox (badness 1394) in paragraph at lines 161--161
-\TU/SourceSerif4(0)/m/n/8 nalidades Çore”(Crear Interacción, Ver
  []
 
-) (./chapter3-desarrollo/3-diseno-arquitectura.tex
 
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-[30]) (./chapter3-desarrollo/4-fases-implementacion.tex)
+
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+[28]
+Overfull \hbox (1.864pt too wide) in alignment at lines 84--84
+[][] 
+ []
+
+
+Overfull \hbox (1.864pt too wide) in alignment at lines 101--101
+[][] 
+ []
+
+
+Overfull \hbox (1.864pt too wide) in alignment at lines 116--116
+[][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+[29]
+Overfull \hbox (1.864pt too wide) in alignment at lines 129--129
+[][] 
+ []
+
+
+Overfull \hbox (1.864pt too wide) in alignment at lines 142--142
+[][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Overfull \hbox (1.86401pt too wide) in alignment at lines 168--168
+[][][][] 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
+[31]) (./chapter3-desarrollo/3-diseno-arquitectura.tex)
+(./chapter3-desarrollo/4-fases-implementacion.tex)
 (./chapter3-desarrollo/5-despliegue-lanzamiento.tex))
 (./chapter4-resultados/chapter4-resultados.tex
-
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[31]
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1784,8 +1818,8 @@ Capítulo 5.
 
 ]) (./report.acr
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 [37])
 
 LaTeX Info: Redefining \. on input line 220.
@@ -1819,11 +1853,11 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43241 strings out of 473832
- 849727 string characters out of 5729480
- 1983659 words of memory out of 5000000
- 65653 multiletter control sequences out of 15000+600000
- 565989 words of font info for 119 fonts, out of 8000000 for 9000
+ 43254 strings out of 473832
+ 849599 string characters out of 5729480
+ 1983760 words of memory out of 5000000
+ 65667 multiletter control sequences out of 15000+600000
+ 567537 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,12n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

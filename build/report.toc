@@ -8,18 +8,18 @@
 \contentsline {section}{\numberline {2.1}Gestión de la Inteligencia Relacional}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Aplicaciones Similares}{2}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Inteligencia Relacional en el Contexto de la Inteligencia Artificial}{3}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Arquitecturas Similares: Grafos Contextuales en Sistemas de Agentes}{7}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Arquitecturas Similares: Grafos Contextuales en Sistemas de Agentes}{6}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Cambio de Paradigma en el Diseño de Producto}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Valores Diferenciadores en la Era de la IA}{9}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Principios de Privacidad y Eficiencia por Diseño}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Principios de Privacidad y Eficiencia por Diseño}{9}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Principio de Privacidad}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Principio de Eficiencia}{12}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Aplicación en Sistemas con Modelos de Lenguaje}{13}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.2}Principio de Eficiencia}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Aplicación en Sistemas con Modelos de Lenguaje}{12}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Aplicación en PANOT}{14}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Contexto Tecnológico}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Contexto Tecnológico}{15}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Capa del Cliente Móvil}{16}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Capa de Datos y Persistencia Local}{17}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Capa de Servicios Externos}{19}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Capa de Servicios Externos}{18}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Capa de Inteligencia Artificial}{20}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Capa de Sistema de Pagos}{21}{subsection.2.4.5}%
 \contentsline {subsection}{\numberline {2.4.6}Capa de Observabilidad}{22}{subsection.2.4.6}%
@@ -31,8 +31,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Hipótesis de Valor}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Requisitos Funcionales}{29}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Requisitos No Funcionales}{31}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Diseño de la Arquitectura del Sistema}{31}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.3}Diseño de la Arquitectura del Sistema}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{32}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento}{32}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Verificación y Resultados}{33}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{34}{chapter.5}%
