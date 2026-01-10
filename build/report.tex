@@ -8,6 +8,8 @@
 
 \newcommand{\elvi}[2][inline]{\color{violet} [EAD]: #2\color{black}}
 
+\usepackage[dvipsnames]{xcolor}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TÍTULO, AUTORES Y DIRECTORES
 %
@@ -159,6 +161,14 @@
         }
 }
 
+\newglossaryentry{vendor-lock-in}{
+        name=Vendor Lock-In,
+        description={
+            Situación en la que un cliente se vuelve dependiente de un proveedor de productos o servicios, siendo incapaz 
+            de migrar a otro proveedor sin incurrir en costes sustanciales de cambio, incompatibilidades técnicas o 
+            pérdida de funcionalidad.
+        }
+}
 
 \newacronym[
 description={Sistema de Gestión de Relaciones con Clientes},
@@ -199,6 +209,11 @@ longplural={Work In Progress}
 description={JSON Web Token},
 longplural={JSON Web Tokens}
 ]{jwt}{JWT}{JSON Web Token}
+
+\newacronym[
+description={Contraseña de Un Solo Uso},
+longplural={Contraseñas de Un Solo Uso}
+]{otp}{OTP}{One-Time Password}
 
 
 

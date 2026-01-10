@@ -3,9 +3,254 @@
 
 \subsection{Visión general de la Arquitectura}
 
-\subsection{Modelado de Procesos}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/architecture-diagram.png}
+    \caption{Arquitectura general del sistema PANOT}
+    \label{fig:diagrama-arquitectura}
+\end{figure}
 
-\subsection{Componentes}
+La arquitectura de PANOT sigue un estilo \textbf{cliente-servidor} con las 
+siguientes características distintivas:
+
+{\small
+\begin{itemize}
+    \item \textbf{Arquitectura Offline-First}: El cliente móvil opera de forma 
+    autónoma, sincronizando datos con el servidor cuando hay conectividad 
+    disponible. Este patrón garantiza la disponibilidad del sistema incluso 
+    en condiciones de red intermitente.
+    
+    \item \textbf{Backend as a Service (BaaS)}: Se delega la lógica de 
+    infraestructura (autenticación, base de datos, tiempo real) a Supabase, 
+    permitiendo enfocarse en la lógica de negocio del cliente.
+    
+    \item \textbf{Sincronización Reactiva}: El estado de la aplicación 
+    se gestiona mediante observables (LegendState) que reaccionan 
+    automáticamente a cambios locales y remotos, manteniendo la UI 
+    actualizada sin intervención manual.
+    
+    \item \textbf{Procesamiento Asíncrono}: Las tareas intensivas 
+    (análisis de transcripciones, generación de embeddings) se delegan 
+    a una cola de trabajos (\texttt{process\_queue}) procesada en backend.
+\end{itemize}
+}
+
+\paragraph{\colorbox{Apricot}{Capa Cliente (React Native / Expo)}}
+La aplicación móvil se organiza internamente en tres subcapas diferenciadas:
+
+{\small
+\begin{itemize}
+    \item \textbf{Presentación}: Pantallas y componentes React Native con 
+          navegación declarativa mediante Expo Router.
+    \item \textbf{Estado}: Modelo híbrido que combina React Context para 
+          estado efímero de la interfaz y LegendState para los datos del 
+          dominio con sincronización bidireccional.
+    \item \textbf{Servicios}: Clases especializadas (\textit{ContactsService}, 
+          \textit{InteractionsService}, \textit{SemanticNodesService}, \textit{ProcessQueueService} y \textit{ProfilesService}) 
+          que encapsulan las operaciones CRUD 
+          y la lógica de persistencia.
+\end{itemize}
+}
+
+Adicionalmente, el módulo nativo \texttt{panot-speech} expone las \acrshort{api}s de 
+reconocimiento de voz de iOS para la transcripción en tiempo real. Y la persistencia 
+local se realiza mediante AsyncStorage, que garantiza la operabilidad \textit{offline}.
+
+\paragraph{\colorbox{CornflowerBlue}{Capa de Servidor (Supabase)}}
+El backend aprovecha los servicios gestionados de Supabase descritos en el anterior 
+Capítulo:
+
+{\small
+\begin{itemize}
+    \item \textbf{Autenticación}: Email con \acrshort{otp} y Apple Sign-In, con gestión 
+          automática de tokens \acrshort{jwt}.
+    \item \textbf{Base de datos}: Persistencia de datos en PostgreSQL con políticas RLS para aislamiento 
+          de datos por usuario.
+    \item \textbf{Realtime}: Suscripciones WebSocket para sincronización 
+          entre dispositivos.
+    \item \textbf{Triggers específicos}: Disparan Edge Functions al insertar registros 
+          en \texttt{process\_queue}, implementando el patrón de cola de mensajes.
+\end{itemize}
+}
+
+\paragraph{\colorbox{Salmon}{Capa de Procesamiento (Edge Functions)}}
+Tres funciones \textit{serverless} implementan la lógica de backend:
+
+{\small
+\begin{itemize}
+    \item \texttt{stripe-endpoint}: Procesa webhooks de Stripe gestionando el ciclo de vida de suscripciones 
+    mediante intenciones de pago, claves efímeras y clientes temporales.
+    \item \texttt{worker-infra}: Sistema de cola de trabajos que instancia un 
+          \textit{worker} por usuario, garantizando procesamiento secuencial 
+          y evitando condiciones de carrera.
+    \item \texttt{relational-agent}: Orquesta el sistema multi-agente para 
+          procesamiento semántico, detallado en la Sección~\ref{sec:sistema-multiagente}.
+\end{itemize}
+}
+
+La arquitectura del sistema se fundamenta en cinco decisiones clave o ADRs(Architectural Decision Records) que 
+condicionan el diseño general:
+
+{\small
+\begin{enumerate}
+    \item[\textbf{ADR-1}] \textbf{Arquitectura Offline-First.} Dado que la aplicación 
+    se utiliza frecuentemente en contextos de networking (eventos, conferencias) con 
+    conectividad intermitente, se optó por implementar sincronización \textit{offline-first} 
+    mediante LegendState y persistencia en AsyncStorage. Esta decisión garantiza 
+    disponibilidad del 100\% y elimina la latencia percibida al operar con datos locales, 
+    aunque introduce complejidad en la resolución de conflictos de sincronización.
+    
+    \item[\textbf{ADR-2}] \textbf{Supabase como BaaS.} Tratándose de un proyecto individual 
+    con recursos limitados que requiere autenticación, base de datos y comunicación en 
+    tiempo real, se seleccionó Supabase frente a un backend personalizado. Esta elección 
+    reduce significativamente el tiempo de desarrollo y proporciona seguridad mediante 
+    RLS sin esfuerzo adicional, asumiendo un \gls{vendor-lock-in} parcial como contrapartida.
+    
+    \item[\textbf{ADR-3}] \textbf{Un Worker por Usuario.} El procesamiento de transcripciones 
+    modifica datos del usuario (contactos, grafo semántico), lo que podría generar 
+    inconsistencias si múltiples trabajos se ejecutan en paralelo. Por ello, cada usuario 
+    dispone de un \textit{worker} dedicado que procesa sus jobs de forma secuencial, 
+    garantizando la consistencia de datos a costa de mayor latencia cuando hay muchos 
+    trabajos encolados.
+    
+    \item[\textbf{ADR-4}] \textbf{Sistema Multi-Agente.} El procesamiento semántico requiere 
+    capacidades diferenciadas: gestión de contactos y gestión del grafo de conocimiento. 
+    Se implementó un orquestador que delega en agentes especializados (\textit{ContactAgent}, 
+    \textit{GraphAgent}), permitiendo separación de responsabilidades, prompts especializados 
+    y facilidad de extensión, con el \textit{overhead} de coordinación entre agentes como 
+    principal desventaja.
+    
+    \item[\textbf{ADR-5}] \textbf{Edge Functions para Lógica de Backend.} El sistema requiere 
+    ejecutar lógica de backend para procesamiento de pagos, gestión de cola de trabajos y 
+    procesamiento con \acrshort{ia}. Frente a alternativas como AWS Lambda, Vercel Serverless 
+    o Cloudflare Workers, se optó por Supabase Edge Functions (basadas en Deno) por su 
+    integración nativa con la base de datos, gateway unificado de \acrshort{api}, capacidad 
+    de invocación desde \textit{triggers} de PostgreSQL y facturación por invocación sin 
+    costes de servidor inactivo. Como contrapartida, el runtime Deno presenta un ecosistema 
+    más reducido que Node.js, existe un límite de ejecución de 150 segundos, y se profundiza 
+    el \gls{vendor-lock-in} con Supabase.
+\end{enumerate}
+}
+
+\subsection{Sistema Multi-Agente para Procesamiento de Información}
+\label{sec:sistema-multiagente}
+
+El procesamiento semántico de las interacciones presenta un reto particular. Una misma interacción podría contener 
+información de naturaleza muy diversa (datos de contacto, intereses personales, relaciones profesionales, etc.), lo que 
+hace imposible predecir qué acciones tomar en cada caso concreto. Para abordar este problema, se ha optado por 
+utilizar un sistema Multi-Agente.
+
+A diferencia de un flujo de trabajo lineal, este sistema es capaz de razonar sobre el contenido y escoger qué operaciones 
+realizar sobre la información. Además, el sistema de Multi-Agente de PANOT, ofrece ventajas a nivel de mantenibilidad, ya que 
+cada agente del sistema es encargado de un dominio específico, y extensibilidad, ya que habilita la incorporación de 
+nuevas capacidades en forma de herramientas o agentes sin necesidad de modificar el flujo general.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/multi-agent-diagram.png}
+    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT}
+    \label{fig:diagrama-multi-agente}
+\end{figure}
+
+\newpage
+
+El sistema Multi-Agente de PANOT sigue una arquitectura vertical, donde un agente orquestador actúa como coordinador central, delegando 
+tareas a agentes especializados que reportan sus resultados de vuelta. Esta estructura proporciona control 
+centralizado sobre el flujo de ejecución, aislando, como ya se ha comentado, a cada agente en su dominio específico.
+
+\paragraph{Agente Orquestador}
+
+El agente orquestador constituye el punto de entrada del sistema multi-agente. Recibe como entrada 
+la transcripción de una interacción junto con el contexto necesario (\texttt{user\_id}, \texttt{contact\_id}, 
+\texttt{node\_id}) y determina qué operaciones realizar sobre la información. El sistema opera en 
+tres modos diferenciados:
+
+{\small
+\begin{itemize}
+    \item \textbf{CONVERSATIONAL}: Activa cuando el usuario realiza consultas sobre su red de contactos 
+    (por ejemplo, \textit{<<¿qué sé de este contacto?>>}). En este modo, el orquestador prioriza la 
+    recuperación de información existente.
+    \item \textbf{ACTIONABLE}: Modo predeterminado para el procesamiento de transcripciones. Permite 
+    ejecutar acciones de creación y actualización sobre contactos y el grafo contextual.
+    \item \textbf{CONTACT\_DETAILS\_UPDATE}: Modo especializado para actualizar datos específicos de 
+    contacto (nombre, canales de comunicación) sin modificar el grafo de conocimiento.
+\end{itemize}
+}
+
+El orquestador analiza el contenido de la transcripción y decide qué agentes invocar según la naturaleza 
+de la información. Sus herramientas principales son los propios agentes especializados: \texttt{manageContact} 
+para operaciones sobre contactos y \texttt{manageContextGraph} para gestión del grafo semántico.
+
+
+
+\paragraph{Agente de Contactos}
+
+Este agente gestiona el ciclo de vida completo de los contactos del usuario. Su dominio abarca 
+las operaciones CRUD sobre la entidad \textit{Contact} y dispone de las siguientes herramientas:
+
+{\small
+\begin{itemize}
+    \item \texttt{create\_contact}: Crea un nuevo contacto en la base de datos. Cabe destacar que 
+    la creación del nodo semántico asociado (de tipo \texttt{CONTACT}) se delega a un \textit{trigger} 
+    de PostgreSQL, manteniendo así la separación de responsabilidades.
+    \item \texttt{get\_contact\_data}: Recupera los datos almacenados de un contacto específico, 
+    permitiendo al orquestador contextualizar las decisiones posteriores.
+    \item \texttt{update\_contact\_details}: 
+\end{itemize}
+}
+
+\paragraph{Agente de Grafo Contextual}
+
+El agente de grafo contextual gestiona la estructura de conocimiento que representa la información 
+semántica sobre cada contacto. Esta estructura adopta la forma de un grafo donde los nodos representan 
+entidades y las aristas codifican las relaciones entre ellas. La elección de un grafo como modelo de 
+datos permite representar relaciones complejas y multidimensionales que serían difíciles de capturar 
+en un modelo relacional tradicional.
+
+El grafo contiene dos tipos principales de nodos: nodos \texttt{CONTACT} (uno por cada contacto del usuario) 
+y nodos \texttt{CONCEPT} que representan entidades abstractas o concretas (intereses, hobbies, empresas, 
+ubicaciones, etc.). Las aristas conectan estos nodos mediante relaciones tipadas como \textit{<<trabaja\_en>>}, 
+\textit{<<le\_interesa>>} o \textit{<<vive\_en>>}.
+
+{\small
+\begin{itemize}
+    \item \texttt{batch\_add\_info\_to\_graph}: Añade múltiples nodos y relaciones al grafo de forma 
+    atómica. Implementa \textit{matching} inteligente para conceptos genéricos (busca nodos semánticamente 
+    similares antes de crear duplicados), mientras que para instancias específicas como empresas o 
+    universidades crea nodos independientes (UPM $\neq$ Complutense).
+    \item \texttt{get\_contact\_context\_from\_graph}: Recupera todo el contexto asociado a un contacto, 
+    traversando el grafo desde su nodo \texttt{CONTACT}.
+    \item \texttt{find\_shared\_connections}: Identifica conexiones compartidas entre dos o más contactos, 
+    útil para descubrir puntos en común antes de reuniones.
+    \item \texttt{search\_semantic\_nodes}: Realiza búsquedas semánticas mediante embeddings vectoriales, 
+    permitiendo encontrar información relevante incluso cuando no coinciden los términos exactos.
+\end{itemize}
+}
+
+
+
+\paragraph{Observabilidad}
+
+Para garantizar la trazabilidad del sistema en producción, se ha integrado LangSmith como plataforma 
+de observabilidad. Esta herramienta permite monitorizar cada invocación del sistema Multi-Agente de PANOT, 
+facilitando el \textit{debugging} de las cadenas de razonamiento y el análisis del uso de herramientas 
+por parte de cada agente. La observabilidad resulta crítica en sistemas basados en \acrshort{ia}, donde 
+el comportamiento no determinista y la opacidad de los modelos dificultan la identificación de errores 
+mediante técnicas tradicionales de depuración.
+
+\vspace{0.5cm} % Ajusta el valor según el margen que necesites
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=.85\textwidth]{figures/ejemplo-traza-langsmith.png}
+    \caption{Ejemplo de traza en LangSmith mostrando el flujo de ejecución del sistema. 
+    Esta vista permite analizar latencias por operación, consumo 
+    de tokens en cada llamada al modelo, y verificar que el flujo de razonamiento del agente sea el esperado.}
+    \label{fig:traza-langsmith}
+\end{figure}
+
+
+
+\subsection{Modelado de Procesos}
 
 \subsection{Modelado de Datos}
 
