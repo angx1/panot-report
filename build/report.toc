@@ -38,18 +38,18 @@
 \contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{34}{paragraph*.20}%
 \contentsline {subsection}{\numberline {3.3.2}Sistema Multi-Agente para Procesamiento de Información}{35}{subsection.3.3.2}%
 \contentsline {paragraph}{Agente Orquestador}{36}{paragraph*.22}%
-\contentsline {paragraph}{Agente de Contactos}{37}{paragraph*.23}%
-\contentsline {paragraph}{Agente de Grafo Contextual}{37}{paragraph*.24}%
-\contentsline {paragraph}{Observabilidad}{38}{paragraph*.25}%
-\contentsline {subsection}{\numberline {3.3.3}Modelado de Procesos}{39}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Modelado de Datos}{39}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{39}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento}{39}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Verificación y Resultados}{40}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Generales}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{41}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{41}{section.5.3}%
+\contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{37}{paragraph*.23}%
+\contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{37}{paragraph*.24}%
+\contentsline {paragraph}{Observabilidad}{39}{paragraph*.25}%
+\contentsline {subsection}{\numberline {3.3.3}Modelado de Procesos}{40}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Modelado de Datos}{40}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{40}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento}{40}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Verificación y Resultados}{41}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{42}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{43}{section*.29}%
-\contentsline {section}{Siglas}{44}{section*.30}%
+\contentsline {section}{Glosario}{44}{section*.29}%
+\contentsline {section}{Siglas}{45}{section*.30}%

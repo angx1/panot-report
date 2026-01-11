@@ -88,10 +88,10 @@ Tres funciones \textit{serverless} implementan la lógica de backend:
 \end{itemize}
 }
 
-La arquitectura del sistema se fundamenta en cinco decisiones clave o ADRs(Architectural Decision Records) que 
+La arquitectura del sistema se fundamenta en cinco decisiones clave o ADRs (Architectural Decision Records) que 
 condicionan el diseño general:
 
-{\small
+{\small 
 \begin{enumerate}
     \item[\textbf{ADR-1}] \textbf{Arquitectura Offline-First.} Dado que la aplicación 
     se utiliza frecuentemente en contextos de networking (eventos, conferencias) con 
@@ -154,79 +154,121 @@ nuevas capacidades en forma de herramientas o agentes sin necesidad de modificar
 
 \newpage
 
-El sistema Multi-Agente de PANOT sigue una arquitectura vertical, donde un agente orquestador actúa como coordinador central, delegando 
+El sistema Multi-Agente de PANOT sigue una arquitectura vertical[INCLUIR REFERENCIA], donde un agente orquestador actúa como coordinador central, delegando 
 tareas a agentes especializados que reportan sus resultados de vuelta. Esta estructura proporciona control 
 centralizado sobre el flujo de ejecución, aislando, como ya se ha comentado, a cada agente en su dominio específico.
 
 \paragraph{Agente Orquestador}
 
-El agente orquestador constituye el punto de entrada del sistema multi-agente. Recibe como entrada 
-la transcripción de una interacción junto con el contexto necesario (\texttt{user\_id}, \texttt{contact\_id}, 
-\texttt{node\_id}) y determina qué operaciones realizar sobre la información. El sistema opera en 
+El agente orquestador constituye el punto de entrada del sistema Multi-Angente. El sistema recibe como entrada o bien 
+la transcripción de una interacción o bien la nueva descripción de un contacto y, junto con el contexto necesario (\texttt{user\_id}, \texttt{contact\_id}, 
+\texttt{node\_id}), determina qué operaciones realizar sobre esta información. El sistema opera en 
 tres modos diferenciados:
 
 {\small
 \begin{itemize}
-    \item \textbf{CONVERSATIONAL}: Activa cuando el usuario realiza consultas sobre su red de contactos 
-    (por ejemplo, \textit{<<¿qué sé de este contacto?>>}). En este modo, el orquestador prioriza la 
-    recuperación de información existente.
     \item \textbf{ACTIONABLE}: Modo predeterminado para el procesamiento de transcripciones. Permite 
     ejecutar acciones de creación y actualización sobre contactos y el grafo contextual.
-    \item \textbf{CONTACT\_DETAILS\_UPDATE}: Modo especializado para actualizar datos específicos de 
-    contacto (nombre, canales de comunicación) sin modificar el grafo de conocimiento.
+    \item \textbf{CONTACT\_DETAILS\_UPDATE}: Modo especializado para actualizar únicamente los datos del grafo contextual. Este modo 
+    está reservado a aquellos casos en los que el usuario modifica manualmente la descripción de un contacto.
+    \item \textbf{CONVERSATIONAL}: Activa cuando el usuario realiza consultas sobre su red de contactos 
+    (por ejemplo, \textit{¿qué sé de este contacto?}). En este modo, el orquestador prioriza la 
+    recuperación de información existente.
 \end{itemize}
 }
 
-El orquestador analiza el contenido de la transcripción y decide qué agentes invocar según la naturaleza 
+El orquestador de PANOT analiza el contenido de la transcripción y decide qué agentes invocar según la naturaleza 
 de la información. Sus herramientas principales son los propios agentes especializados: \texttt{manageContact} 
 para operaciones sobre contactos y \texttt{manageContextGraph} para gestión del grafo semántico.
 
-
-
-\paragraph{Agente de Contactos}
+\paragraph{Agente de Contactos - \texttt{manageContact}}
 
 Este agente gestiona el ciclo de vida completo de los contactos del usuario. Su dominio abarca 
-las operaciones CRUD sobre la entidad \textit{Contact} y dispone de las siguientes herramientas:
+las operaciones de Crear, Leer y Actualizar sobre la entidad \textit{Contact} y dispone de las siguientes herramientas:
 
 {\small
 \begin{itemize}
     \item \texttt{create\_contact}: Crea un nuevo contacto en la base de datos. Cabe destacar que 
     la creación del nodo semántico asociado (de tipo \texttt{CONTACT}) se delega a un \textit{trigger} 
-    de PostgreSQL, manteniendo así la separación de responsabilidades.
+    de PostgreSQL sobre inserción en la tabla de contactos, manteniendo así la separación de responsabilidades.
     \item \texttt{get\_contact\_data}: Recupera los datos almacenados de un contacto específico, 
     permitiendo al orquestador contextualizar las decisiones posteriores.
-    \item \texttt{update\_contact\_details}: 
+    \item \texttt{update\_contact\_details}: Actualiza la información básica del contacto.
 \end{itemize}
 }
 
-\paragraph{Agente de Grafo Contextual}
+\paragraph{Agente de Grafo Contextual - \texttt{manageContextGraph}}
 
 El agente de grafo contextual gestiona la estructura de conocimiento que representa la información 
 semántica sobre cada contacto. Esta estructura adopta la forma de un grafo donde los nodos representan 
-entidades y las aristas codifican las relaciones entre ellas. La elección de un grafo como modelo de 
-datos permite representar relaciones complejas y multidimensionales que serían difíciles de capturar 
-en un modelo relacional tradicional.
+entidades y las aristas codifican las relaciones entre ellas. Como se analiza en la Sección~\ref{sec:grafos-contextuales}, 
+la elección de un grafo como modelo de datos permite representar relaciones complejas y multidimensionales que serían 
+difíciles de capturar en un modelo relacional tradicional, además de ofrecer ventajas significativas en eficiencia 
+de acceso ($\mathcal{O}(1)$ para navegación de vecinos frente a $\mathcal{O}(n \log n)$ en operaciones relacionales). 
+La Figura~\ref{fig:fig-gf-maria} ilustra de manera teórica este modelo aplicado a un contacto concreto.
 
 El grafo contiene dos tipos principales de nodos: nodos \texttt{CONTACT} (uno por cada contacto del usuario) 
 y nodos \texttt{CONCEPT} que representan entidades abstractas o concretas (intereses, hobbies, empresas, 
-ubicaciones, etc.). Las aristas conectan estos nodos mediante relaciones tipadas como \textit{<<trabaja\_en>>}, 
-\textit{<<le\_interesa>>} o \textit{<<vive\_en>>}.
+ubicaciones, etc.). Las aristas conectan estos nodos mediante relaciones tipadas como \textit{TRABAJA\_EN}, 
+\textit{LE\_INTERESA} o \textit{VIVE\_EN}.
 
 {\small
 \begin{itemize}
-    \item \texttt{batch\_add\_info\_to\_graph}: Añade múltiples nodos y relaciones al grafo de forma 
-    atómica. Implementa \textit{matching} inteligente para conceptos genéricos (busca nodos semánticamente 
-    similares antes de crear duplicados), mientras que para instancias específicas como empresas o 
-    universidades crea nodos independientes (UPM $\neq$ Complutense).
-    \item \texttt{get\_contact\_context\_from\_graph}: Recupera todo el contexto asociado a un contacto, 
-    traversando el grafo desde su nodo \texttt{CONTACT}.
-    \item \texttt{find\_shared\_connections}: Identifica conexiones compartidas entre dos o más contactos, 
-    útil para descubrir puntos en común antes de reuniones.
-    \item \texttt{search\_semantic\_nodes}: Realiza búsquedas semánticas mediante embeddings vectoriales, 
-    permitiendo encontrar información relevante incluso cuando no coinciden los términos exactos.
+    \item \texttt{batch\_add\_info\_to\_graph}: Permite añadir múltiples conceptos 
+    (intereses, hobbies, empresas, etc.) al grafo de un contacto en una 
+    única invocación. Para cada concepto, aplica la lógica de matching 
+    semántico para determinar si el concepto debe reutilizar un nodo ya existente o crear uno nuevo.
+    \item \texttt{batch\_delete\_semantic\_nodes}: Elimina múltiples nodos del 
+    grafo en una sola operación. Las aristas asociadas se eliminan 
+    automáticamente por integridad referencial. Solo opera sobre nodos 
+    pertenecientes al usuario especificado. 
+    \item \texttt{get\_contact\_context\_from\_graph}: Recupera el grafo completo 
+    de conocimiento de un contacto, incluyendo todos los nodos conectados y sus tipos de relación. Indica 
+    además si cada nodo es compartido con otros contactos mediante un campo específico denominado \texttt{is\_shared}.
+    \item \texttt{find\_shared\_connections\_for\_contact}: Identifica todos los 
+    contactos que comparten contexto con un contacto específico. Busca 
+    nodos $v$ tales que $weight(v) > 1$ (es decir, su peso es mayor que uno, lo que indica que están conectados a 
+    múltiples contactos) y retorna qué otros contactos comparten cada 
+    nodo. Esta es la funcionalidad que permite descubrir conexiones 
+    no evidentes entre contactos.
+    \item \texttt{search\_semantic\_nodes}: Permite buscar nodos existentes en 
+    el grafo del usuario filtrando por categoría (Hobby, Empresa, Interés, 
+    etc.) o por coincidencia parcial en la etiqueta. Útil para explorar 
+    el grafo o verificar la existencia de conceptos antes de añadirlos.
+    
+
 \end{itemize}
 }
 
+Para el matching semántico, el sistema utiliza búsqueda vectorial para determinar si existe 
+relación semántica con conceptos ya existentes o si el concepto nuevo debe reutilizar un nodo ya existente o crear uno nuevo. 
+Para cada concepto, se genera un \textbf{embedding} utilizando el modelo de OpenAI, combinando tres atributos: 
+la etiqueta del nodo semántico, su categoría y el tipo de relación. Este vector se almacena en PostgreSQL 
+y se compara con los nodos existentes mediante \textbf{pgvector}, la extensión de PostgreSQL para búsqueda por similitud 
+vectorial. Se consideran tres escenarios posibles:
+
+\begin{enumerate}
+    \item \textbf{Match exacto} (similitud $\geq$ 90\%): El concepto se 
+    considera semánticamente idéntico a un nodo existente. En este caso, se reutiliza 
+    el nodo semántico existente, incrementando su peso (\texttt{weight}) y estableciendo una relación 
+    desde el contacto hacia el nodo.
+    
+    \item \textbf{Match relacionado} ($47\% \leq$ similitud $< 90\%$): Los 
+    conceptos son similares pero no idénticos. Se crea un nodo nuevo y 
+    se establece una arista \texttt{RELACIONADO\_CON} hacia el nodo 
+    similar, preservando la conexión semántica.
+    
+    \item \textbf{Sin match} (similitud $<$ 47\%): No existe relación 
+    semántica significativa. Se crea un nodo nuevo sin conexiones 
+    adicionales.
+\end{enumerate}
+
+Esta estrategia permite descubrir \textbf{conexiones compartidas} entre contactos 
+mediante el análisis de caminos en el grafo: dos contactos $C_1$ y $C_2$ están 
+conectados cuando comparten un nodo adyacente común (escenario 1, $d(C_1, C_2) = 2$) 
+o cuando sus nodos están enlazados mediante una arista \texttt{RELACIONADO\_CON} 
+(escenario 2, $d(C_1, C_2) = 3$), priorizando las conexiones de menor distancia 
+como indicadores de mayor afinidad.
 
 
 \paragraph{Observabilidad}
@@ -238,7 +280,7 @@ por parte de cada agente. La observabilidad resulta crítica en sistemas basados
 el comportamiento no determinista y la opacidad de los modelos dificultan la identificación de errores 
 mediante técnicas tradicionales de depuración.
 
-\vspace{0.5cm} % Ajusta el valor según el margen que necesites
+\vspace{0.5cm} 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=.85\textwidth]{figures/ejemplo-traza-langsmith.png}

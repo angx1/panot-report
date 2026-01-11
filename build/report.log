@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  10 JAN 2026 20:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  11 JAN 2026 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1630,12 +1630,12 @@ LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
 [5]
 
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
 [6]
 
-LaTeX Info: Redefining \. on input line 193.
-LaTeX Info: Redefining \% on input line 193.
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
 [7]) (./chapter2-fundamentos/2-paradigmas-diseno-producto.tex
 
 LaTeX Info: Redefining \. on input line 22.
@@ -1801,12 +1801,6 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
 [33]
-Overfull \hbox (32.54005pt too wide) in paragraph at lines 91--93
-[]\TU/SourceSerif4(0)/m/n/12 La arquitectura del sistema se fundamenta en cinco
- decisiones clave o ADRs(Architectural
- []
-
-
 
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
@@ -1827,9 +1821,19 @@ LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
 [36]
 
-LaTeX Info: Redefining \. on input line 227.
-LaTeX Info: Redefining \% on input line 227.
+LaTeX Info: Redefining \. on input line 225.
+LaTeX Info: Redefining \% on input line 225.
 [37]
+Overfull \hbox (1.93478pt too wide) in paragraph at lines 256--260
+\TU/SourceSerif4(0)/m/n/12 no idénticos. Se crea un nodo nuevo y se establece u
+na arista \TU/Menlo(0)/m/n/12 RELACIONADO_CON
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+[38]
 File: figures/ejemplo-traza-langsmith.png Graphic file (type bmp)
 <figures/ejemplo-traza-langsmith.png>
 ) (./chapter3-desarrollo/4-fases-implementacion.tex)
@@ -1837,15 +1841,15 @@ File: figures/ejemplo-traza-langsmith.png Graphic file (type bmp)
 
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
-[38])) (./chapter4-resultados/chapter4-resultados.tex
+[39])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[39]
+[40]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[40
+[41
 
 ]
 Capítulo 5.
@@ -1853,26 +1857,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[41
+[42
 
 ]
 
-[42
+[43
 
 
 ] (./report.gls
 
-[43
+[44
 
 ]) (./report.acr
 
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
-[44])
+[45])
 
 LaTeX Info: Redefining \. on input line 235.
 LaTeX Info: Redefining \% on input line 235.
-[45]
+[46]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -1883,7 +1887,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[46
+[47
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1901,12 +1905,12 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43442 strings out of 473832
- 853567 string characters out of 5729480
- 1988521 words of memory out of 5000000
- 65848 multiletter control sequences out of 15000+600000
- 567545 words of font info for 126 fonts, out of 8000000 for 9000
+ 43447 strings out of 473832
+ 853638 string characters out of 5729480
+ 1988622 words of memory out of 5000000
+ 65852 multiletter control sequences out of 15000+600000
+ 567553 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 95i,12n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,12n,107p,2414b,32881s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (56 pages).
+Output written on report.pdf (57 pages).
