@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{32}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{36}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de traza en LangSmith mostrando el flujo de ejecución del sistema. Esta vista permite analizar latencias por operación, consumo de tokens en cada llamada al modelo, y verificar que el flujo de razonamiento del agente sea el esperado.}}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de traza en LangSmith mostrando el flujo de ejecución del sistema. Esta vista permite analizar latencias por operación, consumo de tokens en cada llamada al modelo, y verificar que el flujo de razonamiento del agente sea el esperado.}}{40}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

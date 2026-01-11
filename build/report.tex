@@ -170,6 +170,48 @@
         }
 }
 
+\newglossaryentry{payment-intent}{
+        name=Intenciones de Pago,
+        description={
+            Objeto de Stripe que representa una intención de cobro. Contiene el monto, moneda y estado del pago, 
+            gestionando todo el ciclo de vida de la transacción.
+        }
+}
+
+\newglossaryentry{ephemeral-key}{
+        name=Claves Efímeras,
+        description={
+            Clave temporal de corta duración que permite a aplicaciones cliente acceder de forma segura a datos 
+            limitados de un cliente temporal (Customer) sin exponer claves secretas.
+        }
+}
+
+\newglossaryentry{stripe-customer}{
+        name=Clientes Temporales,
+        description={
+            Objeto que representa a un cliente en Stripe, permitiendo asociar métodos de pago guardados, historial 
+            de transacciones y suscripciones.
+        }
+}
+
+\newglossaryentry{websocket}{
+        name=WebSocket,
+        description={
+            Protocolo de comunicación bidireccional y full-duplex sobre una única conexión TCP que permite el 
+            intercambio de mensajes en tiempo real entre cliente y servidor sin necesidad de realizar múltiples 
+            peticiones HTTP.
+        }
+}
+
+\newglossaryentry{overhead}{
+        name=Overhead,
+        description={
+            Sobrecarga o coste adicional en tiempo, recursos computacionales o complejidad que introduce 
+            un sistema, proceso o abstracción más allá del trabajo estrictamente necesario para completar 
+            una tarea.
+        }
+}
+
 \newacronym[
 description={Sistema de Gestión de Relaciones con Clientes},
 longplural={Customer Relationship Management}
@@ -211,7 +253,7 @@ longplural={JSON Web Tokens}
 ]{jwt}{JWT}{JSON Web Token}
 
 \newacronym[
-description={Contraseña de Un Solo Uso},
+description={Contraseña de Un Solo Uso (One-Time Password)},
 longplural={Contraseñas de Un Solo Uso}
 ]{otp}{OTP}{One-Time Password}
 

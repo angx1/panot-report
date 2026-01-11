@@ -34,13 +34,14 @@
 \contentsline {section}{\numberline {3.3}Diseño del Sistema}{32}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Visión general de la Arquitectura}{32}{subsection.3.3.1}%
 \contentsline {paragraph}{\colorbox {Apricot}{Capa Cliente (React Native / Expo)}}{33}{paragraph*.18}%
-\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{33}{paragraph*.19}%
+\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{34}{paragraph*.19}%
 \contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{34}{paragraph*.20}%
 \contentsline {subsection}{\numberline {3.3.2}Sistema Multi-Agente para Procesamiento de Información}{35}{subsection.3.3.2}%
 \contentsline {paragraph}{Agente Orquestador}{36}{paragraph*.22}%
 \contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{37}{paragraph*.23}%
 \contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{37}{paragraph*.24}%
-\contentsline {paragraph}{Observabilidad}{39}{paragraph*.25}%
+\contentsline {subsubsection}{Matching Semántico}{38}{subsubsection*.25}%
+\contentsline {subsubsection}{Observabilidad}{39}{subsubsection*.26}%
 \contentsline {subsection}{\numberline {3.3.3}Modelado de Procesos}{40}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Modelado de Datos}{40}{subsection.3.3.4}%
 \contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{40}{section.3.4}%
@@ -51,5 +52,5 @@
 \contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{42}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{42}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{44}{section*.29}%
-\contentsline {section}{Siglas}{45}{section*.30}%
+\contentsline {section}{Glosario}{44}{section*.30}%
+\contentsline {section}{Siglas}{46}{section*.31}%
