@@ -294,32 +294,158 @@ o cuando sus nodos están enlazados mediante una arista \texttt{RELACIONADO\_CON
 (escenario 2, $d(C_1, C_2) = 3$), priorizando las conexiones de menor distancia 
 como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino más corto entre los contactos en el grafo.
 
+\subsection{Modelado de Datos}
+\label{sec:modelado-datos}
 
-\subsubsection{Observabilidad}
-
-Para garantizar la trazabilidad del sistema en producción, se ha integrado LangSmith como plataforma 
-de observabilidad. Esta herramienta permite monitorizar cada invocación del sistema Multi-Agente de PANOT, 
-facilitando el \textit{debugging} de las cadenas de razonamiento y el análisis del uso de herramientas 
-por parte de cada agente. 
-
-La observabilidad resulta crítica en sistemas basados en \acrshort{ia}, donde el comportamiento no determinista 
-y la opacidad de los modelos dificultan la identificación de errores mediante técnicas tradicionales de depuración. 
-Podemos ver un ejemplo de traza en LangSmith en la Figura~\ref{fig:traza-langsmith}. 
-
-\begin{figure}[h]
+\begin{figure}[ht!]
     \centering
-    \includegraphics[width=\textwidth]{figures/ejemplo-traza-langsmith.png}
-    \caption{Ejemplo de traza en LangSmith mostrando el flujo de ejecución del sistema. 
-    Esta vista permite analizar latencias por operación, consumo 
-    de tokens en cada llamada al modelo, y verificar que el flujo de razonamiento del agente sea el esperado.}
-    \label{fig:traza-langsmith}
+    \includegraphics[width=1\textwidth]{figures/db-modeled-auth.png}
+    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<auth>>}. Solo se incluye la tabla \textit{auth.users} ya que es la unica tabla de el schema \textit{<<auth>>} que se ha modificado.}
+    \label{fig:diagrama-modelado-datos-auth}
+\end{figure}
+
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/db-modeled-public.png}
+    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<public>>}.}
+    \label{fig:diagrama-modelado-datos-public}
+\end{figure}
+
+\newpage
+
+El modelo de datos de PANOT se organiza en dos schemas: \texttt{<<auth>>} (gestionado por Supabase) y \texttt{<<public>>} (lógica de negocio). 
+A continuación, se explicarán las entidades del schema \textit{<<public>>}:
+
+\subsubsection{Entidades Principales}
+
+{\small
+\begin{itemize}
+    \item \texttt{profiles}: Información del perfil de usuario 
+    de la aplicación. Cada registro está vinculado a un usuario del schema 
+    \texttt{<<auth>>} mediante \texttt{user\_id}. Contiene el estado del 
+    onboarding y si el usuario tiene suscripción activa o no.
+    
+    \item \texttt{contacts}: Contactos creados por el usuario. 
+    Cada contacto tiene un \texttt{owner\_id} que indica su propietario (usuario creador) y 
+    un \texttt{node\_id} que lo vincula con su nodo correspondiente en el 
+    grafo semántico correspondiente. El campo \texttt{details} almacena en formato JSON la descripción y detalles
+    del contacto, generado manualmente por el usuario o automaticamente por el sistema. 
+    
+    \item \texttt{interactions}: Transcripciones de voz 
+    grabadas por el usuario. El campo \texttt{raw\_content} contiene el 
+    texto transcrito. Cada interacción puede estar asociada a un contacto 
+    mediante \texttt{contact\_id} o permanecer sin asignar. El campo 
+    \texttt{status} indica el estado de procesamiento, que puede ser:
+    \begin{itemize}
+        \item \texttt{UNPROCESSED}: pendiente de procesar,
+        \item \texttt{PROCESSING}: en proceso,
+        \item \texttt{PROCESSED}: completado.
+    \end{itemize}
+\end{itemize}
+}
+
+Adicionalmente, se ha incorporado en todas las entidades un campo \texttt{deleted} que implementa el patrón \textit{soft delete}. 
+Este mecanismo permite marcar los registros como eliminados de manera lógica en lugar de borrarlos físicamente, 
+lo que facilita la recuperación ante eliminaciones accidentales y preserva la integridad referencial entre 
+entidades relacionadas. Cabe añadir que este mecanismo ha sido incorporado de forma anticipada para futuras iteraciones del sistema.
+
+\newpage
+\subsubsection{Grafo Semántico}
+
+El conocimiento contextual de los contactos se modela como un grafo almacenado en PostgreSQL, compuesto por dos entidades:
+
+{\small
+\begin{itemize}
+    \item \texttt{semantic\_nodes}: Nodos del grafo. El campo \texttt{type} distingue entre 
+    dos tipos: \texttt{CONTACT} (nodo raíz creado automáticamente para cada contacto) y \texttt{CONCEPT} 
+    (información contextual como intereses, hobbies, ubicaciones o emociones). El campo \texttt{weight} indica 
+    cuántas conexiones tiene el nodo; un valor mayor a uno señala que es compartido por múltiples contactos. 
+    El campo \texttt{embedding} almacena el vector generado para búsqueda por similitud semántica. 
+    Y el campo \texttt{concept\_category} clasifica el tipo de concepto (Hobby, Interés, Empresa, Emoción, etc.).
+    
+    \item \texttt{semantic\_edges}: Aristas del grafo. Representa la relación semántica entre dos nodos. Conecta un nodo origen con un nodo destino
+    (\texttt{source\_id} $\rightarrow$ \texttt{target\_id}) mediante un tipo de relación (\texttt{relation\_type}). 
+\end{itemize}
+}
+
+Se ha optado por implementar el grafo directamente en PostgreSQL (\textit{graph-on-SQL}) en lugar de utilizar 
+una base de datos de grafos dedicada. La razón principal de esta decisión es evitar la complejidad operativa 
+de mantener múltiples motores de bases de datos: un único sistema simplifica el despliegue, las copias de seguridad, 
+la monitorización y el mantenimiento general de la infraestructura. Además, para grafos de escala personal 
+(cientos a miles de nodos por usuario), PostgreSQL ofrece un rendimiento más que suficiente.
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=.75\textwidth]{figures/graph-on-sql-showcase.png}
+    \caption{Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. 
+    Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}
+    \label{fig:graph-on-sql-showcase}
+\end{figure}
+
+
+Esta elección trae consigo ventajas adicionales: la integración nativa con Supabase y el resto del modelo de datos, 
+el soporte de búsqueda vectorial mediante la extensión \texttt{pgvector} (necesaria para el matching semántico), 
+y la posibilidad de ejecutar operaciones sobre el grafo y las entidades relacionales en una misma transacción, 
+garantizando la consistencia de los datos.
+
+\subsubsection{Sistema de Procesamiento}
+
+Como se describió en la visión general de la arquitectura, PANOT implementa un modelo de ejecución basado en cola de 
+trabajos que combina paralelismo entre usuarios con procesamiento secuencial por usuario. Este patrón se materializa 
+en dos entidades:
+
+{\small
+\begin{itemize}
+    \item \texttt{process\_queue}: Cola de trabajos pendientes. Cada 
+    registro representa una tarea a procesar, identificada por su 
+    \texttt{job\_type}:
+    \begin{itemize}
+        \item \texttt{NEW\_CONTACT}: procesar nuevo contacto.
+        \item \texttt{INTERACTION\_TRANSCRIPT}: analizar transcripción.
+        \item \texttt{DETAILS\_UPDATE}: actualizar resumen del contacto.
+    \end{itemize}
+    El campo \texttt{status} indica el estado del trabajo:
+    \begin{itemize}
+        \item \texttt{PENDING}: pendiente de procesar.
+        \item \texttt{PROCESSING}: en proceso.
+        \item \texttt{COMPLETED}: completado.
+        \item \texttt{FAILED}: fallido.
+        \item \texttt{CANCELLED}: cancelado.
+    \end{itemize}
+    El campo \texttt{contact\_id} almacena opcionalmente el identificador 
+    del contacto cuando la operación actúa sobre uno específico. El campo 
+    \texttt{payload} contiene en formato JSON los datos específicos 
+    necesarios para que el sistema Multi-Agente ejecute la tarea. Y en 
+    caso de error, el campo \texttt{error\_message} almacena la 
+    descripción del fallo.
+    
+    
+    \item \texttt{worker}: Representa el worker dedicado de cada usuario. 
+    Cada usuario tiene exactamente un worker (restricción \texttt{UNIQUE} 
+    en \texttt{user\_id}). El campo \texttt{status} indica el estado:
+    \begin{itemize}
+        \item \texttt{idle}: disponible.
+        \item \texttt{busy}: procesando una tarea.
+    \end{itemize}
+    El campo \texttt{last\_activity\_at} registra la última actividad, 
+    permitiendo detectar workers bloqueados o inactivos.
+\end{itemize}
+}
+
+A continuación, se presenta el diagrama de actividad de este sistea de procesamienton por cola. Para mantener la simplicidad se han obviado
+datos como actualización de tiempos (\texttt{last\_activity\_at}, \texttt{processed\_at}, \texttt{created\_at}, \texttt{updated\_at}) y el tipo 
+de \texttt{PAYLOAD} usado para invocar a \texttt{relational-agent} en función del tipo de trabajo (\texttt{job\_type}). Para ver cómo funciona 
+el sistema Multi-Agente, se puede consultar el apartado \ref{sec:sistema-multiagente} anterior.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/processing-system-activity-diagram.png}
+    \caption{Diagrama de actividad del sistema de procesamiento de PANOT}
+    \label{fig:processing-system-activity-diagram}
 \end{figure}
 
 
 
-
-\subsection{Modelado de Procesos}
-
-\subsection{Modelado de Datos}
-\label{sec:modelado-datos}
 

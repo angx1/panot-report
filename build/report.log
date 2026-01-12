@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  11 JAN 2026 19:53
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  12 JAN 2026 20:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1272,28 +1272,28 @@ LaTeX Info: Redefining \% on input line 20.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Info: Redefining \. on input line 266.
-LaTeX Info: Redefining \% on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1336,73 +1336,73 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 266.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 266.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 266.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 266.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 266.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 266.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 266.
-LaTeX Font Info:    Redeclaring math accent \check on input line 266.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 266.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 266.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 266.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 266.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 266.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 267.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 267.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 267.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 267.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 267.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 267.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 267.
+LaTeX Font Info:    Redeclaring math accent \check on input line 267.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 267.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 267.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 267.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 267.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 266.
+(Font)              `operators' in the math version `normal' on input line 267.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/SourceSerif4(0)/m/n on input line 26
-6.
+7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 266.
+(Font)              `operators' in the math version `bold' on input line 267.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerif4(0)/m/n on input line 2
-66.
+67.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/SourceSerif4(0)/m/n --> TU/SourceSerif4(0)/m/n on in
-put line 266.
+put line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/SourceSerif4(0)/m/it on input line 
-266.
+267.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerif4(0)/b/n on input line 2
-66.
+67.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Helvetica(0)/m/n on input line 266.
+(Font)                  OT1/cmss/m/n --> TU/Helvetica(0)/m/n on input line 267.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/m/n on input line 266.
+(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/m/n on input line 267.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/SourceSerif4(0)/m/n --> TU/SourceSerif4(0)/b/n on in
-put line 266.
+put line 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/SourceSerif4(0)/b/it on input line
- 266.
+ 267.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Helvetica(0)/b/n on input line 266
+(Font)                  OT1/cmss/bx/n --> TU/Helvetica(0)/b/n on input line 267
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/b/n on input line 266.
-LaTeX Info: Redefining \microtypecontext on input line 266.
-Package microtype Info: Applying patch `item' on input line 266.
-Package microtype Info: Applying patch `toc' on input line 266.
-Package microtype Info: Applying patch `eqnum' on input line 266.
-Package microtype Info: Applying patch `footnote' on input line 266.
-Package microtype Info: Applying patch `verbatim' on input line 266.
-LaTeX Info: Redefining \microtypesetup on input line 266.
+(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/b/n on input line 267.
+LaTeX Info: Redefining \microtypecontext on input line 267.
+Package microtype Info: Applying patch `item' on input line 267.
+Package microtype Info: Applying patch `toc' on input line 267.
+Package microtype Info: Applying patch `eqnum' on input line 267.
+Package microtype Info: Applying patch `footnote' on input line 267.
+Package microtype Info: Applying patch `verbatim' on input line 267.
+LaTeX Info: Redefining \microtypesetup on input line 267.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1421,7 +1421,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 266.
+Package hyperref Info: Link coloring ON on input line 267.
 
 (./report.out) (./report.out)
 \@outlinefile=\write7
@@ -1444,14 +1444,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
 
 (./report.bbl)
-Package biblatex Info: Reference section=0 on input line 266.
-Package biblatex Info: Reference segment=0 on input line 266.
+Package biblatex Info: Reference section=0 on input line 267.
+Package biblatex Info: Reference segment=0 on input line 267.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Helvetica' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 266--266
+Overfull \hbox (18.0pt too wide) in paragraph at lines 267--267
 [][] 
  []
 
@@ -1464,16 +1464,16 @@ File: upm-report/images/upm-logotipo.png Graphic file (type bmp)
 \openout4 = `report.ist'.
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 266
+LaTeX Font Info:    Trying to load font information for U+msa on input line 267
 .
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1481,7 +1481,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 266
+LaTeX Font Info:    Trying to load font information for U+msb on input line 267
 .
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1499,24 +1499,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (34.3555pt too wide) in paragraph at lines 266--266
+Overfull \hbox (34.3555pt too wide) in paragraph at lines 267--267
 | \TU/Menlo(0)/m/n/10 title = {PANOT: Plataforma Móvil para la Gestión de la In
 teligencia Relacional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\TU/SourceSerif4(0)/m/n/10 Esta obra está bajo una licencia [][]Creative Comm
 ons «  Atribución-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \TU/SourceSerif4(0)/m/n/10 NoComercial-CompartirIgual 4.0 Internacional»[][]. O
 bra derivada de
  []
@@ -1524,7 +1524,7 @@ bra derivada de
 File: doclicense-CC-by-nc-sa-88x31.pdf Graphic file (type pdf)
 <use doclicense-CC-by-nc-sa-88x31.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 
  []
 
@@ -1566,8 +1566,8 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-LaTeX Info: Redefining \. on input line 266.
-LaTeX Info: Redefining \% on input line 266.
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
 [2] (./report.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1576,6 +1576,13 @@ LaTeX Info: Redefining \% on input line 1.
 Overfull \hbox (15.21608pt too wide) in paragraph at lines 7--7
  [][] [][][]\TU/SourceSerif4(0)/m/n/12 Visualización de las columnas del tabler
 o Kanban implementado en GitHub 
+ []
+
+
+Overfull \hbox (1.9272pt too wide) in paragraph at lines 10--10
+ [][] [][][]\TU/SourceSerif4(0)/m/n/12 Diagrama del modelo de datos de PANOT de
+l schema de Supabase \TU/SourceSerif4(0)/m/it/12 «auth»\TU/SourceSerif4(0)/m/n/
+12 . 
  []
 
 )
@@ -1731,8 +1738,8 @@ File: figures/tablero-kanban.png Graphic file (type bmp)
 <figures/tablero-kanban.png>
 ) (./chapter3-desarrollo/2-especificacion-requisitos.tex
 
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
 [27]
 Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
@@ -1740,8 +1747,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
 
 
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
 [28]
 Overfull \hbox (1.864pt too wide) in alignment at lines 84--84
 [][] 
@@ -1835,26 +1842,58 @@ LaTeX Info: Redefining \% on input line 233.
 LaTeX Info: Redefining \. on input line 265.
 LaTeX Info: Redefining \% on input line 265.
 [38]
-File: figures/ejemplo-traza-langsmith.png Graphic file (type bmp)
-<figures/ejemplo-traza-langsmith.png>
+File: figures/db-modeled-auth.png Graphic file (type bmp)
+<figures/db-modeled-auth.png>
+File: figures/db-modeled-public.png Graphic file (type bmp)
+<figures/db-modeled-public.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+[39]
 
+LaTeX Info: Redefining \. on input line 334.
+LaTeX Info: Redefining \% on input line 334.
+[40]
+Overfull \hbox (4.942pt too wide) in paragraph at lines 335--341
+[]\TU/Menlo(0)/m/n/10.95 interactions\TU/SourceSerif4(0)/m/n/10.95 : Transcripc
+iones de voz grabadas por el usuario. El campo \TU/Menlo(0)/m/n/10.95 raw_conte
+nt
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 353.
+LaTeX Info: Redefining \% on input line 353.
+[41]
+File: figures/graph-on-sql-showcase.png Graphic file (type bmp)
+<figures/graph-on-sql-showcase.png>
+
+
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
+[42]
+
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
+[43]
+File: figures/processing-system-activity-diagram.png Graphic file (type bmp)
+<figures/processing-system-activity-diagram.png>
 ) (./chapter3-desarrollo/4-fases-implementacion.tex)
-(./chapter3-desarrollo/5-despliegue-lanzamiento.tex
-
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-[39])) (./chapter4-resultados/chapter4-resultados.tex
+(./chapter3-desarrollo/5-despliegue-lanzamiento.tex))
+(./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[40]
+[44]
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[45]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[41
+[46
 
 ]
 Capítulo 5.
@@ -1862,26 +1901,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[42
+[47
 
 ]
 
-[43
+[48
 
 
 ] (./report.gls
 
-[44
+[49
 
 ]
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[45]) (./report.acr)
+[50]) (./report.acr)
 
-LaTeX Info: Redefining \. on input line 277.
-LaTeX Info: Redefining \% on input line 277.
-[46]
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
+[51]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -1892,7 +1931,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[47
+[52
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1904,18 +1943,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 74F0CD223A701296FDB182B72C4B14E8;4618.
+(rerunfilecheck)             Checksum: 4D73116702FB9866FB9FA5CDBBC2C292;4618.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43648 strings out of 473832
- 858468 string characters out of 5729480
- 1991875 words of memory out of 5000000
- 66048 multiletter control sequences out of 15000+600000
+ 43680 strings out of 473832
+ 859662 string characters out of 5729480
+ 1992258 words of memory out of 5000000
+ 66077 multiletter control sequences out of 15000+600000
  567593 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (57 pages).
+Output written on report.pdf (62 pages).
