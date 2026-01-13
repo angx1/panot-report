@@ -292,6 +292,10 @@
 \RequirePackage{microtype} % Mejoras tipográficas generales
 % TODO Cambiar los tipos de letra según la guía de estilos de la escuela
 %\setmainfont{TeX Gyre PagellaX}
+
+% \setmainfont{Source Serif Pro}
+% \setsansfont{Nimbus Sans}
+% \setmonofont{Source Code Pro}
 \setmainfont{Source Serif 4}[
   BoldFont=Source Serif 4 Bold,
   BoldItalicFont=Source Serif 4 Bold Italic
