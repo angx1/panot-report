@@ -278,7 +278,7 @@ comportamiento del matching se define formalmente mediante la función:
 \]
 
 \footnotesize
-\noindent donde $n^* = \arg\max_{n \in \mathcal{N}} \text{sim}(\mathbf{e}_{\text{nuevo}}, \mathbf{e}_n)$ 
+\noindent Donde $n^* = \arg\max_{n \in \mathcal{N}} \text{sim}(\mathbf{e}_{\text{nuevo}}, \mathbf{e}_n)$ 
 es el nodo con mayor similitud, $\mathcal{N}$ es el conjunto de nodos semánticos existentes, 
 y $\mathcal{A} = \{\text{REUTILIZAR}, \text{CREAR}, \text{RELACIONAR}\}$ es el conjunto de acciones. 
 En el primer caso (\textit{match exacto}), se incrementa el peso del nodo $n^*$ y se establece 
@@ -287,6 +287,7 @@ nuevo con una arista \texttt{RELACIONADO\_CON} hacia $n^*$, preservando la conex
 tercer caso, se crea un nodo nuevo sin conexiones adicionales.
 }
 
+\vspace{.5cm}
 Esta estrategia permite descubrir \textbf{conexiones compartidas} entre contactos 
 mediante el análisis de caminos en el grafo: dos contactos $C_1$ y $C_2$ están 
 conectados cuando comparten un nodo adyacente común (escenario 1, $d(C_1, C_2) = 2$) 
@@ -300,7 +301,8 @@ como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino m
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=1\textwidth]{figures/db-modeled-auth.png}
-    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<auth>>}. Solo se incluye la tabla \textit{auth.users} ya que es la unica tabla de el schema \textit{<<auth>>} que se ha modificado.}
+    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<auth>>}. Solo se incluye la tabla \textit{auth.users} ya 
+    que es la unica tabla de el schema \textit{<<auth>>} que se ha modificado.}
     \label{fig:diagrama-modelado-datos-auth}
 \end{figure}
 
@@ -308,13 +310,15 @@ como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino m
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=1\textwidth]{figures/db-modeled-public.png}
-    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<public>>}.}
+    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<public>>}. \textbf{Nota:} Se ha obviado del diagrama 
+    que las claves foráneas \texttt{user\_id} o \texttt{owner\_id} de las tablas provienen del \texttt{id} de la tabla \texttt{users} del schema \textit{<<auth>>}. A modo de ejemplo, 
+    solo se ha añadido en la tabla \texttt{profiles} para mantener el diagrama más legible.}
     \label{fig:diagrama-modelado-datos-public}
 \end{figure}
 
 \newpage
 
-El modelo de datos de PANOT se organiza en dos schemas: \texttt{<<auth>>} (gestionado por Supabase) y \texttt{<<public>>} (lógica de negocio). 
+El modelo de datos de PANOT se organiza en dos schemas: \textit{<<auth>>} (gestionado por Supabase) y \textit{<<public>>} (lógica de negocio). 
 A continuación, se explicarán las entidades del schema \textit{<<public>>}:
 
 \subsubsection{Entidades Principales}
@@ -323,7 +327,7 @@ A continuación, se explicarán las entidades del schema \textit{<<public>>}:
 \begin{itemize}
     \item \texttt{profiles}: Información del perfil de usuario 
     de la aplicación. Cada registro está vinculado a un usuario del schema 
-    \texttt{<<auth>>} mediante \texttt{user\_id}. Contiene el estado del 
+    \textit{<<auth>>} mediante \texttt{user\_id}. Contiene el estado del 
     onboarding y si el usuario tiene suscripción activa o no.
     
     \item \texttt{contacts}: Contactos creados por el usuario. 
@@ -348,7 +352,7 @@ A continuación, se explicarán las entidades del schema \textit{<<public>>}:
 Adicionalmente, se ha incorporado en todas las entidades un campo \texttt{deleted} que implementa el patrón \textit{soft delete}. 
 Este mecanismo permite marcar los registros como eliminados de manera lógica en lugar de borrarlos físicamente, 
 lo que facilita la recuperación ante eliminaciones accidentales y preserva la integridad referencial entre 
-entidades relacionadas. Cabe añadir que este mecanismo ha sido incorporado de forma anticipada para futuras iteraciones del sistema.
+entidades relacionadas. Cabe añadir que este mecanismo ha sido implementado de cara a futuras iteraciones.
 
 \newpage
 \subsubsection{Grafo Semántico}
@@ -435,7 +439,7 @@ en dos entidades:
 }
 
 A continuación, se presenta el diagrama de actividad de este sistea de procesamienton por cola. Para mantener la simplicidad se han obviado
-datos como actualización de tiempos (\texttt{last\_activity\_at}, \texttt{processed\_at}, \texttt{created\_at}, \texttt{updated\_at}) y el tipo 
+datos como actualización de tiempos (\texttt{last\_activity\_at}, \texttt{processed\_at}, \texttt{created\_at} y \texttt{updated\_at}) y el tipo 
 de \texttt{PAYLOAD} usado para invocar a \texttt{relational-agent} en función del tipo de trabajo (\texttt{job\_type}). Para ver cómo funciona 
 el sistema Multi-Agente, se puede consultar el apartado \ref{sec:sistema-multiagente} anterior.
 
@@ -446,6 +450,19 @@ el sistema Multi-Agente, se puede consultar el apartado \ref{sec:sistema-multiag
     \label{fig:processing-system-activity-diagram}
 \end{figure}
 
+\vspace{.5cm}
+El diagrama de actividad anterior (\ref{fig:processing-system-activity-diagram}) se centra en el flujo interno de la cola de trabajos. 
+Para comprender el flujo completo de procesamiento, es necesario considerar todas las entidades y artefactos involucrados en el sistema. 
+A continuación, se presenta un diagrama de secuencia que muestra la interacción entre el cliente móvil, la base de datos, el sistema 
+de cola de trabajos (\texttt{process\_queue} y \texttt{worker-infra}) y el sistema Multi-Agente (\texttt{relational-agent}):
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/process-transcript-sequence-diagram.png}
+    \caption{Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}
+    \label{fig:process-transcript-sequence-diagram}
+\end{figure}
 
 
 
+ 
