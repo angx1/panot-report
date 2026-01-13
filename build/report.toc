@@ -45,7 +45,7 @@
 \contentsline {subsubsection}{Entidades Principales}{40}{subsubsection*.28}%
 \contentsline {subsubsection}{Grafo Semántico}{42}{subsubsection*.29}%
 \contentsline {subsubsection}{Sistema de Procesamiento}{43}{subsubsection*.31}%
-\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{44}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{45}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento}{45}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Verificación y Resultados}{46}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{47}{chapter.5}%
@@ -53,5 +53,5 @@
 \contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{47}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{47}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{49}{section*.35}%
-\contentsline {section}{Siglas}{51}{section*.36}%
+\contentsline {section}{Glosario}{49}{section*.36}%
+\contentsline {section}{Siglas}{51}{section*.37}%
