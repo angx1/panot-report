@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ANÁLISIS COMPARATIVO
+
+\section{Contexto Tecnológico}
+
+La elección de tecnologías para el desarrollo del proyecto se ha realizado teniendo en cuenta los 
+criterios de mantenibilidad, seguridad, escalabilidad, rapidez de implementación y coste. Tras un análisis comparativo 
+entre múltiples opciones disponibles, se ha optado por una arquitectura cliente-servidor con aplicación móvil desarrollada 
+con el framework \textit{Expo} React Native, un backend entermente gestionado por \textit{Supabase}, con PostgreSQL como motor de bases de datos, 
+\textit{Stripe} para la integración con pasarelas de pago y \textit{PostHog} para el análisis de métricas de éxito y seguimiento de uso de 
+funcionalidades.
+
+\subsection{Capa del Cliente Móvil}
+
+Para el desarrollo de la aplicación móvil PANOT se ha seleccionado \textit{Expo}, un framework construido sobre 
+\textit{React Native} que simplifica significativamente el proceso de desarrollo de aplicaciones multiplataforma. 
+Esta elección se fundamenta en varios factores clave:
+
+\begin{itemize}
+    \item \textbf{Rapidez de desarrollo}: \textit{Expo} proporciona un conjunto de herramientas e Interfaces de Programación de Aplicaciones (\acrshort{api}s) preconfiguradas que 
+    reducen la complejidad de configuración del proyecto y aceleran el tiempo de desarrollo, permitiendo enfocar 
+    los esfuerzos en la implementación de funcionalidades de valor. Además \textit{Expo} es un framework basado en 
+    \textit{React} y en el caso de PANOT, \textit{Typescript} lo que facilita el desarrollo modular, la reutilización de componentes 
+    y el tipado de los artefactos del proyecto debido a la naturaleza de estos lenguajes.
+    
+    \item \textbf{Compatibilidad multiplataforma}: Aunque el proyecto se centra inicialmente en iOS, \textit{Expo} facilita 
+    la extensión futura a Android con mínimos cambios en el código base, garantizando una base sólida para el crecimiento 
+    del producto.
+    
+    \item \textbf{Ecosistema Open Source}: \textit{Expo} cuenta con una comunidad activa y documentación muy completa, lo que 
+    facilita el aprendizaje y la resolución de problemas.
+    
+    \item \textbf{Acceso a funcionalidades nativas}: A través de módulos nativos y \acrshort{api}s expuestas por \textit{Expo}, se mantiene 
+    acceso a capacidades del dispositivo como notificaciones push, almacenamiento local y sensores, sin requerir la 
+    complejidad del desarrollo nativo puro.
+\end{itemize}
+
+Se analizaron las siguientes alternativas tecnológicas para el desarrollo del cliente móvil:
+
+\begin{itemize}
+    \item \textbf{Desarrollo nativo con \textit{Swift} y \textit{SwiftUI}}: Esta opción habría proporcionado un rendimiento óptimo 
+    y acceso completo a todas las capacidades nativas de iOS. Sin embargo, fue descartada debido a su mayor complejidad de 
+    configuración, un tiempo de desarrollo más extenso y la limitación a una única plataforma, aspectos que no se alinean 
+    con los objetivos de eficiencia y escalabilidad del proyecto.
+
+    \item \textbf{Desarrollo multiplataforma con \textit{Flutter}}: También se consideró el uso de \textit{Flutter}, un framework 
+    desarrollado por Google que permite crear aplicaciones móviles utilizando \textit{Dart} y un motor de renderizado 
+    propio, compilando a código nativo. \textit{Flutter} permite construir interfaces visuales consistentes en diferentes 
+    plataformas y evita la dependencia de componentes nativos del sistema operativo, similar a \textit{Expo}. 
+    Sin embargo, esta alternativa también fue descartada principalmente debido a la poca familiaridad con el lenguaje 
+    \textit{Dart}, lo que habría alargado inevitablemente el tiempo de desarrollo del proyecto.
+\end{itemize}
+
+\subsection{Capa de Datos y Persistencia Local}
+
+Uno de los requisitos fundamentales de PANOT es garantizar la funcionalidad de la aplicación incluso en ausencia 
+de conectividad a Internet, permitiendo a los usuarios capturar interacciones y gestionar sus relaciones de manera continua 
+independientemente de su estado de conexión. Para materializar este requisito, se ha adoptado un enfoque \textit{local-first}, 
+donde los datos se almacenan localmente en primer lugar, sincronizándose con el servidor cuando la conectividad 
+está disponible.
+
+La implementación de este patrón se ha realizado mediante la combinación de \textit{Legend State}, una librería de gestión 
+de estado reactiva y eficiente, junto con las capacidades de almacenamiento local proporcionadas por Expo. Legend State 
+proporciona un sistema de observables que permite mantener un estado global sincronizado entre los componentes de la aplicación, 
+mientras que Expo ofrece \acrshort{api}s para el almacenamiento persistente en el dispositivo mediante \textit{AsyncStorage} o sistemas 
+de base de datos locales como \textit{SQLite}.
+
+El flujo de trabajo implementado sigue el siguiente patrón: cuando el usuario realiza una acción (por ejemplo, registrar 
+una interacción), los datos se almacenan inmediatamente en el estado local gestionado por Legend State y se persisten en el 
+almacenamiento local del dispositivo. Esta operación es instantánea y no requiere conectividad. Posteriormente, en segundo plano, 
+la aplicación intenta sincronizar estos datos con el servidor cuando detecta conectividad disponible. Si la sincronización 
+falla temporalmente, los datos permanecen en el dispositivo y se reintenta automáticamente cuando la conexión se restablece, 
+garantizando que ninguna información se pierda.
+
+Para la persistencia en la nube, se ha seleccionado \textit{Supabase} como plataforma de backend, que proporciona una base de 
+datos \textit{PostgreSQL} gestionada junto con \acrshort{api}s REST y en tiempo real. Esta elección se fundamenta en:
+
+\begin{itemize}
+    \item \textbf{Simplicidad de integración}: \textit{Supabase} proporciona un cliente JavaScript/TypeScript que se integra 
+    naturalmente con React Native y Expo, facilitando la sincronización bidireccional entre el estado local y la base de datos.
+    
+    \item \textbf{Escalabilidad}: PostgreSQL es un motor de bases de datos relacional robusto y escalable, capaz de 
+    gestionar grandes volúmenes de datos y relaciones complejas entre entidades.
+    
+    \item \textbf{Sincronización en tiempo real}: \textit{Supabase} ofrece capacidades de suscripción a cambios en tiempo real, 
+    permitiendo que actualizaciones realizadas desde otros dispositivos se reflejen automáticamente en la aplicación.
+    
+    \item \textbf{Seguridad integrada}: Como se mencionó en la sección de privacidad, \textit{Supabase} proporciona mecanismos 
+    de seguridad a nivel de fila y columna que garantizan el aislamiento de datos entre usuarios y encriptación de datos
+    en todo su ciclo de vida.
+
+    \item \textbf{Coste de uso}: el plan gratuito de \textit{Supabase} ofrece llamas ilimitadas a su \acrshort{api}, gestión de hasta 500.000 usuarios activos, 
+    y hasta 500MB de almacenamiento de datos, lo que supone una base sólida para hacer posible el desarrollo del proyecto.  
+\end{itemize}
+
+Esta arquitectura local-first no solo garantiza la funcionalidad offline, sino que también mejora la experiencia del usuario 
+al proporcionar respuestas instantáneas sin depender de la latencia de red, mientras mantiene la consistencia de datos a través 
+de la sincronización automática en segundo plano.
+
+\subsection{Capa de Servicios Externos}
+
+Además de proporcionar la infraestructura de base de datos y autenticación, \textit{Supabase} se ha utilizado como plataforma 
+de backend completo para gestionar todas las conexiones con servicios externos mediante su arquitectura de \textit{Edge Functions}, 
+que actúa como un \gls{api-gateway} centralizado. Esta decisión arquitectónica se alinea directamente con los principios de seguridad 
+y eficiencia por diseño establecidos en el proyecto.
+
+Las \textit{Edge Functions} de \textit{Supabase} son funciones serverless escritas en TypeScript y ejecutadas en un runtime basado en \textit{Deno}. 
+Estas funciones son distribuidas y replicadas globalmente en servidores para reducir así la latencia en función del posicionamiento geográfico del usuario. 
+
+\begin{enumerate}
+    \item \textbf{Entrada de solicitud en el edge gateway}: El \gls{api-gateway} actúa como relay que enruta el tráfico, gestiona los 
+    headers de autenticación, valida los JSON Web Tokens (\acrshort{jwt}) y aplica reglas de enrutamiento y control de tráfico.
+    
+    \item \textbf{Aplicación de autenticación y políticas}: El \gls{api-gateway} valida los \acrshort{jwt} de \textit{Supabase}, aplica 
+    rate limiting y centraliza las comprobaciones de seguridad antes de ejecutar el código, garantizando que solo solicitudes 
+    autenticadas y autorizadas accedan a los servicios externos.
+    
+    \item \textbf{Ejecución en el edge runtime}: La función se ejecuta en un nodo de \textit{Edge Runtime} distribuido regionalmente 
+    más cercano al usuario, minimizando la latencia de procesamiento.
+    
+    \item \textbf{Integraciones y acceso a datos}: Las funciones comúnmente invocan \acrshort{api}s de \textit{Supabase} (Auth, Postgres, Storage) 
+    o \acrshort{api}s de terceros, utilizando estrategias de conexión optimizadas para entornos edge/serverless.
+    
+    \item \textbf{Observabilidad y logs}: Las invocaciones emiten logs y métricas que pueden explorarse en el dashboard de 
+    \textit{Supabase} o integrarse con sistemas de monitorización downstream como \textit{Sentry}.
+    
+    \item \textbf{Respuesta a través del gateway}: El \gls{api-gateway} reenvía la respuesta al cliente y registra los metadatos de la 
+    solicitud para análisis y auditoría posterior.
+\end{enumerate}
+
+Esta arquitectura de \gls{api-gateway} [COMO SE PUEDE VER EN LA FIG.N] proporciona múltiples beneficios que justifican su adopción:
+
+\begin{itemize}
+    \item \textbf{Seguridad centralizada}: Todas las claves de \acrshort{api} y credenciales de servicios externos se mantienen en el 
+    servidor, nunca expuestas al cliente móvil. El gateway valida automáticamente la autenticación antes de procesar cualquier 
+    solicitud, reduciendo significativamente la superficie de ataque.
+    
+    \item \textbf{Baja latencia}: La distribución global de las funciones garantiza que las solicitudes se procesen en el nodo 
+    más cercano geográficamente al usuario, reduciendo el tiempo de respuesta total.
+    
+    \item \textbf{Escalabilidad automática}: Las Edge Functions se escalan automáticamente según la demanda, eliminando la 
+    necesidad de gestionar infraestructura de servidores y optimizando los costes operativos mediante un modelo de pago por uso.
+    
+    \item \textbf{Simplificación del desarrollo}: La integración nativa con las \acrshort{api}s de \textit{Supabase} permite que las funciones 
+    accedan directamente a la base de datos, autenticación y almacenamiento sin configuración adicional, reduciendo la complejidad 
+    del código y la gestión de credenciales.
+    
+    \item \textbf{Rate limiting y control de tráfico}: El gateway proporciona mecanismos integrados para limitar la frecuencia 
+    de solicitudes, protegiendo tanto los servicios externos como la infraestructura propia de sobrecargas.
+\end{itemize}
+
+[incluir brevemente alternativas consideradas]
+
+\subsection{Capa de Inteligencia Artificial}
+
+La capa de inteligencia artificial de PANOT, responsable del procesamiento de interacciones y la generación de recomendaciones 
+contextuales, se ha implementado mediante \textit{Supabase Edge Functions} que actúan como intermediario entre la aplicación móvil 
+y la \textit{API de OpenAI}, utilizando el modelo [TODAVIA POR COMPARAR] para el procesamiento de lenguaje natural.
+
+La elección de \textit{OpenAI} como proveedor de servicios de inteligencia artificial se fundamenta en su alta adopción por parte 
+de la comunidad de desarrolladores y su extensa documentación, que facilita, de nuevo, la integración y resolución de problemas durante el 
+desarrollo. \textit{OpenAI} mantiene una hoja de ruta activa con actualizaciones frecuentes de sus modelos y mejoras continuas en la \textit{API de OpenAI}, garantizando 
+la evolución y mantenibilidad a largo plazo de la integración.
+
+La selección del modelo específico [TODAVIA POR COMPARAR] se fundamenta en su equilibrio entre eficiencia, calidad y coste. Este modelo ofrece tiempos 
+de respuesta menores que alternativas más grandes como [TODAVIA POR COMPARAR], permitiendo una 
+experiencia de usuario más fluida en aplicaciones móviles donde la latencia es crítica. A pesar de ser más ligero, mantiene 
+capacidades de comprensión y generación de lenguaje natural suficientes para las tareas requeridas en PANOT, como el análisis 
+semántico de interacciones y la generación de recomendaciones personalizadas. Además, su coste por token sustancialmente menor 
+es fundamental para la sostenibilidad económica del proyecto, considerando que las operaciones de inteligencia artificial se 
+ejecutan frecuentemente en segundo plano.
+
+[TABLA COMPARATIVA DE LOS TRES MODELOS DE OPENAI]
+
+Las \textit{Edge Functions} encapsulan la lógica de comunicación con la \textit{API de OpenAI}, incluyendo manejo de errores, gestión de 
+timeouts y validación de la estructura de respuesta, abstrayéndose así de acoplar la lógica de comunicación con el cliente móvil.
+
+Como alternativas se consideraron los modelos \textit{Claude de Anthropic}, que ofrece capacidades avanzadas de razonamiento pero con un coste 
+de computación sustancialmente mayor.[VER A VE ESTO PORQUE REALMENTE SE HA ELEGIDO OPENAI POR ELECCION PERSONAL]
+
+[TABLA COMPARATIVA DE AMBOS MODELOS]
+
+\subsection{Capa de Sistema de Pagos}
+
+Para la integración de funcionalidades de pago y suscripciones, se ha seleccionado \textit{Stripe} como proveedor de servicios 
+de pasarela de pagos. \textit{Stripe} es una plataforma líder que proporciona \acrshort{api}s robustas y seguras para procesar pagos, 
+gestionar suscripciones recurrentes y manejar la facturación.
+
+La integración con \textit{Stripe} se realiza también mediante \textit{Supabase Edge Functions}. 
+Las \textit{Edge Functions} gestionan la creación 
+de intenciones de pago, la validación de tarjetas y el procesamiento de transacciones de forma segura, además de recibir y 
+procesar webhooks para manejar eventos asíncronos como confirmaciones de pago o actualizaciones de métodos de pago, sincronizando 
+automáticamente el estado en la base de datos. Además, \textit{Stripe} gestiona automáticamente el cumplimiento de estándares de seguridad 
+como \gls{pci-dss} (Payment Card Industry Data Security Standard).
+
+Como alternativa a \textit{Stripe} se evaluó \textit{Polar}, una plataforma de pasarela de pagos que ofrece funcionalidades similares para el 
+procesamiento de transacciones. La principal diferencia entre ambas plataformas radica en que \textit{Polar}, aunque ofrece una mejor experiencia de 
+desarrollo y una simplicidad de implementación mayor a \textit{Stripe}, está desarrollada 
+fundamentalmente para aplicaciones web, mientras que \textit{Stripe} proporciona un soporte nativo y maduro para aplicaciones móviles 
+con Kit de Desarrollo de Software (\acrshort{sdk}s) específicos para iOS y Android. \textit{Polar} no cuenta con suficiente adopción en el ecosistema de aplicaciones móviles, 
+lo que se traduce en documentación limitada, menos ejemplos de integración y una comunidad de desarrolladores más reducida para 
+este tipo de aplicaciones. Esta orientación hacia aplicaciones web añadiría una complejidad adicional al proyecto, ya que requeriría 
+adaptaciones y soluciones personalizadas para integrar correctamente los pagos en la aplicación móvil desarrollada con Expo, 
+incrementando el tiempo de desarrollo y el riesgo de problemas de compatibilidad. Por estas razones, se descartó \textit{Polar} en 
+favor de \textit{Stripe}, que ofrece una integración más directa y documentada para aplicaciones móviles, reduciendo la complejidad 
+del desarrollo y garantizando una experiencia de usuario más fluida.
+
+\subsection{Capa de Observabilidad}
+
+Una parte crítica en el desarrollo de productos digitales, es tener un claro entendimiento de cómo los usuarios interactúan con el producto.
+Para ello, es esencial que los desarrolladores tengan documentadas métricas de éxito y uso de funcionalidades, con el objetivo de poder tomar decisiones
+informadas basadas en datos reales, teniendo en cuenta qué aspectos de la aplicación están aportando valor al usuario y cuales no.
+
+Para llevar a cabo este análisis de uso de funcionalidades y comprensión del comportamiento de los usuarios, 
+se ha integrado una capa de observabilidad con \textit{PostHog}, una plataforma de análisis de productos de código 
+abierto que proporciona lwa capacidad de hacer un seguimiento de eventos una vez la aplicación está en manos del usuario.
+
+La selección de \textit{PostHog} se fundamenta en su compatibilidad con React Native y Expo, su modelo de código abierto que 
+permite desplegar la plataforma de forma autohospedada si se requiere mayor control sobre los datos, y su enfoque específico en 
+análisis de producto que proporciona métricas relevantes para, como ya hemos comentado, la toma de decisiones basadas en datos. 
+Además, \textit{PostHog} ofrece una capa gratuita que permite comenzar el seguimiento de eventos sin coste inicial, 
+lo que se ajusta al contexto de este proyecto.
+
+El seguimiento de eventos se implementa mediante llamadas a funciones especcíficas, que permiten registrar eventos 
+personalizados con propiedades asociadas. Por ejemplo, cuando un usuario realiza una acción específica en la aplicación, como 
+completar una interacción o visualizar una recomendación, se registra un evento con identificadores únicos y metadatos relevantes. 
+\textit{PostHog} también proporciona funcionalidades adicionales como la identificación de usuarios, que permite asociar eventos a 
+usuarios específicos y realizar análisis de comportamiento individual, y el seguimiento automático de eventos del sistema como 
+inicios de sesión o actualizaciones de la aplicación.
+
+Como alternativas se consideraron \textit{Mixpanel}, que ofrece herramientas avanzadas para el análisis de productos y retención de 
+usuarios con un \acrshort{sdk} robusto para React Native, y \textit{Amplitude}, una plataforma líder en análisis de productos que proporciona 
+capacidades avanzadas de \gls{analisis-cohorte} y \gls{embudos}. Sin embargo, ambas alternativas presentan modelos de precios más restrictivos 
+en sus planes gratuitos comparado con \textit{PostHog}, y requieren una configuración más compleja para su integración con Expo. 
+También se evaluó \textit{Google Analytics}, una solución gratuita y ampliamente utilizada, pero su enfoque está más orientado al 
+análisis de tráfico web que al análisis de producto específico para aplicaciones móviles.
+
+
+
+

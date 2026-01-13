@@ -1,7 +1,16 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional.}}{6}{figure.caption.7}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{26}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{32}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{36}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<auth>>}. Solo se incluye la tabla \textit {auth.users} ya que es la unica tabla de el schema \textit {<<auth>>} que se ha modificado.}}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<public>>}.}}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRINCIPIOS DE PRIVACIDAD Y EFICIENCIA POR DISEÑO
+
+\section{Principios de Privacidad y Eficiencia por Diseño}
+
+El desarrollo de sistemas de software modernos, especialmente aquellos que procesan información personal y 
+utilizan recursos computacionales intensivos como modelos de lenguaje, requieren de la integración de principios 
+fundamentales desde las primeras etapas del diseño. En este apartado se presentan dos marcos conceptuales 
+esenciales: la \textit{Privacidad desde el Diseño}, enmarcada en el contexto normativo español, y 
+la \textit{Eficiencia por Diseño}, fundamentada en las mejores prácticas de arquitectura de software modernas.
+
+\subsection{Principio de Privacidad}
+
+La \textit{Privacidad desde el Diseño} (Privacy by Design, PbD) constituye un enfoque proactivo que integra 
+la protección de datos personales desde las primeras fases de desarrollo de productos, servicios o procesos. 
+Este concepto, desarrollado inicialmente por Ann Cavoukian en la década de los 90 y reconocido internacionalmente 
+en la 32ª Conferencia Internacional de Comisionados de Protección de Datos y Privacidad celebrada en Jerusalén en 2010, 
+ha sido consolidado legalmente en el Reglamento General de Protección de Datos (RGPD) mediante su artículo 25, 
+que establece la obligación de implementar medidas técnicas y organizativas apropiadas para garantizar la 
+protección de datos desde el diseño y por defecto.
+
+La Agencia Española de Protección de Datos (AEPD), en su \textit{Guía de Privacidad desde el Diseño} 
+\cite{aepd2019privacidad}, identifica siete principios fundacionales que deben guiar el desarrollo de 
+sistemas que procesan datos personales:
+
+\begin{enumerate}
+    \item \textit{Proactivo, no reactivo; preventivo, no correctivo}: La privacidad debe anticiparse a los 
+    riesgos antes de que se materialicen, implementando medidas preventivas en lugar de soluciones correctivas 
+    posteriores.
+    
+    \item \textit{La privacidad como configuración predeterminada}: Los sistemas deben proteger 
+    los datos personales por defecto, sin requerir acción adicional del usuario. La configuración más 
+    privada debe ser la opción predeterminada.
+    
+    \item \textit{Privacidad incorporada en la fase de diseño}: Las medidas de protección deben integrarse 
+    desde el inicio del desarrollo, evitando soluciones añadidas posteriormente que puedan ser menos efectivas 
+    o generar fricciones en la experiencia del usuario.
+    
+    \item \textit{Funcionalidad total: pensamiento "todos ganan"}: Los objetivos de privacidad no deben comprometer 
+    la funcionalidad del sistema. El diseño debe equilibrar ambos aspectos, garantizando que la protección de 
+    datos y las funcionalidades esenciales coexistan sin sacrificios mutuos.
+    
+    \item \textit{Aseguramiento de la privacidad en todo el ciclo de vida}: La protección de datos debe 
+    mantenerse durante todas las etapas del ciclo de vida del sistema, desde su concepción hasta su retirada, 
+    incluyendo desarrollo, puesta en producción, operación, mantenimiento y eliminación.
+    
+    \item \textit{Visibilidad y transparencia}: Los usuarios deben tener información clara y accesible sobre las 
+    prácticas de tratamiento de datos, fomentando la confianza mediante la transparencia en los procesos.
+    
+    \item \textit{Respeto por la privacidad de los usuarios: mantener un enfoque centrado en el usuario}: El diseño 
+    debe respetar las preferencias y necesidades de privacidad de los usuarios, otorgándoles control efectivo 
+    sobre sus datos personales y manteniendo un enfoque que priorice sus derechos y expectativas.
+\end{enumerate}
+
+La implementación de estos principios requiere un enfoque de \textit{Privacy Engineering} o ingeniería de 
+la privacidad, que traduce los principios conceptuales en medidas técnicas concretas durante las diversas fases de 
+desarrollo. La guía de la AEPD identifica estrategias de diseño específicas, entre las que 
+destacan: \textit{minimizar} la recopilación de datos a lo estrictamente necesario, \textit{ocultar} 
+información sensible mediante técnicas de ofuscación o desvinculación, \textit{separar} datos para evitar 
+correlaciones indebidas o perfilados del usuario, \textit{abstraer} detalles personales limitando su detalle, \textit{informar} a los usuarios sobre 
+el tratamiento de sus datos, \textit{controlar} el acceso y uso de la información, \textit{cumplir} con 
+qué procedimiento se están llevando a cabo con sus datos, \textit{controlar} en sentido de otorgar control a los usuarios en relación a 
+la recogida, tratamiento, usos y comunicaciones realizados sobre sus datos personales, \textit{cumplir} asegurando que los tratamientos personales son 
+compatibles y respetan los requisitos y obligaciones legales impuestos por la normativa, y por último \textit{demostrar}, según 
+el artículo 24 de la LGPD, el cumplimiento normativo mediante documentación y auditorías, tanto a los usuarios como 
+a las autoridades de supervisión asociadas.
+
+\subsection{Principio de Eficiencia}
+
+La \textit{Eficiencia por Diseño} (Efficiency by Design) constituye un enfoque arquitectónico que integra 
+la optimización de recursos computacionales desde las primeras etapas del desarrollo, garantizando que los sistemas 
+puedan gestionar su carga de trabajo utilizando la menor cantidad de recursos posibles sin comprometer la funcionalidad 
+ni la experiencia de usuario. A diferencia de la optimización reactiva, que se aplica una vez que el sistema ya está 
+en producción, la eficiencia por diseño requiere considerar aspectos de rendimiento, escalabilidad y consumo de recursos 
+desde las fases de análisis y diseño arquitectónico.
+
+En su libro \textit{Clean Architecture}, Robert C. Martin \cite{martin2017clean} aborda esta cuestión desde una perspectiva más fundacional, 
+enfatizando la importancia de promover la eficiencia a largo plazo mediante el diseño de sistemas flexibles y mantenibles, a través de la 
+separación de la lógica de negocio y los detalles técnicos. Esto se consigue con un diseño de capas donde las dependencias siempre 
+apuntan hacia el interior, de modo que los cambios en aspectos técnicos, es decir, en capas más centrales, no impacten en las capas superiores de 
+principios y reglas del sistema. De esta manera, se favorece la creación de sistemas eficientes y sostenibles, capaces de mantener su 
+funcionalidad y adaptabilidad en el tiempo.
+
+En la práctica, las empresas de software modernas implementan el principio de eficiencia por diseño mediante diversas 
+estrategias arquitectónicas. Por ejemplo, la adopción de arquitecturas serverless y funciones como servicio (FaaS) permite 
+a empresas como Netflix optimizar el consumo de recursos computacionales, pagando únicamente por el tiempo de ejecución 
+real en lugar de mantener servidores activos de forma continua. Otras empresas, como Spotify, han implementado 
+arquitecturas de microservicios con auto-escalado horizontal, permitiendo que la infraestructura se adapte dinámicamente 
+a la carga de trabajo sin sobre-provisionamiento de recursos. Asimismo, la implementación de estrategias de caching 
+distribuido y CDN (Content Delivery Networks) en empresas como Amazon Web Services permite reducir la latencia y el 
+consumo de ancho de banda mediante el almacenamiento de contenido frecuentemente accedido en ubicaciones geográficamente 
+cercanas a los usuarios finales.
+
+\subsection{Aplicación en Sistemas con Modelos de Lenguaje}
+
+La aplicación de los principios de privacidad y eficiencia por diseño adquiere particularidades específicas cuando 
+se trata de sistemas que integran modelos de lenguaje (LLMs), debido a la naturaleza sensible de los datos procesados 
+y a los elevados costes computacionales asociados con el procesamiento de lenguaje natural.
+
+En el contexto de aplicaciones que utilizan modelos de lenguaje, la protección de la privacidad presenta desafíos 
+únicos derivados de la necesidad de procesar información personal, a menudo sensible, mediante servicios externos 
+o infraestructura en la nube. Para abordar estos desafíos, se han desarrollado diversas 
+\textit{tecnologías de preservación de la privacidad} (TPP) que permiten procesar datos manteniendo su confidencialidad.
+
+Una de las técnicas más prometedoras en este ámbito es el \textit{cifrado totalmente homomórfico} 
+(Fully Homomorphic Encryption, FHE), un paradigma criptográfico que permite realizar operaciones 
+computacionales sobre datos cifrados sin necesidad de descifrarlos previamente. A diferencia del 
+cifrado tradicional, donde los datos deben descifrarse antes de ser procesados, el cifrado homomórfico 
+permite que un servidor o servicio externo procese información cifrada y devuelva resultados también 
+cifrados, manteniendo la confidencialidad de los datos en todo momento. Este enfoque es especialmente 
+relevante en sistemas que utilizan modelos de lenguaje en entornos como el sanitario \cite{tfg-mgsicilia}, 
+ya que permitiría enviar datos sensibles cifrados sobre pacientes a servicios de procesamiento de lenguaje natural 
+sin que el proveedor del servicio pueda acceder al contenido real de la información.
+
+Sin embargo, el cifrado totalmente homomórfico presenta limitaciones prácticas significativas en términos 
+de rendimiento y eficiencia computacional ya que este tipo de operaciones requieren de modelos pre-entrenados con datos homomórficamente cifrados. 
+Por esta razón, su aplicación en sistemas desplegados sigue siendo un área de investigación activa, 
+aunque existen implementaciones experimentales que demuestran su viabilidad para casos de uso específicos.
+
+Además del cifrado homomórfico, otras estrategias de preservación de la privacidad en sistemas con modelos de 
+lenguaje incluyen la \textit{minimización de datos}, enviando únicamente la información estrictamente necesaria 
+para el procesamiento, la \textit{ofuscación} de información sensible mediante técnicas de anonimización o 
+pseudonimización, y el \textit{procesamiento local} cuando es posible, utilizando modelos de lenguaje más 
+pequeños ejecutados directamente en el dispositivo del usuario para evitar la transmisión de datos a servicios externos.
+
+En el caso de la eficiencia en este tipo de sistemas, una estrategia arquitectónica fundamental es la adopción de 
+\textit{arquitecturas serverless} y \textit{Funciones como Servicio} (FaaS), que permiten ejecutar procesamiento 
+de modelos de lenguaje de manera escalable y bajo demanda. Los servicios serverless eliminan la necesidad de 
+mantener servidores activos de forma continua, permitiendo que la infraestructura se active únicamente cuando 
+se requiere procesamiento, reduciendo significativamente los costes operativos. Plataformas como AWS Lambda, 
+Google Cloud Functions o Azure Functions permiten ejecutar funciones que invocan modelos de lenguaje, pagando 
+únicamente por el tiempo de ejecución real y los recursos computacionales consumidos durante cada invocación.
+
+Además de la arquitectura serverless, la \textit{elección del modelo de lenguaje adecuado} constituye un factor 
+crítico para optimizar la eficiencia en sistemas que procesan lenguaje natural. La selección del modelo debe 
+equilibrar tres dimensiones fundamentales: la \textit{eficiencia computacional}, el \textit{coste económico} 
+y el \textit{tiempo de respuesta}. Modelos de lenguaje más grandes y complejos, como GPT-5 Codex de OpenAI o Claude 4.5 Sonnet de Anthropic, 
+ofrecen capacidades superiores de comprensión y generación de lenguaje, pero conllevan un mayor coste computacional. 
+Por el contrario, modelos más pequeños y optimizados, como Gemma 3n E4B de Google o Ministral 3B de Mistral, aunque suponen un coste computacional 
+menor, no ofrecen las mismas capacidades que los primeros.
+
+[insertar tabla de costes de de los modelos mencionados en coste por nº de tokens de input]
+
+La optimización de la eficiencia en sistemas con modelos de lenguaje requiere, por tanto, un análisis cuidadoso 
+de los requisitos funcionales y no funcionales de la aplicación, seleccionando el modelo que mejor equilibre 
+la calidad de las respuestas, el tiempo de respuesta y un coste económico sostenible. 
+
+\subsection{Aplicación en PANOT}
+
+El caso del servicio que se ha desarrollado en este proyecto, se ha planteado un enfoque que respeta y aplica los 
+principios de privacidad y eficiencia desde el diseño del sistema.
+
+El principio de privacidad en un sistema como PANOT,
+adquiere una relevancia especial ya que se manejan datos sobre relaciones interpersonales, preferencias, 
+contextos situacionales y evolución temporal de los contactos del usuario. Sin embargo, la aplicación de la privacidad desde 
+el diseño en PANOT presenta particularidades específicas derivadas de su naturaleza como herramienta personal de 
+gestión de contactos.
+
+PANOT está diseñado como una aplicación personal donde el usuario gestiona y evoluciona el perfil de sus propios contactos. 
+En este contexto, la privacidad no requiere ocultar información al usuario propietario y governador del dato, sino protegerlos 
+frente a accesos no autorizados y cumplir con las restricciones legales sobre datos especialmente sensibles dentro de lo que es posible. 
+
+A nivel de infraestructura, se ha utilizado \textit{Supabase} como plataforma de backend como ya se explicará en puntos posteriores. 
+\textit{Supabase} tiene la particularidad de autogestionar estas medidas de seguridad a través de dos mecanismos: 
+Por un lado, todos los datos se encriptan en reposo mediante \gls{aes-256} y en tránsito mediante el protocolo \gls{transport-layer-security}, 
+garantizando la protección de la información en todas las etapas del ciclo de vida. Y por otro lado, \textit{Supabase} proporciona 
+\gls{row-level-security} y \gls{column-level-security}, permitiendo un control granular del acceso a los datos a nivel de 
+fila y columna, lo que asegura que cada usuario solo pueda acceder a sus propios datos y a nada más. \textit{Supabase} además cumple 
+con estándares de seguridad como \gls{soc-2-type-2}, proporcionando una base de cumplimiento normativo adicional. 
+
+La aplicación de los principios de eficiencia por diseño en PANOT se ha materializado mediante la adopción de una 
+metodología de desarrollo inspirada en el enfoque \textit{Lean Startup} propuesto por Eric Ries \cite{ries2011lean}. 
+Este marco metodológico, fundamentado en el ciclo iterativo \gls{construir-medir-aprender}, establece que el 
+desarrollo de productos debe priorizar la entrega de valor con el menor coste posible, en el menor tiempo posible, 
+manteniendo la máxima calidad en las funcionalidades principales —aunque esta filosofía, que guiará todo el desarrollo, 
+se explicará más en detalle en los capítulos siguientes—.
+
+En este contexto, durante el diseño arquitectónico de PANOT, se han orientando las decisiones técnicas hacia la construcción 
+de una infraestructura escalable y eficiente desde sus fundamentos. Este enfoque ha permitido priorizar la funcionalidad 
+esencial del sistema —la gestión inteligente de relaciones interpersonales mediante modelos de lenguaje— mientras se 
+optimiza el consumo de recursos computacionales y económicos asociados con el alojamiento de la infraestructura y 
+el uso de servicios externos.
+
+
