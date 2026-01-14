@@ -247,10 +247,12 @@ mediante relaciones semánticamente tipadas (afiliación, preferencia, espacial,
     el grafo del usuario filtrando por categoría (Hobby, Empresa, Interés, 
     etc.) o por coincidencia parcial en la etiqueta. Útil para explorar 
     el grafo o verificar la existencia de conceptos antes de añadirlos.
-    
-
 \end{itemize}
 }
+
+En cuanto a la elección de herramientas, se han implementado funciones basadas en procesamiento por lotes (\textit{batch processing}). 
+Este enfoque permite que los agentes procesen múltiples elementos de manera eficiente en una sola operación. Como resultado, se reduce la 
+latencia y se optimizan los costes operativos del sistema. 
 
 \subsubsection{Matching Semántico}
 
@@ -262,7 +264,7 @@ su categoría y el tipo de relación (usando el modelo \textit{text-embedding-3-
 Este vector se almacena en PostgreSQL y se compara con los nodos existentes mediante \textit{pgvector}, 
 calculando la \textit{similitud coseno} $s$ entre el embedding entrante y los ya almacenados. El 
 comportamiento del matching se define formalmente mediante la función: 
-\newpage
+
 
 {\small
 \[
@@ -295,25 +297,19 @@ o cuando sus nodos están enlazados mediante una arista \texttt{RELACIONADO\_CON
 (escenario 2, $d(C_1, C_2) = 3$), priorizando las conexiones de menor distancia 
 como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino más corto entre los contactos en el grafo.
 
+\newpage
 \subsection{Modelado de Datos}
 \label{sec:modelado-datos}
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=1\textwidth]{figures/db-modeled-auth.png}
-    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<auth>>}. Solo se incluye la tabla \textit{auth.users} ya 
-    que es la unica tabla de el schema \textit{<<auth>>} que se ha modificado.}
-    \label{fig:diagrama-modelado-datos-auth}
-\end{figure}
-
-
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/db-modeled-public.png}
-    \caption{Diagrama del modelo de datos de PANOT del schema de Supabase \textit{<<public>>}. \textbf{Nota:} Se ha obviado del diagrama 
-    que las claves foráneas \texttt{user\_id} o \texttt{owner\_id} de las tablas provienen del \texttt{id} de la tabla \texttt{users} del schema \textit{<<auth>>}. A modo de ejemplo, 
-    solo se ha añadido en la tabla \texttt{profiles} para mantener el diagrama más legible.}
-    \label{fig:diagrama-modelado-datos-public}
+    \includegraphics[width=.9\textwidth]{figures/db-modeled.png}
+    \caption{Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit{<<public>>} y \textit{<<auth>>}. 
+    En el diagrama del schema \textit{<<auth>>} solo se ha incluido la tabla \textit{auth.users} ya que es la unica tabla de el 
+    schema que se ha modificado. Y en el diagrama del schema \textit{<<public>>} se ha obviado del diagrama que las claves 
+    foráneas \texttt{user\_id} o \texttt{owner\_id} de las tablas provienen del \texttt{id} de la tabla \texttt{users} del 
+    schema \textit{<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt{profiles} para mantener el diagrama más legible.}
+    \label{fig:diagrama-modelado-datos}
 \end{figure}
 
 \newpage

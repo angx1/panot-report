@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  13 JAN 2026 14:31
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  14 JAN 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -755,10 +755,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip89
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 397.
-Package hyperref Info: Option `plainpages' set `false' on input line 397.
-Package hyperref Info: Option `unicode' set `true' on input line 397.
-Package hyperref Info: Option `colorlinks' set `true' on input line 397.
+Package hyperref Info: Option `breaklinks' set `true' on input line 402.
+Package hyperref Info: Option `plainpages' set `false' on input line 402.
+Package hyperref Info: Option `unicode' set `true' on input line 402.
+Package hyperref Info: Option `colorlinks' set `true' on input line 402.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count351
 \lst@gtempboxa=\box66
@@ -1249,11 +1249,11 @@ File: glossaries-extra-abbrstyles.def 2025/03/04 v1.57 (NLCT)
 \glo@main@file=\write5
 \openout5 = `report.glo'.
 
-Package glossaries Info: Writing glossary file report.glo on input line 710.
+Package glossaries Info: Writing glossary file report.glo on input line 715.
 \glo@acronym@file=\write6
 \openout6 = `report.acn'.
 
-Package glossaries Info: Writing glossary file report.acn on input line 710.
+Package glossaries Info: Writing glossary file report.acn on input line 715.
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
@@ -1579,21 +1579,14 @@ o Kanban implementado en GitHub
  []
 
 
-Overfull \hbox (1.9272pt too wide) in paragraph at lines 10--10
- [][] [][][]\TU/SourceSerif4(0)/m/n/12 Diagrama del modelo de datos de PANOT de
-l schema de Supabase \TU/SourceSerif4(0)/m/it/12 «auth»\TU/SourceSerif4(0)/m/n/
-12 . 
- []
 
-)
+[3
+
+])
 \tf@lof=\write9
 \openout9 = `report.lof'.
 
 
-
-[3
-
-]
 
 LaTeX Info: Redefining \. on input line 267.
 LaTeX Info: Redefining \% on input line 267.
@@ -1843,23 +1836,21 @@ LaTeX Info: Redefining \. on input line 233.
 LaTeX Info: Redefining \% on input line 233.
 [37]
 
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
+LaTeX Info: Redefining \. on input line 280.
+LaTeX Info: Redefining \% on input line 280.
 [38]
-File: figures/db-modeled-auth.png Graphic file (type bmp)
-<figures/db-modeled-auth.png>
-File: figures/db-modeled-public.png Graphic file (type bmp)
-<figures/db-modeled-public.png>
 
-
-LaTeX Info: Redefining \. on input line 317.
-LaTeX Info: Redefining \% on input line 317.
+LaTeX Info: Redefining \. on input line 300.
+LaTeX Info: Redefining \% on input line 300.
 [39]
+File: figures/db-modeled.png Graphic file (type bmp)
+<figures/db-modeled.png>
 
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
+
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
 [40]
-Overfull \hbox (4.942pt too wide) in paragraph at lines 337--343
+Overfull \hbox (4.942pt too wide) in paragraph at lines 335--341
 []\TU/Menlo(0)/m/n/10.95 interactions\TU/SourceSerif4(0)/m/n/10.95 : Transcripc
 iones de voz grabadas por el usuario. El campo \TU/Menlo(0)/m/n/10.95 raw_conte
 nt
@@ -1867,38 +1858,49 @@ nt
 
 
 
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
+LaTeX Info: Redefining \. on input line 353.
+LaTeX Info: Redefining \% on input line 353.
 [41]
 File: figures/graph-on-sql-showcase.png Graphic file (type bmp)
 <figures/graph-on-sql-showcase.png>
 
 
-LaTeX Info: Redefining \. on input line 394.
-LaTeX Info: Redefining \% on input line 394.
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
 [42]
 
-LaTeX Info: Redefining \. on input line 443.
-LaTeX Info: Redefining \% on input line 443.
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
 [43]
 File: figures/processing-system-activity-diagram.png Graphic file (type bmp)
 <figures/processing-system-activity-diagram.png>
 File: figures/process-transcript-sequence-diagram.png Graphic file (type bmp)
 <figures/process-transcript-sequence-diagram.png>
-) (./chapter3-desarrollo/4-fases-implementacion.tex)
-(./chapter3-desarrollo/5-despliegue-lanzamiento.tex
+) (./chapter3-desarrollo/4-fases-implementacion.tex
 
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
-[44])) (./chapter4-resultados/chapter4-resultados.tex
+[44]
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[45]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[46
+
+])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[45]
+[47
+
+]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[46
+[48
 
 ]
 Capítulo 5.
@@ -1906,26 +1908,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[47
+[49
 
 ]
 
-[48
+[50
 
 
 ] (./report.gls
 
-[49
+[51
 
 ]
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[50]) (./report.acr)
+[52]) (./report.acr)
 
 LaTeX Info: Redefining \. on input line 278.
 LaTeX Info: Redefining \% on input line 278.
-[51]
+[53]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -1936,7 +1938,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[52
+[54
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1948,18 +1950,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: F7A09F1C2F6B6E7E39B4AE846C302851;4618.
+(rerunfilecheck)             Checksum: C853AC7E6DE4E9AC85853119716CAFD9;4613.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43690 strings out of 473832
- 860166 string characters out of 5729480
- 1992375 words of memory out of 5000000
- 66086 multiletter control sequences out of 15000+600000
+ 43681 strings out of 473832
+ 859794 string characters out of 5729480
+ 1992612 words of memory out of 5000000
+ 66078 multiletter control sequences out of 15000+600000
  567593 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (63 pages).
+Output written on report.pdf (65 pages).

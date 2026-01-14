@@ -7,11 +7,10 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{32}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{36}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<auth>>}. Solo se incluye la tabla \textit {auth.users} ya que es la unica tabla de el schema \textit {<<auth>>} que se ha modificado.}}{39}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<public>>}.}}{40}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible.}}{40}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
