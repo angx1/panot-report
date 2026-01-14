@@ -143,39 +143,38 @@
 \@writefile{toc}{\contentsline {paragraph}{Agente de Contactos - \texttt  {manageContact}}{37}{paragraph*.23}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Agente de Grafo Contextual - \texttt  {manageContextGraph}}{37}{paragraph*.24}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Matching Semántico}{38}{subsubsection*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Modelado de Datos}{39}{subsection.3.3.3}\protected@file@percent }
-\newlabel{sec:modelado-datos}{{3.3.3}{39}{Modelado de Datos}{subsection.3.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit  {<<auth>>}. Solo se incluye la tabla \textit  {auth.users} ya que es la unica tabla de el schema \textit  {<<auth>>} que se ha modificado.}}{39}{figure.caption.26}\protected@file@percent }
-\newlabel{fig:diagrama-modelado-datos-auth}{{3.5}{39}{Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<auth>>}. Solo se incluye la tabla \textit {auth.users} ya que es la unica tabla de el schema \textit {<<auth>>} que se ha modificado}{figure.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del modelo de datos de PANOT del schema de Supabase \textit  {<<public>>}.}}{40}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:diagrama-modelado-datos-public}{{3.6}{40}{Diagrama del modelo de datos de PANOT del schema de Supabase \textit {<<public>>}}{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Entidades Principales}{40}{subsubsection*.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Grafo Semántico}{42}{subsubsection*.29}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:graph-on-sql-showcase}{{3.7}{42}{Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON}{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Sistema de Procesamiento}{43}{subsubsection*.31}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:processing-system-activity-diagram}{{3.8}{44}{Diagrama de actividad del sistema de procesamiento de PANOT}{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:process-transcript-sequence-diagram}{{3.9}{45}{Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}{figure.caption.33}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Fases de la Implementación Iterativa}{45}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento}{45}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Verificación y Resultados}{46}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Modelado de Datos}{40}{subsection.3.3.3}\protected@file@percent }
+\newlabel{sec:modelado-datos}{{3.3.3}{40}{Modelado de Datos}{subsection.3.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit  {<<public>>} y \textit  {<<auth>>}. En el diagrama del schema \textit  {<<auth>>} solo se ha incluido la tabla \textit  {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit  {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt  {user\_id} o \texttt  {owner\_id} de las tablas provienen del \texttt  {id} de la tabla \texttt  {users} del schema \textit  {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt  {profiles} para mantener el diagrama más legible.}}{40}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:diagrama-modelado-datos}{{3.5}{40}{Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible}{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Entidades Principales}{41}{subsubsection*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Grafo Semántico}{42}{subsubsection*.28}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:graph-on-sql-showcase}{{3.6}{42}{Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON}{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Sistema de Procesamiento}{43}{subsubsection*.30}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:processing-system-activity-diagram}{{3.7}{44}{Diagrama de actividad del sistema de procesamiento de PANOT}{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:process-transcript-sequence-diagram}{{3.8}{45}{Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Implementación del Sistema}{46}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Configuración Inicial}{46}{subsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{47}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Verificación y Resultados}{48}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:resultados-y-evaluacion}{{4}{46}{Verificación y Resultados}{chapter.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{47}{chapter.5}\protected@file@percent }
+\newlabel{ch:resultados-y-evaluacion}{{4}{48}{Verificación y Resultados}{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{49}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:conclusiones-y-trabajo-futuro}{{5}{47}{Conclusiones y Trabajo Futuro}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Conclusiones Generales}{47}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{47}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{47}{section.5.3}\protected@file@percent }
+\newlabel{ch:conclusiones-y-trabajo-futuro}{{5}{49}{Conclusiones y Trabajo Futuro}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Conclusiones Generales}{49}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{49}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{49}{section.5.3}\protected@file@percent }
 \ttl@finishall
-\@writefile{toc}{\contentsline {section}{Glosario}{49}{section*.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{Siglas}{51}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Glosario}{51}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Siglas}{53}{section*.36}\protected@file@percent }
 \providecommand\totalcount@set[2]{}
-\totalcount@set{figure}{10}
+\totalcount@set{figure}{9}
 \totalcount@set{table}{7}
 \totalcount@set{lstlisting}{0}
 \totalcount@set{equation}{0}
@@ -186,4 +185,4 @@
 \abx@aux@defaultrefcontext{0}{tfg-mgsicilia}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{ries2011lean}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{2012leanthinking}{none/global//global/global/global}
-\gdef \@abspage@last{63}
+\gdef \@abspage@last{65}
