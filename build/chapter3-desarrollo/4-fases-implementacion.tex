@@ -1,6 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FASES DE LA IMPLEMENTACIÓN
-
 \clearpage
 \section{Implementación del Sistema}
 
@@ -12,10 +9,63 @@ capacidades del sistema.
 
 Es esencial señalar que en este proyecto, el despliegue no es una fase posterior de la implementación, sino su culminación. La publicación 
 de la aplicación \textit{"Semilla"} en una plataforma de distribución es el evento de cierre del proceso de construcción (Fase \textit{Construir}) y da comienzo 
-a la fase de medición (Fase \textit{Medir}). Por ello, la implementación incluirá tareas como la instrumentación de métricas ya que, sin ellas, 
+a la fase de medición (Fase \textit{Medir}). Por ello, la implementación incluirá tareas como la instrumentación de herramientas de medición ya que, sin ellas, 
 el \acrshort{mvp} no podría cumplir su propósito de validación de la hipótesis de valor.
 
-\subsection{Configuración Inicial}
+\subsection{Organización \texttt{panot-hq}}
+
+Para facilitar la gestión y organización del código del proyecto, se ha creado la organización \texttt{panot-hq} en \textit{GitHub}. 
+Esta organización centraliza todos los repositorios de desarrollo de PANOT, permitiendo una estructura clara y escalable del proyecto. Además, como ya se explicó en 
+la sección \ref{sec:metodologia-flujo-desarrollo}, se ha configurado un proyecto dentro de la organización para agrupar las unidades de trabajo y el progreso de las mismas.
+Esta estructura se ha establecido para, además de los beneficios obvios de trazabilidad y seguimiento, permitir la incorporación 
+de nuevos colaboradores en el futuro. Los repositorios levantados de la organización son los siguientes:
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/panot-hq-repos.png}
+    \caption{Repositorios de la organización \texttt{panot-hq}}
+    \label{fig:panot-hq-repos}
+\end{figure}
+
+{\small
+\begin{itemize}
+    \item \texttt{panot-hq/mobile}: Código de la aplicación móvil.
+    \item \texttt{panot-hq/landing}: Código de [incluir en el glosario def de landing] landing de PANOT.
+    \item \texttt{panot-hq/edge-backend}: Código de las Edge Functions que se despliegan en Supabase.
+    \item \texttt{panot-hq/graph-visualizer}: Código del entorno de pruebas para la visualización de grafos de conocimiento.
+    \item \texttt{panot-hq/panot-speech}: Código del paquete \textit{npm} del módulo nativo iOS para transcripción en tiempo real para dispositivos iOS.
+\end{itemize}
+}
+
+\subsection{Ejes de Desarrollo}
+
+Se define eje de desarrollo como la línea de trabajo dedicada al desarrollo de una capacidad del sistema, incluyendo su integración con el 
+resto de los componentes con los que interactúe. En el caso de PANOT, se han llevado a cabo los siguientes ejes de desarrollo:
+
+
+\begin{table}[ht!]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{Eje}                                                   & \textit{Propósito}                                                             & \textit{Repositorios Involucrados} \\ \hline
+(1) Aplicación Móbil                                           & Desarrollo de la UI y componentes de la aplicación de PANOT                    & \texttt{panot-hq/mobile} \newline \texttt{panot-hq/panot-speech}                                  \\ \hline
+(2) Base de Datos                                              & Desarrollo y despliegue de infraestructura de datos       & \texttt{panot-hq/mobile}                                  \\ \hline
+(3) Sistema Multi-Agente                                       & Desarrollo de sistema de procesamiento de información                 & \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/graph-visualizer} \newline \texttt{panot-hq/mobile}                                 \\ \hline
+(4) Sistema de Cola de Trabajos                                & Desarrollo de sistema de gestión de trabajadores                               & \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/mobile}                                  \\ \hline
+(5) Landing de PANOT                                           & Desarrollo de página web                                              & \texttt{panot-hq/landing}                                  \\ \hline
+\end{tabularx}
+\caption{Ejes de desarrollo de PANOT}
+\label{tab:ejes-trabajo}
+\end{table}
+
+
+\subsection{Línea de Tiempo}
+
+
+
+
 
 
 

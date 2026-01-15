@@ -11,6 +11,7 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{46}{figure.caption.33}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
