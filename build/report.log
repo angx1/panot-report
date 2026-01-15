@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  14 JAN 2026 17:53
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  15 JAN 2026 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1722,14 +1722,14 @@ File: figures/gitflow-diagram.png Graphic file (type bmp)
 <figures/gitflow-diagram.png>
 
 
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 [25]
 Missing character: There is no º ("BA) in font cmmi12!
 
 
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
 [26]
 File: figures/tablero-kanban.png Graphic file (type bmp)
 <figures/tablero-kanban.png>
@@ -1878,29 +1878,36 @@ File: figures/process-transcript-sequence-diagram.png Graphic file (type bmp)
 <figures/process-transcript-sequence-diagram.png>
 ) (./chapter3-desarrollo/4-fases-implementacion.tex
 
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
 [44]
-
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-[45]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
-
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
-[46
-
-])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[47
+[45]
+File: figures/panot-hq-repos.png Graphic file (type bmp)
+<figures/panot-hq-repos.png>
+
+
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+[46
+
+]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[47])) (./chapter4-resultados/chapter4-resultados.tex
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[48
 
 ]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[48
+[49
 
 ]
 Capítulo 5.
@@ -1908,26 +1915,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[49
+[50
 
 ]
 
-[50
+[51
 
 
 ] (./report.gls
 
-[51
+[52
 
 ]
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[52]) (./report.acr)
+[53]) (./report.acr)
 
 LaTeX Info: Redefining \. on input line 278.
 LaTeX Info: Redefining \% on input line 278.
-[53]
+[54]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -1938,7 +1945,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[54
+[55
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -1950,18 +1957,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: C853AC7E6DE4E9AC85853119716CAFD9;4613.
+(rerunfilecheck)             Checksum: 16E656C942367ADBB22C2BE5ACB12C72;4613.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43681 strings out of 473832
- 859794 string characters out of 5729480
- 1992612 words of memory out of 5000000
- 66078 multiletter control sequences out of 15000+600000
- 567593 words of font info for 132 fonts, out of 8000000 for 9000
+ 43696 strings out of 473832
+ 860208 string characters out of 5729480
+ 1992818 words of memory out of 5000000
+ 66091 multiletter control sequences out of 15000+600000
+ 567601 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (65 pages).
+Output written on report.pdf (66 pages).
