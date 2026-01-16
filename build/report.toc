@@ -48,13 +48,31 @@
 \contentsline {section}{\numberline {3.4}Implementación del Sistema}{46}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Organización \texttt {panot-hq}}{46}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Ejes de Desarrollo}{47}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Línea de Tiempo}{47}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{48}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Verificación y Resultados}{49}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{50}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Generales}{50}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{50}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{50}{section.5.3}%
+\contentsline {subsection}{\numberline {3.4.3}Evolución Cronológica y Concurrente}{48}{subsection.3.4.3}%
+\contentsline {subsubsection}{Octubre 2025}{48}{subsubsection*.35}%
+\contentsline {paragraph}{Gestión de Usuario (\hyperref [req:FR-01]{FR-01})}{49}{paragraph*.37}%
+\contentsline {paragraph}{Gestión de Contactos (\hyperref [req:FR-04]{FR-04}, \hyperref [req:FR-08]{FR-08})}{49}{paragraph*.38}%
+\contentsline {paragraph}{Gestión de Interacciones (\hyperref [req:FR-10]{FR-10}, \hyperref [req:FR-11]{FR-11}, \hyperref [req:FR-12]{FR-12})}{49}{paragraph*.39}%
+\contentsline {paragraph}{Instrumentación Base}{49}{paragraph*.40}%
+\contentsline {subsubsection}{Noviembre 2025}{50}{subsubsection*.42}%
+\contentsline {paragraph}{Completar Gestión de Contactos (\hyperref [req:FR-05]{FR-05}, \hyperref [req:FR-07]{FR-07}, \hyperref [req:FR-09]{FR-09})}{50}{paragraph*.44}%
+\contentsline {paragraph}{Captura de Voz para Contactos (\hyperref [req:FR-06]{FR-06})}{50}{paragraph*.45}%
+\contentsline {paragraph}{Configuraciones de la Aplicación (\hyperref [req:FR-16]{FR-16}, \hyperref [req:FR-17]{FR-17})}{51}{paragraph*.46}%
+\contentsline {paragraph}{Finalización de Autenticación (\hyperref [req:FR-01]{FR-01})}{51}{paragraph*.47}%
+\contentsline {paragraph}{Inteligencia Relacional Básica (\hyperref [req:FR-14]{FR-14})}{51}{paragraph*.48}%
+\contentsline {subsubsection}{Diciembre 2025}{52}{subsubsection*.50}%
+\contentsline {paragraph}{Gestión de Pagos y Suscripciones}{52}{paragraph*.52}%
+\contentsline {paragraph}{Sistema Multi-Agente (\hyperref [req:FR-14]{FR-14})}{52}{paragraph*.53}%
+\contentsline {paragraph}{Sistema de Cola de Procesos (\hyperref [req:FR-14]{FR-14})}{53}{paragraph*.55}%
+\contentsline {paragraph}{Capa de Observabilidad (\hyperref [req:RNF-MANT-008]{RNF-MANT-008})}{53}{paragraph*.56}%
+\contentsline {paragraph}{Sistema de Soporte (\hyperref [req:FR-16]{FR-16})}{54}{paragraph*.57}%
+\contentsline {subsubsection}{Enero 2026}{54}{subsubsection*.59}%
+\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{57}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Verificación y Resultados}{58}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{59}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{52}{section*.37}%
-\contentsline {section}{Siglas}{54}{section*.38}%
+\contentsline {section}{Glosario}{61}{section*.66}%
+\contentsline {section}{Siglas}{63}{section*.67}%

@@ -23,7 +23,7 @@ de nuevos colaboradores en el futuro. Los repositorios levantados de la organiza
 \vspace{.5cm}
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/panot-hq-repos.png}
+    \includegraphics[width=0.9\textwidth]{figures/panot-hq-repos.png}
     \caption{Repositorios de la organización \texttt{panot-hq}}
     \label{fig:panot-hq-repos}
 \end{figure}
@@ -45,26 +45,248 @@ resto de los componentes con los que interactúe. En el caso de PANOT, se han ll
 
 
 \begin{table}[ht!]
-\scriptsize
+\footnotesize
 \begin{tabularx}{\textwidth}{|l|X|X|}
 \hline
 \rowcolor[HTML]{EFEFEF} 
-\textit{Eje}                                                   & \textit{Propósito}                                                             & \textit{Repositorios Involucrados} \\ \hline
-(1) Aplicación Móbil                                           & Desarrollo de la UI y componentes de la aplicación de PANOT                    & \texttt{panot-hq/mobile} \newline \texttt{panot-hq/panot-speech}                                  \\ \hline
-(2) Base de Datos                                              & Desarrollo y despliegue de infraestructura de datos       & \texttt{panot-hq/mobile}                                  \\ \hline
-(3) Sistema Multi-Agente                                       & Desarrollo de sistema de procesamiento de información                 & \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/graph-visualizer} \newline \texttt{panot-hq/mobile}                                 \\ \hline
-(4) Sistema de Cola de Trabajos                                & Desarrollo de sistema de gestión de trabajadores                               & \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/mobile}                                  \\ \hline
-(5) Landing de PANOT                                           & Desarrollo de página web                                              & \texttt{panot-hq/landing}                                  \\ \hline
+\textit{Eje} & \textit{Repositorios Involucrados} & \textit{Tecnologías Utilizadas} \\ \hline
+(1) Aplicación Móvil & {\scriptsize \texttt{panot-hq/mobile} \newline \texttt{panot-hq/panot-speech}} & Expo, SwiftUI, TypeScript, PostHog, Stripe \\ \hline
+(2) Base de Datos & {\scriptsize \texttt{panot-hq/mobile}} & Supabase, PostgreSQL, TypeScript \\ \hline
+(3) Sistema Multi-Agente & {\scriptsize \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/graph-visualizer} \newline \texttt{panot-hq/mobile}} & Supabase, Deno, TypeScript, LangChain, LangSmith \\ \hline
+(4) Sistema de Cola de Trabajos & {\scriptsize \texttt{panot-hq/edge-backend} \newline \texttt{panot-hq/mobile}} & Supabase, Deno, TypeScript \\ \hline
+(5) Landing de PANOT & {\scriptsize \texttt{panot-hq/landing}} & Next.js, TypeScript \\ \hline
 \end{tabularx}
 \caption{Ejes de desarrollo de PANOT}
 \label{tab:ejes-trabajo}
 \end{table}
 
+{\small
+\begin{enumerate}
+    \item[(1)] \textbf{Aplicación Móvil}: Desarrollo de la UI y componentes de la aplicación de PANOT.
+    \item[(2)] \textbf{Base de Datos}: Desarrollo y despliegue de la infraestructura de datos.
+    \item[(3)] \textbf{Sistema Multi-Agente}: Desarrollo de sistema de procesamiento de información.
+    \item[(4)] \textbf{Sistema de Cola de Trabajos}: Desarrollo de sistema de gestión de trabajadores.
+    \item[(5)] \textbf{Landing de PANOT}: Desarrollo de la página web.
+\end{enumerate}
+}
 
-\subsection{Línea de Tiempo}
+
+\subsection{Evolución Cronológica y Concurrente}
+
+A continuación, se detalla la línea de tiempo del desarrollo, organizada por hitos mensuales.
 
 
+\subsubsection{Octubre 2025}
 
+El primer mes de desarrollo se centró en establecer la identidad del usuario y la capacidad de gestión de contactos e interacciones local. El objetivo 
+fue alcanzar una aplicación funcional en modo \textit{offline} que permitiera la captura de datos manual y por voz. Durante este mes se trabajó principalmente 
+en los ejes de desarrollo (1) \textit{Aplicación Móvil} y (2) \textit{Base de Datos}, estableciendo la infraestructura de datos en Supabase y desarrollando 
+las interfaces de usuario en {\footnotesize \texttt{panot-hq/mobile}}.
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/closed-issues-octubre.png}
+    \caption{Issues cerradas en octubre de 2025}
+    \label{fig:closed-issues-octubre}
+\end{figure}
+
+{\small
+
+\paragraph{Gestión de Usuario (\hyperref[req:FR-01]{FR-01})} Se crearon las tablas necesarias en Supabase para la gestión de usuarios y 
+se desarrolló en {\footnotesize \texttt{panot-hq/mobile}} la interfaz para conectarse con Supabase. Además, se implementó el flujo de autenticación 
+mediante Email \acrshort{otp} y Apple ID (Issue \#22). Esto permitió que el resto del desarrollo contara con un contexto de seguridad 
+basado en el ID de usuario.
+
+\paragraph{Gestión de Contactos (\hyperref[req:FR-04]{FR-04}, \hyperref[req:FR-08]{FR-08})} Se crearon las tablas necesarias en Supabase 
+para la gestión de contactos y se desarrolló en {\footnotesize \texttt{panot-hq/mobile}} la interfaz para conectarse con Supabase. Se completó el núcleo 
+del \acrshort{crud} manual de contactos (Issues \#6, \#7, \#8). Por último, se integró la capa de persistencia local (\hyperref[req:RNF-DISP-004]{RNF-DISP-004}) 
+utilizando \textit{Legend-State} y \textit{AsyncStorage} (Issue \#33).
+
+\paragraph{Gestión de Interacciones (\hyperref[req:FR-10]{FR-10}, \hyperref[req:FR-11]{FR-11}, \hyperref[req:FR-12]{FR-12})} Se crearon las tablas necesarias 
+en Supabase para la gestión de interacciones además de la interfaz de interacción en {\footnotesize \texttt{panot-hq/mobile}} y se desarrolló el paquete nativo {\footnotesize \texttt{panot-speech}} para habilitar la grabación de voz y 
+la transcripción inmediata (Issues \#12, \#26) y se integró en la aplicación móvil.
+
+\paragraph{Instrumentación Base} Se implementó la lógica de permisos contextuales (\textit{micrófono y contactos}) necesaria 
+para el cumplimiento normativo y funcional de Apple (Issue \#25).
+}
+
+\vspace{.7cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/git-commit-tree-octubre.png}
+    \caption{Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt{panot-hq/mobile}}
+    \label{fig:git-commit-tree-octubre}
+\end{figure}
+
+\subsubsection{Noviembre 2025}
+
+Noviembre se centró en completar las funcionalidades restantes de gestión de contactos además de implementar las capacidades de 
+inteligencia relacional básicas. El objetivo fue alcanzar un sistema funcional que permitiera la actualización automática de los detalles  
+de los contactos mediante el procesamiento de interacciones. Durante este mes se continuó trabajando en el eje (1) \textit{Aplicación Móvil} 
+y se inició el desarrollo del eje (3) \textit{Sistema Multi-Agente} con la implementación de la lógica básica de actualización automática 
+del contexto de contactos.
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/closed-issues-noviembre.png}
+    \caption{Issues cerradas en noviembre de 2025}
+    \label{fig:closed-issues-noviembre}
+\end{figure}
+
+{\small
+
+\paragraph{Completar Gestión de Contactos (\hyperref[req:FR-05]{FR-05}, \hyperref[req:FR-07]{FR-07}, \hyperref[req:FR-09]{FR-09})} Se cerró 
+el trabajo en las operaciones clave del \acrshort{crud} de contactos que quedaban pendientes. Se implementó 
+la funcionalidad para importar contactos desde la agenda nativa del dispositivo (Issue \#10), la búsqueda de contactos con filtrado por nombre 
+y palabras clave (Issue \#11), y la eliminación permanente de contactos (Issue \#9). Esto completó la experiencia básica de gestión de contactos.
+
+\paragraph{Captura de Voz para Contactos (\hyperref[req:FR-06]{FR-06})} Se integró la captura de voz para crear contactos mediante 
+dictado en lenguaje natural. Se desarrollaron mejoras en la visualización de audio y se implementó el flujo completo de creación de 
+contactos "hablando sobre ellos" (Issue \#37, PRs \#38, \#40).
+
+\paragraph{Configuraciones de la Aplicación (\hyperref[req:FR-16]{FR-16}, \hyperref[req:FR-17]{FR-17})} Se añadió la pantalla de 
+ajustes de la aplicación con configuraciones como el idioma de voz y otras preferencias del usuario (Issue \#42, PRs \#44, \#45). 
+Esta funcionalidad estableció la base para futuras capacidades de personalización y el apartado de feedback.
+
+\paragraph{Finalización de Autenticación (\hyperref[req:FR-01]{FR-01})} Se completó el flujo de inicio de sesión mediante Email y 
+Apple ID, consolidando la implementación iniciada en octubre (Issue \#23, PR \#46). Esto permitió que el sistema contara con un 
+mecanismo de autenticación robusto y funcional.
+
+\paragraph{Inteligencia Relacional Básica (\hyperref[req:FR-14]{FR-14})} Se implementó la lógica para actualizar automáticamente 
+los detalles de un contacto cuando se registra una nueva interacción (Issue \#48, PR \#49). Esta funcionalidad 
+constituyó el primer paso hacia el sistema de inteligencia relacional completo.
+
+{\footnotesize
+\textit{Nota}: todavía no se contaba con el sistema multi-agente ni la clase de grafo semántico, es decir, todavía no existía un sistema de procesamiento relacional 
+ni en el procesamiento de interacciones ni en la creación de contactos "hablando sobre ellos".
+}
+}
+
+\vspace{.7cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/git-commit-tree-noviembre.png}
+    \caption{Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt{panot-hq/mobile}}
+    \label{fig:git-commit-tree-noviembre}
+\end{figure}
+
+
+\newpage
+\subsubsection{Diciembre 2025}
+
+Diciembre se centró en completar las funcionalidades esenciales para el lanzamiento del \acrshort{mvp}, incluyendo la monetización, 
+el sistema multi-agente, el sistema de cola de procesamiento, la instrumentación de observabilidad y los mecanismos de soporte. El objetivo fue alcanzar 
+un sistema listo para despliegue. Durante este mes se trabajó principalmente en los ejes (1) \textit{Aplicación Móvil}, (2) \textit{Base de Datos}, 
+(3) \textit{Sistema Multi-Agente} y (4) \textit{Sistema de Cola de Trabajos}.
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/closed-issues-diciembre.png}
+    \caption{Issues cerradas en diciembre de 2025}
+    \label{fig:closed-issues-diciembre}
+\end{figure}
+
+{\small
+
+\paragraph{Gestión de Pagos y Suscripciones} Se completó la lógica de \textit{paywall} e integración con \textit{Stripe} para suscripciones mensuales 
+y acceso a funcionalidades premium (Issue \#50) con el desarrollo de la Edge Function \texttt{stripe-infra}. Esta implementación permitió establecer el 
+modelo de monetización del sistema y controlar el acceso a las capacidades de procesamiento relacional de la aplicación.
+
+
+\paragraph{Sistema Multi-Agente (\hyperref[req:FR-14]{FR-14})} Se implementó el sistema multi-agente \ref{fig:diagrama-multi-agente} completo para el procesamiento de información, incluyendo 
+la aceptación y actualización de datos derivados en contactos (Issue \#52). Los sub-hitos principales fueron:
+\begin{enumerate}
+    \item Desarrollo de {\footnotesize \texttt{relational-agent}} en {\footnotesize \texttt{panot-hq/edge-backend}} utilizando \textit{LangChain} 
+    para la orquestación de agentes e integración con la aplicación móvil.
+    \item Creación de las tablas necesarias en Supabase para los nodos y las aristas semánticas.
+    \item Desarrollo de la herramienta {\footnotesize \texttt{panot-hq/graph-visualizer}} para facilitar el desarrollo, pruebas 
+    y validación de la estructura del grafo semántico del usuario.
+    \item Integración de \textit{LangSmith} como capa de observabilidad del sistema agéntico, habilitando el seguimiento y depuración de 
+    las trazas de ejecución de los agentes, permitiendo monitorizar el flujo de procesamiento con información como latencia, tokens utilizados y coste de la ejecución.
+\end{enumerate}
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/ejemplo-traza-langsmith.png}
+    \caption{Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}
+    \label{fig:ejemplo-traza-langsmith}
+\end{figure}
+\vspace{.5cm}
+
+\paragraph{Sistema de Cola de Procesos (\hyperref[req:FR-14]{FR-14})} Se implementó el sistema de cola de procesos para la gestión asíncrona entre 
+usuarios del procesamiento de información \ref{fig:processing-system-activity-diagram}. Los sub-hitos principales fueron:
+\begin{enumerate}
+    \item Desarrollo de {\footnotesize \texttt{worker-infra}} en {\footnotesize \texttt{panot-hq/edge-backend}} y su integración con la aplicación móvil.
+    \item Creación de las tablas necesarias en Supabase para la cola de procesos y los \textit{workers} de los usuarios.
+\end{enumerate}
+
+\paragraph{Capa de Observabilidad (\hyperref[req:RNF-MANT-008]{RNF-MANT-008})} Se instrumentó la aplicación para análisis y telemetría 
+utilizando herramientas como \textit{PostHog} (Epic \#55). Esta implementación permitió monitorizar el comportamiento de los usuarios y 
+las funcionalidades del sistema, cumpliendo con el requisito de captura de métricas para validar las hipótesis de valor definidas en el proyecto.
+
+\paragraph{Sistema de Soporte (\hyperref[req:FR-16]{FR-16})} Se añadió el mecanismo de soporte y recolección de \textit{tickets} para reportes 
+de errores, sugerencias y solicitudes desde la aplicación (Issue \#43). Esta funcionalidad estableció el canal de comunicación entre 
+los usuarios y el equipo de desarrollo, permitiendo la recolección de feedback estructurado.
+}
+
+\vspace{.7cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/git-commit-tree-diciembre.png}
+    \caption{Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt{panot-hq/mobile}}
+    \label{fig:git-commit-tree-diciembre}
+\end{figure}
+
+\subsubsection{Enero 2026}
+
+Habiendo finalizado el desarrollo completo del \acrshort{mvp}, principios de enero (del 6 al 8) de 2026 se dedicaron únicamente al desarrollo de la 
+página web landing de PANOT tanto en inglés como en español. En la web se han incluido las siguientes secciones:
+
+{\small
+\begin{itemize}
+    \item \textbf{Inicio}: Pagina de inicio de la web donde se expone la hipótesis de valor y el link de descarga de la aplicación.
+    \item \textbf{Changelog}: Línea de tiempo de cambios de PANOT.
+    \item \textbf{Política de Privacidad}: Política de privacidad de PANOT. Necesario para la publicación de la aplicación en los canales de distribución.
+    \item \textbf{Términos y Condiciones}: Términos y condiciones de uso de PANOT.
+\end{itemize}
+}
+Esto engloba el eje de desarrollo (5) \textit{Landing de PANOT} en el repositorio {\footnotesize \texttt{panot-hq/landing}}.
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/landing-home-1.png}
+    \caption{Página de inicio de la landing de PANOT (parte 1)}
+    \label{fig:landing-home-1}
+\end{figure}
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/landing-changelog.png}
+    \caption{Página de changelog de la landing de PANOT}
+    \label{fig:landing-changelog}
+\end{figure}
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/landing-privacy.png}
+    \caption{Página de política de privacidad de la landing de PANOT}
+    \label{fig:landing-privacy}
+\end{figure}
+
+\vspace{.5cm}
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/landing-terms.png}
+    \caption{Página de términos y condiciones de la landing de PANOT}
+    \label{fig:landing-terms}
+\end{figure}
 
 
 
