@@ -19,10 +19,7 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Issues cerradas en diciembre de 2025}}{52}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{53}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{54}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Página de inicio de la landing de PANOT (parte 1)}}{55}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Página de changelog de la landing de PANOT}}{55}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Página de política de privacidad de la landing de PANOT}}{56}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Página de términos y condiciones de la landing de PANOT}}{56}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{55}{figure.caption.61}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
