@@ -67,12 +67,13 @@
 \contentsline {paragraph}{Capa de Observabilidad (\hyperref [req:RNF-MANT-008]{RNF-MANT-008})}{53}{paragraph*.56}%
 \contentsline {paragraph}{Sistema de Soporte (\hyperref [req:FR-16]{FR-16})}{54}{paragraph*.57}%
 \contentsline {subsubsection}{Enero 2026}{54}{subsubsection*.59}%
-\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{57}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Verificación y Resultados}{58}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Generales}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{59}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{59}{section.5.3}%
+\contentsline {subsubsection}{Resumen}{54}{subsubsection*.60}%
+\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{56}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Verificación y Resultados}{57}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{58}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{58}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{58}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{61}{section*.66}%
-\contentsline {section}{Siglas}{63}{section*.67}%
+\contentsline {section}{Glosario}{60}{section*.64}%
+\contentsline {section}{Siglas}{62}{section*.65}%
