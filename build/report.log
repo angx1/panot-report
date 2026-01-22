@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  18 JAN 2026 20:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  22 JAN 2026 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1583,7 +1583,7 @@ o Kanban implementado en GitHub
 [3
 
 ]
-Overfull \hbox (63.86127pt too wide) in paragraph at lines 18--18
+Overfull \hbox (63.86127pt too wide) in paragraph at lines 19--19
  [][] [][][]\TU/SourceSerif4(0)/m/n/12 Árbol de commits de noviembre de 2025 en
  repositorio Git local de \TU/Menlo(0)/m/n/12 panot-hq/mobile[][] [][]  
  []
@@ -1914,26 +1914,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
 [47]
+File: figures/burn-up-lines-stacked.png Graphic file (type bmp)
+<figures/burn-up-lines-stacked.png>
+
+
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+[48]
 File: figures/closed-issues-octubre.png Graphic file (type bmp)
 <figures/closed-issues-octubre.png>
-
-
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
-[48]
 File: figures/git-commit-tree-octubre.png Graphic file (type bmp)
 <figures/git-commit-tree-octubre.png>
 
 
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
 [49]
 File: figures/closed-issues-noviembre.png Graphic file (type bmp)
 <figures/closed-issues-noviembre.png>
 
 
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 162.
+LaTeX Info: Redefining \% on input line 162.
 [50]
 File: figures/git-commit-tree-noviembre.png Graphic file (type bmp)
 <figures/git-commit-tree-noviembre.png>
@@ -1946,46 +1948,35 @@ File: figures/closed-issues-diciembre.png Graphic file (type bmp)
 <figures/closed-issues-diciembre.png>
 
 
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
 [52]
 File: figures/ejemplo-traza-langsmith.png Graphic file (type bmp)
 <figures/ejemplo-traza-langsmith.png>
-
-
-LaTeX Info: Redefining \. on input line 229.
-LaTeX Info: Redefining \% on input line 229.
-[53]
 File: figures/git-commit-tree-diciembre.png Graphic file (type bmp)
 <figures/git-commit-tree-diciembre.png>
 
-Overfull \hbox (12.08327pt too wide) in paragraph at lines 251--252
-\TU/SourceSerif4(0)/m/n/12 Esto engloba el eje de desarrollo (5) \TU/SourceSeri
-f4(0)/m/it/12 Landing de PANOT \TU/SourceSerif4(0)/m/n/12 en el repositorio \TU
-/Menlo(0)/m/n/10 panot-hq/landing\TU/SourceSerif4(0)/m/n/12 . 
- []
 
-File: figures/burn-up-lines-stacked.png Graphic file (type bmp)
-<figures/burn-up-lines-stacked.png>
-
-
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
-[54]) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+[53]
+File: figures/closed-issues-enero.png Graphic file (type bmp)
+<figures/closed-issues-enero.png>
+) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
-[55])) (./chapter4-resultados/chapter4-resultados.tex
+[54])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[56
+[55
 
 ]
 Capítulo 4.
 ) (./chapter5-conclusiones/chapter5-conclusiones.tex
 
-[57
+[56
 
 ]
 Capítulo 5.
@@ -1993,26 +1984,26 @@ Capítulo 5.
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[58
+[57
 
 ]
 
-[59
+[58
 
 
 ] (./report.gls
 
-[60
+[59
 
 ]
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[61]) (./report.acr)
+[60]) (./report.acr)
 
 LaTeX Info: Redefining \. on input line 283.
 LaTeX Info: Redefining \% on input line 283.
-[62]
+[61]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -2023,7 +2014,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[63
+[62
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -2035,18 +2026,18 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 477B73AD692B85C062A9C8E7C657600E;4613.
+(rerunfilecheck)             Checksum: 6B4E184F505E1308F9A13D07118CD230;4613.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43813 strings out of 473832
- 863852 string characters out of 5729480
- 1994177 words of memory out of 5000000
- 66200 multiletter control sequences out of 15000+600000
+ 43823 strings out of 473832
+ 864211 string characters out of 5729480
+ 1994343 words of memory out of 5000000
+ 66209 multiletter control sequences out of 15000+600000
  567601 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (74 pages).
+Output written on report.pdf (73 pages).
