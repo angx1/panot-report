@@ -12,14 +12,15 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.31}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{46}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Issues cerradas en octubre de 2025}}{48}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{49}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Issues cerradas en noviembre de 2025}}{50}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{51}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Issues cerradas en diciembre de 2025}}{52}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{53}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{54}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{55}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{48}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Issues cerradas en octubre de 2025}}{49}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{50}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Issues cerradas en noviembre de 2025}}{51}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Issues cerradas en diciembre de 2025}}{52}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{54}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Issue cerrada en enero de 2026 (captura tomada a mediados de enero de 2026)}}{54}{figure.caption.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
