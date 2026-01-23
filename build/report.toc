@@ -54,11 +54,14 @@
 \contentsline {subsubsection}{Diciembre 2025}{52}{subsubsection*.42}%
 \contentsline {subsubsection}{Enero 2026}{54}{subsubsection*.46}%
 \contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{55}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Verificación y Resultados}{56}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Generales}{57}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{57}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {3.5.1}Preparación del Entorno y Adaptación Académica}{55}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Proceso de Publicación con App Store Connect}{56}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Estrategia de Lanzamiento y Visibilidad}{56}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Verificación y Resultados}{57}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{58}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{58}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{58}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{59}{section*.50}%
-\contentsline {section}{Siglas}{61}{section*.51}%
+\contentsline {section}{Glosario}{60}{section*.50}%
+\contentsline {section}{Siglas}{62}{section*.51}%
