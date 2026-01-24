@@ -10,6 +10,9 @@
 		\setentrycounter[]{page}\glsnumberformat{2}}}%
 \glossentry{crud}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossentry{hig}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{56}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{ia}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
