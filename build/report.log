@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  24 JAN 2026 20:45
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  25 JAN 2026 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1272,28 +1272,28 @@ LaTeX Info: Redefining \% on input line 20.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 284.
+LaTeX Font Info:    ... okay on input line 284.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1336,73 +1336,73 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 278.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 278.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 278.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 278.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 278.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 278.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 278.
-LaTeX Font Info:    Redeclaring math accent \check on input line 278.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 278.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 278.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 278.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 278.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 278.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 284.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 284.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 284.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 284.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 284.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 284.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 284.
+LaTeX Font Info:    Redeclaring math accent \check on input line 284.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 284.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 284.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 284.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 284.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 278.
+(Font)              `operators' in the math version `normal' on input line 284.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/SourceSerif4(0)/m/n on input line 27
-8.
+(Font)                  OT1/cmr/m/n --> TU/SourceSerif4(0)/m/n on input line 28
+4.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 278.
+(Font)              `operators' in the math version `bold' on input line 284.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerif4(0)/m/n on input line 2
-78.
+84.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/SourceSerif4(0)/m/n --> TU/SourceSerif4(0)/m/n on in
-put line 278.
+put line 284.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/SourceSerif4(0)/m/it on input line 
-278.
+284.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerif4(0)/b/n on input line 2
-78.
+84.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Helvetica(0)/m/n on input line 278.
+(Font)                  OT1/cmss/m/n --> TU/Helvetica(0)/m/n on input line 284.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/m/n on input line 278.
+(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/m/n on input line 284.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/SourceSerif4(0)/m/n --> TU/SourceSerif4(0)/b/n on in
-put line 278.
+put line 284.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/SourceSerif4(0)/b/it on input line
- 278.
+ 284.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Helvetica(0)/b/n on input line 278
+(Font)                  OT1/cmss/bx/n --> TU/Helvetica(0)/b/n on input line 284
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/b/n on input line 278.
-LaTeX Info: Redefining \microtypecontext on input line 278.
-Package microtype Info: Applying patch `item' on input line 278.
-Package microtype Info: Applying patch `toc' on input line 278.
-Package microtype Info: Applying patch `eqnum' on input line 278.
-Package microtype Info: Applying patch `footnote' on input line 278.
-Package microtype Info: Applying patch `verbatim' on input line 278.
-LaTeX Info: Redefining \microtypesetup on input line 278.
+(Font)                  OT1/cmtt/m/n --> TU/Menlo(0)/b/n on input line 284.
+LaTeX Info: Redefining \microtypecontext on input line 284.
+Package microtype Info: Applying patch `item' on input line 284.
+Package microtype Info: Applying patch `toc' on input line 284.
+Package microtype Info: Applying patch `eqnum' on input line 284.
+Package microtype Info: Applying patch `footnote' on input line 284.
+Package microtype Info: Applying patch `verbatim' on input line 284.
+LaTeX Info: Redefining \microtypesetup on input line 284.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1421,7 +1421,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 278.
+Package hyperref Info: Link coloring ON on input line 284.
 
 (./report.out) (./report.out)
 \@outlinefile=\write7
@@ -1444,14 +1444,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
 
 (./report.bbl)
-Package biblatex Info: Reference section=0 on input line 278.
-Package biblatex Info: Reference segment=0 on input line 278.
+Package biblatex Info: Reference section=0 on input line 284.
+Package biblatex Info: Reference segment=0 on input line 284.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Helvetica' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 278--278
+Overfull \hbox (18.0pt too wide) in paragraph at lines 284--284
 [][] 
  []
 
@@ -1464,16 +1464,16 @@ File: upm-report/images/upm-logotipo.png Graphic file (type bmp)
 \openout4 = `report.ist'.
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 278
+LaTeX Font Info:    Trying to load font information for U+msa on input line 284
 .
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1481,7 +1481,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 278
+LaTeX Font Info:    Trying to load font information for U+msb on input line 284
 .
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1499,24 +1499,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (34.3555pt too wide) in paragraph at lines 278--278
+Overfull \hbox (34.3555pt too wide) in paragraph at lines 284--284
 | \TU/Menlo(0)/m/n/10 title = {PANOT: Plataforma Móvil para la Gestión de la In
 teligencia Relacional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\TU/SourceSerif4(0)/m/n/10 Esta obra está bajo una licencia [][]Creative Comm
 ons «  Atribución-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \TU/SourceSerif4(0)/m/n/10 NoComercial-CompartirIgual 4.0 Internacional»[][]. O
 bra derivada de
  []
@@ -1524,7 +1524,7 @@ bra derivada de
 File: doclicense-CC-by-nc-sa-88x31.pdf Graphic file (type pdf)
 <use doclicense-CC-by-nc-sa-88x31.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 
  []
 
@@ -1566,8 +1566,8 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
 [2] (./report.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1594,8 +1594,8 @@ Overfull \hbox (63.86127pt too wide) in paragraph at lines 19--19
 
 
 
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
 [4] (./report.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1744,73 +1744,106 @@ File: figures/tablero-kanban.png Graphic file (type bmp)
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 [28]
-Overfull \hbox (1.864pt too wide) in alignment at lines 84--84
+Overfull \hbox (2.55135pt too wide) in alignment at lines 75--75
 [][] 
  []
 
 
-Overfull \hbox (1.864pt too wide) in alignment at lines 101--101
-[][] 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
-
-Overfull \hbox (1.864pt too wide) in alignment at lines 116--116
-[][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
 [29]
-Overfull \hbox (1.864pt too wide) in alignment at lines 129--129
+Overfull \hbox (1.864pt too wide) in alignment at lines 113--113
 [][] 
  []
 
 
-Overfull \hbox (1.864pt too wide) in alignment at lines 142--142
+Overfull \hbox (1.864pt too wide) in alignment at lines 130--130
+[][] 
+ []
+
+
+Overfull \hbox (1.864pt too wide) in alignment at lines 145--145
+[][] 
+ []
+
+
+Overfull \hbox (1.864pt too wide) in alignment at lines 158--158
 [][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
+LaTeX Info: Redefining \. on input line 162.
+LaTeX Info: Redefining \% on input line 162.
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Overfull \hbox (1.864pt too wide) in alignment at lines 171--171
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
 
-Overfull \hbox (1.86401pt too wide) in alignment at lines 168--168
+
+LaTeX Info: Redefining \. on input line 223.
+LaTeX Info: Redefining \% on input line 223.
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 241--241
+\TU/SourceSerif4(0)/m/n/8 nalidades Core (Crear Interacción, Ver
+ []
+
+
+Overfull \hbox (1.86401pt too wide) in alignment at lines 241--241
+[][][][] 
+ []
+
+
+Overfull \hbox (1.86401pt too wide) in alignment at lines 256--256
 [][][][] 
  []
 
 
 
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
-[31]) (./chapter3-desarrollo/3-diseno-arquitectura.tex
+LaTeX Info: Redefining \. on input line 260.
+LaTeX Info: Redefining \% on input line 260.
+[32]
+
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+[33]) (./chapter3-desarrollo/3-diseno-arquitectura.tex
 File: figures/architecture-diagram.png Graphic file (type bmp)
 <figures/architecture-diagram.png>
 
 
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
-[32]
+[34]
 
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
-[33]
+[35]
 Overfull \hbox (24.94797pt too wide) in paragraph at lines 85--87
 []\TU/SourceSerif4(0)/b/n/10.95 Triggers de procesamiento\TU/SourceSerif4(0)/m/
 n/10.95 : Disparan Edge Functions al insertar registros en \TU/Menlo(0)/m/n/10.
@@ -1821,7 +1854,7 @@ n/10.95 : Disparan Edge Functions al insertar registros en \TU/Menlo(0)/m/n/10.
 
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
-[34]
+[36]
 File: figures/multi-agent-diagram.png Graphic file (type bmp)
 <figures/multi-agent-diagram.png>
 
@@ -1832,30 +1865,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
-[35]
+[37]
 
 LaTeX Info: Redefining \. on input line 191.
 LaTeX Info: Redefining \% on input line 191.
-[36]
+[38]
 
 LaTeX Info: Redefining \. on input line 233.
 LaTeX Info: Redefining \% on input line 233.
-[37]
+[39]
 
 LaTeX Info: Redefining \. on input line 280.
 LaTeX Info: Redefining \% on input line 280.
-[38]
+[40]
 
 LaTeX Info: Redefining \. on input line 300.
 LaTeX Info: Redefining \% on input line 300.
-[39]
+[41]
 File: figures/db-modeled.png Graphic file (type bmp)
 <figures/db-modeled.png>
 
 
 LaTeX Info: Redefining \. on input line 315.
 LaTeX Info: Redefining \% on input line 315.
-[40]
+[42]
 Overfull \hbox (4.942pt too wide) in paragraph at lines 335--341
 []\TU/Menlo(0)/m/n/10.95 interactions\TU/SourceSerif4(0)/m/n/10.95 : Transcripc
 iones de voz grabadas por el usuario. El campo \TU/Menlo(0)/m/n/10.95 raw_conte
@@ -1866,18 +1899,18 @@ nt
 
 LaTeX Info: Redefining \. on input line 353.
 LaTeX Info: Redefining \% on input line 353.
-[41]
+[43]
 File: figures/graph-on-sql-showcase.png Graphic file (type bmp)
 <figures/graph-on-sql-showcase.png>
 
 
 LaTeX Info: Redefining \. on input line 392.
 LaTeX Info: Redefining \% on input line 392.
-[42]
+[44]
 
 LaTeX Info: Redefining \. on input line 441.
 LaTeX Info: Redefining \% on input line 441.
-[43]
+[45]
 File: figures/processing-system-activity-diagram.png Graphic file (type bmp)
 <figures/processing-system-activity-diagram.png>
 File: figures/process-transcript-sequence-diagram.png Graphic file (type bmp)
@@ -1886,18 +1919,18 @@ File: figures/process-transcript-sequence-diagram.png Graphic file (type bmp)
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[44]
+[46]
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[45]
+[47]
 File: figures/panot-hq-repos.png Graphic file (type bmp)
 <figures/panot-hq-repos.png>
 
 
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
-[46
+[48
 
 ]
 Underfull \hbox (badness 3977) in paragraph at lines 58--58
@@ -1913,14 +1946,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
-[47]
+[49]
 File: figures/burn-up-lines-stacked.png Graphic file (type bmp)
 <figures/burn-up-lines-stacked.png>
 
 
 LaTeX Info: Redefining \. on input line 110.
 LaTeX Info: Redefining \% on input line 110.
-[48]
+[50]
 File: figures/closed-issues-octubre.png Graphic file (type bmp)
 <figures/closed-issues-octubre.png>
 File: figures/git-commit-tree-octubre.png Graphic file (type bmp)
@@ -1929,28 +1962,28 @@ File: figures/git-commit-tree-octubre.png Graphic file (type bmp)
 
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
-[49]
+[51]
 File: figures/closed-issues-noviembre.png Graphic file (type bmp)
 <figures/closed-issues-noviembre.png>
 
 
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
-[50]
+[52]
 File: figures/git-commit-tree-noviembre.png Graphic file (type bmp)
 <figures/git-commit-tree-noviembre.png>
 
 
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
-[51]
+[53]
 File: figures/closed-issues-diciembre.png Graphic file (type bmp)
 <figures/closed-issues-diciembre.png>
 
 
 LaTeX Info: Redefining \. on input line 206.
 LaTeX Info: Redefining \% on input line 206.
-[52]
+[54]
 File: figures/ejemplo-traza-langsmith.png Graphic file (type bmp)
 <figures/ejemplo-traza-langsmith.png>
 File: figures/git-commit-tree-diciembre.png Graphic file (type bmp)
@@ -1959,52 +1992,73 @@ File: figures/git-commit-tree-diciembre.png Graphic file (type bmp)
 
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
-[53]
+[55]
 File: figures/closed-issues-enero.png Graphic file (type bmp)
 <figures/closed-issues-enero.png>
 ) (./chapter3-desarrollo/5-despliegue-lanzamiento.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[54]
+[56]
+
+LaTeX Warning: Reference `tab:non-functional-requirements' on page 57 undefined
+ on input line 8.
+
+
 
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
-[55
+[57
 
 ]
 
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
-[56])) (./chapter4-resultados/chapter4-resultados.tex
+[58])) (./chapter4-resultados/chapter4-resultados.tex
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-[57]
+[59]
 Capítulo 4.
-) (./chapter5-conclusiones/chapter5-conclusiones.tex
+(./chapter4-resultados/1-interfaz-flujos.tex
+Overfull \hbox (1.46475pt too wide) in paragraph at lines 24--24
+|[]\TU/Helvetica(0)/m/n/17.28 Flujo de Grabación de Interacción y Asignación a 
+Con-
+ []
 
-[58
 
-]
+
+[60
+
+]) (./chapter4-resultados/2-verificacion-requisitos.tex)
+(./chapter4-resultados/3-cumplimiento-objetivos.tex))
+(./chapter5-conclusiones/chapter5-conclusiones.tex
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[61]
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[62]
 Capítulo 5.
 (./chapter5-conclusiones/1-conclusiones-generales.tex)
 (./chapter5-conclusiones/2-aplicacion-conocimientos.tex)
 (./chapter5-conclusiones/3-lineas-trabajo-futuro.tex))
 
-[59
+[63
 
 ]
 
 Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 289.
+(biblatex)                Using fallback driver on input line 295.
 
 
 Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 289.
+(biblatex)                Using fallback driver on input line 295.
 
 
-Overfull \hbox (4.2307pt too wide) in paragraph at lines 289--289
+Overfull \hbox (4.2307pt too wide) in paragraph at lines 295--295
 []\TU/SourceSerif4(0)/m/n/12 Apple, \TU/SourceSerif4(0)/m/it/12 Human Interface
  Guidelines\TU/SourceSerif4(0)/m/n/12 , 2025. dirección: [][]$[][][][][] [] [] 
 [] [][][][][][][][][] [] [][][][][] []
@@ -2012,22 +2066,22 @@ Overfull \hbox (4.2307pt too wide) in paragraph at lines 289--289
 
 
 
-[60
+[64
 
 
 ] (./report.gls
 
-[61
+[65
 
 ]
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[62]) (./report.acr)
+[66]) (./report.acr)
 
-LaTeX Info: Redefining \. on input line 289.
-LaTeX Info: Redefining \% on input line 289.
-[63]
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+[67]
 File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
@@ -2038,7 +2092,7 @@ File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-[64
+[68
 
 ] (./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
@@ -2049,19 +2103,23 @@ LaTeX Info: Redefining \% on input line 20.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 6B4E184F505E1308F9A13D07118CD230;4613.
+(rerunfilecheck)             Checksum: EBCE50951C51C8F601C3F2C86CB590EC;5266.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43868 strings out of 473832
- 865185 string characters out of 5729480
- 1994743 words of memory out of 5000000
- 66254 multiletter control sequences out of 15000+600000
+ 43941 strings out of 473832
+ 867057 string characters out of 5729480
+ 1996685 words of memory out of 5000000
+ 66318 multiletter control sequences out of 15000+600000
  567601 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (75 pages).
+Output written on report.pdf (79 pages).

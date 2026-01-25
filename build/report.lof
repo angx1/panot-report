@@ -5,22 +5,22 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{26}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{32}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{36}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible.}}{40}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{42}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{44}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{45}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{46}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{48}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Issues cerradas en octubre de 2025}}{49}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{50}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Issues cerradas en noviembre de 2025}}{51}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{51}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Issues cerradas en diciembre de 2025}}{52}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{53}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{54}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Issue cerrada en enero de 2026 (captura tomada a mediados de enero de 2026)}}{54}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{38}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible.}}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{48}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{50}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Issues cerradas en octubre de 2025}}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{52}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Issues cerradas en noviembre de 2025}}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{53}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Issues cerradas en diciembre de 2025}}{54}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{55}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{56}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Issue cerrada en enero de 2026 (captura tomada a mediados de enero de 2026)}}{56}{figure.caption.51}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 
