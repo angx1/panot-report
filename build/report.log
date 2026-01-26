@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  25 JAN 2026 21:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  26 JAN 2026 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2021,22 +2021,19 @@ LaTeX Info: Redefining \% on input line 1.
 [59]
 Capítulo 4.
 (./chapter4-resultados/1-interfaz-flujos.tex
-Overfull \hbox (1.46475pt too wide) in paragraph at lines 24--24
-|[]\TU/Helvetica(0)/m/n/17.28 Flujo de Grabación de Interacción y Asignación a 
-Con-
- []
-
-
 
 [60
 
-]) (./chapter4-resultados/2-verificacion-requisitos.tex)
+]
+File: figures/user-flow-settings.png Graphic file (type bmp)
+<figures/user-flow-settings.png>
+
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+[61]) (./chapter4-resultados/2-verificacion-requisitos.tex)
 (./chapter4-resultados/3-cumplimiento-objetivos.tex))
 (./chapter5-conclusiones/chapter5-conclusiones.tex
-
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[61]
 
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2108,16 +2105,16 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: EBCE50951C51C8F601C3F2C86CB590EC;5266.
+(rerunfilecheck)             Checksum: A088032E89CEB3B437E320145A1890D6;5266.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43941 strings out of 473832
- 867057 string characters out of 5729480
- 1996685 words of memory out of 5000000
- 66318 multiletter control sequences out of 15000+600000
+ 43951 strings out of 473832
+ 867394 string characters out of 5729480
+ 1996750 words of memory out of 5000000
+ 66327 multiletter control sequences out of 15000+600000
  567601 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -64,18 +64,17 @@
 \contentsline {subsection}{\numberline {4.1.1}Flujo de Registro de Usuario y Onboarding}{60}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Flujo de Inicio de Sesión}{60}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Flujo de Creación de Contacto}{60}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Flujo de Grabación de Interacción y Asignación a Contacto}{61}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Flujo de Visualización de Interacciones de un Contacto}{61}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Flujo de Configuración y Ajustes}{61}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Flujo de Soporte y Feedback}{61}{subsection.4.1.7}%
-\contentsline {section}{\numberline {4.2}Verificación de Requisitos}{61}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Verificación de Requisitos Funcionales}{61}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Verificación de Requisitos No Funcionales}{61}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.1.4}Flujo de Grabación y Procesamiento de Interacción}{61}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Flujo de Configuración y Ajustes}{61}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Flujo de Soporte y Feedback}{62}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.2}Verificación de Requisitos}{62}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Verificación de Requisitos Funcionales}{62}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Verificación de Requisitos No Funcionales}{62}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Cumplimiento de Objetivos}{62}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{63}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusiones Generales}{63}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{63}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{63}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{65}{section*.54}%
-\contentsline {section}{Siglas}{67}{section*.55}%
+\contentsline {section}{Glosario}{65}{section*.55}%
+\contentsline {section}{Siglas}{67}{section*.56}%
