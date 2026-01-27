@@ -29,36 +29,52 @@
 \contentsline {subsection}{\numberline {3.1.2}Metodología y Flujo de Desarrollo}{25}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Definición del PMV y Especificación de Requisitos}{27}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Hipótesis de Valor}{28}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Requisitos Funcionales}{29}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Requisitos No Funcionales}{31}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Diseño del Sistema}{32}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Visión general de la Arquitectura}{32}{subsection.3.3.1}%
-\contentsline {paragraph}{\colorbox {Apricot}{Capa Cliente (React Native / Expo)}}{33}{paragraph*.18}%
-\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{34}{paragraph*.19}%
-\contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{34}{paragraph*.20}%
-\contentsline {subsection}{\numberline {3.3.2}Sistema Multi-Agente para Procesamiento de Información}{35}{subsection.3.3.2}%
-\contentsline {paragraph}{Agente Orquestador}{36}{paragraph*.22}%
-\contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{37}{paragraph*.23}%
-\contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{37}{paragraph*.24}%
-\contentsline {subsubsection}{Matching Semántico}{38}{subsubsection*.25}%
-\contentsline {subsection}{\numberline {3.3.3}Modelado de Datos}{40}{subsection.3.3.3}%
-\contentsline {subsubsection}{Entidades Principales}{41}{subsubsection*.27}%
-\contentsline {subsubsection}{Grafo Semántico}{42}{subsubsection*.28}%
-\contentsline {subsubsection}{Sistema de Procesamiento}{43}{subsubsection*.30}%
-\contentsline {section}{\numberline {3.4}Implementación del Sistema}{46}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Organización \texttt {panot-hq}}{46}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Ejes de Desarrollo}{47}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Evolución Cronológica}{48}{subsection.3.4.3}%
-\contentsline {subsubsection}{Octubre 2025}{49}{subsubsection*.36}%
-\contentsline {subsubsection}{Noviembre 2025}{50}{subsubsection*.39}%
-\contentsline {subsubsection}{Diciembre 2025}{52}{subsubsection*.42}%
-\contentsline {subsubsection}{Enero 2026}{54}{subsubsection*.46}%
-\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{55}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Verificación y Resultados}{56}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones Generales}{57}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{57}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {3.2.2}Historias de Usuario}{29}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Requisitos Funcionales}{29}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Matriz de Trazabilidad}{31}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Requisitos No Funcionales}{32}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Diseño del Sistema}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Visión general de la Arquitectura}{33}{subsection.3.3.1}%
+\contentsline {paragraph}{\colorbox {Apricot}{Capa Cliente (React Native / Expo)}}{34}{paragraph*.20}%
+\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{35}{paragraph*.21}%
+\contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{35}{paragraph*.22}%
+\contentsline {subsection}{\numberline {3.3.2}Sistema Multi-Agente para Procesamiento de Información}{36}{subsection.3.3.2}%
+\contentsline {paragraph}{Agente Orquestador}{37}{paragraph*.24}%
+\contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{38}{paragraph*.25}%
+\contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{38}{paragraph*.26}%
+\contentsline {subsubsection}{Matching Semántico}{39}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {3.3.3}Modelado de Datos}{41}{subsection.3.3.3}%
+\contentsline {subsubsection}{Entidades Principales}{42}{subsubsection*.29}%
+\contentsline {subsubsection}{Grafo Semántico}{43}{subsubsection*.30}%
+\contentsline {subsubsection}{Sistema de Procesamiento}{44}{subsubsection*.32}%
+\contentsline {section}{\numberline {3.4}Implementación del Sistema}{47}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Organización \texttt {panot-hq}}{47}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Ejes de Desarrollo}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Evolución Cronológica}{49}{subsection.3.4.3}%
+\contentsline {subsubsection}{Octubre 2025}{50}{subsubsection*.38}%
+\contentsline {subsubsection}{Noviembre 2025}{51}{subsubsection*.41}%
+\contentsline {subsubsection}{Diciembre 2025}{53}{subsubsection*.44}%
+\contentsline {subsubsection}{Enero 2026}{55}{subsubsection*.48}%
+\contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{56}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Preparación del Entorno y Adaptación Académica}{56}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Cumplimiento Normativo y Directrices de Apple}{57}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Estrategia de Lanzamiento y Visibilidad}{57}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Resultados y Verificación}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Interfaz de Usuario y Flujos del Sistema}{59}{section.4.1}%
+\contentsline {subsubsection}{Flujo de Registro de Usuario y Onboarding - \hyperref [req:HU-01]{HU-01}}{59}{subsubsection*.50}%
+\contentsline {subsubsection}{Flujo de Inicio de Sesión - \hyperref [req:HU-01]{HU-01}}{60}{subsubsection*.52}%
+\contentsline {subsubsection}{Flujo de Creación de Contacto - \hyperref [req:HU-02]{HU-02} y \hyperref [req:HU-03]{HU-03}}{60}{subsubsection*.54}%
+\contentsline {subsubsection}{Flujo de Grabación y Procesamiento de Interacción - \hyperref [req:HU-04]{HU-04}, \hyperref [req:HU-06]{HU-06} y \hyperref [req:HU-08]{HU-08}}{63}{subsubsection*.59}%
+\contentsline {subsubsection}{Flujo de Soporte y Feedback - \hyperref [req:HU-09]{HU-09}}{67}{subsubsection*.63}%
+\contentsline {subsubsection}{Flujo de Configuración y Ajustes}{68}{subsubsection*.66}%
+\contentsline {section}{\numberline {4.2}Verificación de Requisitos}{69}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Verificación de Requisitos Funcionales}{69}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Verificación de Requisitos No Funcionales}{69}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Cumplimiento de Objetivos}{70}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{71}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales}{71}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{71}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{71}{section.5.3}%
 \contentsfinish 
-\contentsline {section}{Glosario}{59}{section*.50}%
-\contentsline {section}{Siglas}{61}{section*.51}%
+\contentsline {section}{Glosario}{73}{section*.71}%
+\contentsline {section}{Siglas}{75}{section*.72}%

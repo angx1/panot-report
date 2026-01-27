@@ -2,15 +2,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Features del Sistema y los IDs de los Requisitos Funcionales Asociados}}{29}{table.caption.10}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 1 - Gestión de Usuario}}}}{29}{table.caption.11}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 2 - Gestión de Contactos}}}}{29}{table.caption.12}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 3 - Gestión de Interacciones}}}}{30}{table.caption.13}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 4 - Inteligencia Relacional}}}}{30}{table.caption.14}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 5 - Soporte y Feedback}}}}{30}{table.caption.15}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Requisitos No Funcionales del sistema con ID, Tipo, Descripción y Criterio de Aceptación}}{31}{table.caption.16}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Ejes de desarrollo de PANOT}}{47}{table.caption.34}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Definición de las Historias de Usuario para el \gls {mvp} de PANOT}}{29}{table.caption.10}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Features del Sistema y los IDs de los Requisitos Funcionales Asociados}}{29}{table.caption.11}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 1 - Gestión de Usuario}}}}{30}{table.caption.12}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 2 - Gestión de Contactos}}}}{30}{table.caption.13}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 3 - Gestión de Interacciones}}}}{30}{table.caption.14}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 4 - Inteligencia Relacional}}}}{30}{table.caption.15}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Requisitos Funcionales de la \hyperref [tab:system-features]{\textit {Feature 5 - Soporte y Feedback}}}}{31}{table.caption.16}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Matriz de Trazabilidad de Requisitos e Historias de Usuario}}{31}{table.caption.17}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Requisitos No Funcionales del sistema: ID, Tipo, Descripción y Criterio de Aceptación}}{32}{table.caption.18}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Ejes de desarrollo de PANOT}}{48}{table.caption.36}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de verificación del cumplimiento de Requisitos Funcionales. Se han omitido los requisitos \hyperref [req:FR-08]{FR-08} y \hyperref [req:FR-09]{FR-09} que corresponden a la edición y eliminación de un contacto por motivos de simplicidad de la memoria.}}{69}{table.caption.68}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 

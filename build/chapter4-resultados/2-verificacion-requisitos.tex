@@ -1,0 +1,42 @@
+\section{Verificación de Requisitos}
+
+Una vez expuestos los resultados visuales y técnicos del sistema, se procede a la verificación formal de los requisitos definidos en la fase de análisis. Este proceso asegura que el artefacto 
+desarrollado cumple con la especificación original y garantiza los niveles de calidad exigidos.
+
+\subsection{Verificación de Requisitos Funcionales}
+
+Para validar la funcionalidad del sistema, se ha realizado un contraste entre cada requisito funcional y la evidencia generada en los flujos de usuario. En la siguiente tabla se detalla 
+el estado de cumplimiento de cada requisito, vinculándolos con los flujos de la sección anterior.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|c|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID} & \textit{Descripción del Requisito} & \textit{Estado} & \textit{Evidencia / Fuente} \\ \hline
+\textbf{\hyperref[req:FR-01]{FR-01}} & Registro e inicio de sesión seguro. & Logrado & Flujos \ref{fig:onboarding} y \ref{fig:signin} \\ \hline
+\textbf{\hyperref[req:FR-02]{FR-02}} & Cerrar sesión del usuario de forma segura. & Logrado & Flujo \ref{fig:configuracion-ajustes} \\ \hline
+\textbf{\hyperref[req:FR-03]{FR-03}} & Eliminación completa de cuenta y datos. & Logrado &  Flujo \ref{fig:configuracion-ajustes} \\ \hline
+\textbf{\hyperref[req:FR-04]{FR-04}} & Creación de un contacto manualmente. & Logrado & Flujo \ref{fig:new-contact} \\ \hline
+\textbf{\hyperref[req:FR-05]{FR-05}} & Importación de contactos desde agenda nativa. & Logrado & Flujo \ref{fig:new-contact} \\ \hline
+\textbf{\hyperref[req:FR-06]{FR-06}} & Creación de contacto mediante dictado de voz. & Logrado & Flujo \ref{fig:new-contact}, Traza \ref{fig:trace-pedro} y Fig. \ref{fig:grafo-pedro} \\ \hline
+\textbf{\hyperref[req:FR-07]{FR-07}} & Búsqueda semántica y por nombre. & Logrado & Barra de búsqueda (Flujo \ref{fig:new-contact}) \\ \hline
+\textbf{\hyperref[req:FR-10]{FR-10}} & Interfaz dedicada de grabación y aceptación de permisos de hardware. & Logrado & Flujos \ref{fig:new-interaction-long} y \ref{fig:new-interaction-short} \\ \hline
+\textbf{\hyperref[req:FR-11]{FR-11}} & Validación de texto transcrito previo a aceptación. & Logrado & Flujos \ref{fig:new-interaction-long} y \ref{fig:new-interaction-short} \\ \hline
+\textbf{\hyperref[req:FR-12]{FR-12}} & Conversión de audio a texto en tiempo real. & Logrado & Módulo {\scriptsize \texttt{panot-speech}} \\ \hline
+\textbf{\hyperref[req:FR-13]{FR-13}} & Descartar una interacción. & Logrado & Flujos \ref{fig:new-interaction-long} y \ref{fig:new-interaction-short} \\ \hline
+\textbf{\hyperref[req:FR-14]{FR-14}} & Actualización del grafo semántico tras interacción. & Logrado & Figuras \ref{fig:grafo-pedro-pepe-inicial} y \ref{fig:grafo-pedro-pepe-nueva-interaccion} \\ \hline
+\textbf{\hyperref[req:FR-15]{FR-15}} & Generación de relaciones (matching semántico). & Logrado & Fig. \ref{fig:grafo-pedro-pepe-nueva-interaccion} (Nodos comunes) \\ \hline
+\textbf{\hyperref[req:FR-16]{FR-16}} & Envío de reportes de errores o bugs. & Logrado & Flujo \ref{fig:support-feedback} y Fig.\ref{fig:db-tickets} \\ \hline
+\textbf{\hyperref[req:FR-17]{FR-17}} & Envío de propuestas de mejora o solicitudes de nuevas funcionalidades. & Logrado & Flujo \ref{fig:support-feedback} y Fig. \ref{fig:db-tickets} \\ \hline
+\end{tabularx}
+\caption{Tabla de verificación del cumplimiento de Requisitos Funcionales. Se han omitido los requisitos \hyperref[req:FR-08]{FR-08} y \hyperref[req:FR-09]{FR-09} que corresponden a la edición y 
+eliminación de un contacto por motivos de simplicidad de la memoria.}
+\label{tab:verificacion-funcional}
+\end{table}
+
+
+\subsection{Verificación de Requisitos No Funcionales}
+
+[VERIFICACIÓN DE REQUISITOS NO FUNCIONALES]

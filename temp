@@ -1,0 +1,27 @@
+\subsubsection{Flujo de Configuración y Ajustes}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/user-flow-settings.png}
+    \caption{Flujo de Configuración y Ajustes}
+    \label{fig:configuracion-ajustes}
+\end{figure}
+
+\subsubsection{Flujo de Soporte y Feedback}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/user-flow-support.png}
+    \caption{Flujo de Soporte y Feedback}
+    \label{fig:support-feedback}
+\end{figure}
+
+Para cerrar el ciclo de soporte, se ha verificado la recepción de estos datos en la infraestructura persistente. La Figura \ref{fig:db-tickets} muestra los registros reales en la tabla de Supabase, 
+confirmando que el reporte de errores y sugerencias llega correctamente al equipo de desarrollo para su gestión.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/db-feedback-tickets.png}
+    \caption{Verificación de persistencia: Filas de la base de datos con los tickets de soporte enviados.}
+    \label{fig:db-tickets}
+\end{figure}

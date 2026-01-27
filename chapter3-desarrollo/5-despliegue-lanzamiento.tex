@@ -1,7 +1,67 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% DESPLIEGUE Y LANZAMIENTO DE PANOT
-
 \clearpage
 \section{Despliegue y Lanzamiento de PANOT}
 
-[Escribir aqui el despliegue y lanzamiento de PANOT]
+Tras culminar con las fases de análisis, diseño e implementación, el proyecto entra en su fase clave de puesta en producción.
+Este proceso no se limita únicamente a transferir el código a un servidor, sino que engloba una serie de verificaciones de seguridad, 
+la preparación de artefactos nativos y la gestión administrativa ante las plataformas de distribución (en este caso la App Store de Apple).
+El objetivo final es garantizar que el \acrshort{mvp} sea accesible para los usuarios finales bajo los estándares de seguridad, rendimiento 
+y diseño definidos en los capítulos anteriores \ref{tab:non-functional-requirements} y los impuestos por las políticas de Apple.
+
+Dada la naturaleza académica de este proyecto y el marco normativo de la Universidad Politécnica de Madrid, el despliegue está orientado a la 
+materialización de un artefacto funcional ajustando ciertas capacidades comerciales para alinearse con los derechos de explotación de la institución.
+[VER BIEN ESTO Y MODIFICARLO SI NO ES CORRECTO]
+
+\subsection{Preparación del Entorno y Adaptación Académica}
+
+La transición hacia una versión publicable ha requerido una configuración específica de la infraestructura y la aplicación móvil de PANOT. A diferencia 
+de una versión comercial abierta, y con el objetivo de garantizar la sostenibilidad del proyecto a futuro, se ha desplegado una versión 
+que prioriza las capacidades de almacenamiento local y gestión de usuarios, contactos e interacciones descritas en la especificación del sistema. En este sentido, 
+se ha optado por una configuración que prescinde de los módulos de pago recurrente y de las llamadas activas al sistema multi-agente en el entorno desplegado. 
+Esta decisión técnica permite que tanto el evaluador y como futuros usuarios interactúen con una aplicación estable y fluida, centrada en la experiencia 
+de usuario y la arquitectura local-first, sin riesgos operativos o económicos.
+
+En cuanto al cliente móvil, el proceso de empaquetado se realizó de forma manual utilizando \textit{Xcode}. Este flujo de trabajo se inicia con la 
+generación del proyecto nativo de iOS mediante el comando de pre-construcción ({\footnotesize \texttt{npx expo prebuild --platform ios}}) de Expo, integrando todos 
+los módulos que componen el proyecto. Una vez dentro de \textit{Xcode}, se procedió a la firma del código mediante certificados de distribución oficiales, 
+paso indispensable para generar el archivo con extensión {\footnotesize \texttt{.ipa}} (iOS App Store Package) denominado binario (\textit{binary}). Este archivo binario, constituye la entrega 
+final y representaría el esfuerzo de ingeniería realizado listo para su distribución.
+
+\subsection{Cumplimiento Normativo y Directrices de Apple}
+
+La subida del binario a la plataforma \textit{App Store Connect} marca el inicio de una auditoría técnica y de contenido por parte de Apple. Para superar 
+este proceso de revisión (App Review), el desarrollo de PANOT ha tenido que alinearse con las \textit{App Review Guidelines} \cite{apple-app-store-review-guidelines}, un conjunto de reglas 
+estrictas que garantizan la seguridad y calidad de las aplicaciones en el ecosistema iOS.
+
+Uno de los puntos críticos ha sido el cumplimiento de la directiva sobre Privacidad y Protección de Datos (\textit{Legal - 5.1 Privacy}). Dado que PANOT 
+solicita acceso a información sensible como la agenda de contactos y el micrófono del dispositivo, se han tenido que implementar mensajes 
+de propósito claros y concisos que expliquen al usuario exactamente por qué y para qué se requieren dichos permisos. Este compromiso técnico se extiende al rendimiento (\textit{Performance}), 
+donde la arquitectura local-first y la gestión de estados con \textit{Legend-State} permiten cumplir con la exigencia de Apple de ofrecer una respuesta instantánea y 
+eficiente, minimizando la latencia de red y optimizando el uso de los recursos del hardware. Paralelamente, el diseño de PANOT se ha trazado 
+siguiendo las Human Interface Guidelines (\acrshort{hig}) \cite{apple-human-interface-guidelines} para asegurar una experiencia basada en los pilares de 
+\textit{Jerarquía}, \textit{Armonía} y \textit{Consistencia}, donde además, el enfoque voice-first permite reducir la fricción cognitiva conforme a los 
+estándares de usabilidad de la plataforma.
+
+Finalmente, la decisión de omitir la pasarela de pagos en esta versión académica de PANOT simplifica el cumplimiento de las directrices 
+de negocio (\textit{Business - 3.1 Payments}), evitando la complejidad de las compras integradas obligatorias y permitiendo que el proyecto se presente como un 
+producto de software estable y gratuito. Esta aproximación valida el sistema bajo las normativas de seguridad y diseño del ecosistema de Apple, reduciendo simultáneamente 
+la incertidumbre legal derivada de los derechos de explotación de la Universidad Politécnica de Madrid.
+
+\subsection{Estrategia de Lanzamiento y Visibilidad}
+
+La finalización de este proceso de despliegue se alcanza con la aprobación de la aplicación por parte del equipo de revisión de Apple. Este hito 
+no solo representa un éxito a nivel administrativo, sino que actúa como una certificación de que el software cumple con los estándares de seguridad, rendimiento 
+y diseño exigidos por Apple. La confirmación de entrada en la \textit{App Store} permite habilitar los siguientes canales de captación diseñados para atraer a los 
+primeros usuarios y comenzar la fase de validación (\textit{Medir}).
+
+[INLUIR CAPTURA DE APROBACIÓN DE LA APP REVIEW]
+
+Con la aplicación disponible para el público general, la estrategia de difusión se apoya en la landing page de PANOT. Esta web, que fue indispensable durante el 
+envío a revisión para alojar las políticas de privacidad exigidas por Apple, cumple el propósito de canalizar a los usuarios hacia la tienda oficial, reforzando la 
+propuesta de valor de la Inteligencia Relacional y sirviendo como punto de referencia para aquellos que descubran el proyecto a través de canales externos.
+
+Finalmente, el lanzamiento principal se ha planificado en la plataforma \textit{Product Hunt}. Al tratarse de un sistema con un alto componente de innovación, resulta el escenario 
+más adecuado para cerrar el primer ciclo de la metodología \textit{Lean Startup}. La visibilidad de este canal no solo busca funcionar como embudo de captación de usuarios, sino 
+que además, permite la recolección de métricas de comportamiento de usuarios reales que habilitan la validación de la hipótesis de valor del proyecto. De este modo, la 
+publicación oficial en la App Store y la subsiguiente campaña de visibilidad en \textit{Product Hunt} cierran el bloque de desarrollo de la memoria.
+
+[INCLUIR CAPTURA DE LAUNCH EN PRODUCT HUNT]
