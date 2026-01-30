@@ -1,39 +1,53 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional.}}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional.}}{6}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{26}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{33}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{37}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible.}}{41}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{43}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{45}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{46}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{47}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{49}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Issues cerradas en octubre de 2025}}{50}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{51}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Issues cerradas en noviembre de 2025}}{52}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{52}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Issues cerradas en diciembre de 2025}}{53}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{54}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{55}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Issue cerrada en enero de 2026 (captura tomada a mediados de enero de 2026)}}{55}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama orientativo de la estrategia de ramificación. (1) \textbf {Aislamiento}: Creación de una rama efímera (\textit {feature}) a partir de desarrollo para trabajar en un \textit {Issue} específico. (2) \textbf {Implementación}: Desarrollo de la funcionalidad mediante \textit {commits} atómicos. (3) \textbf {Integración}: Fusión de la rama mediante un \textit {Pull Request} validado, cerrando el ciclo de desarrollo. (4) \textbf {Release}: Promoción del código estable desde desarrollo a la rama principal (\textit {main}) para su despliegue en producción.}}{26}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualización de las columnas del tablero Kanban implementado en GitHub Projects en un punto del desarrollo. Se destaca el límite de \gls {wip} configurado a 1 en la columna \textit {In Progress} (indicador 1/1), forzando un flujo continuo y eliminando el desperdicio asociado al cambio de contexto.}}{27}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura general del sistema PANOT}}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de la arquitecturadel sistema multi-agente de PANOT}}{37}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit {<<public>>} y \textit {<<auth>>}. En el diagrama del schema \textit {<<auth>>} solo se ha incluido la tabla \textit {auth.users} ya que es la unica tabla de el schema que se ha modificado. Y en el diagrama del schema \textit {<<public>>} se ha obviado del diagrama que las claves foráneas \texttt {user\_id} o \texttt {owner\_id} de las tablas provienen del \texttt {id} de la tabla \texttt {users} del schema \textit {<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt {profiles} para mantener el diagrama más legible.}}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de grafo semántico en PostgreSQL. En el se pueden ver dos nodos: un primer nodo A de tipo CONTACT y un segundo nodo B de tipo CONCEPT. Ambos estan conectados con una relación de tipo RELACIONADO\_CON.}}{43}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de actividad del sistema de procesamiento de PANOT}}{45}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de secuencia del procesamiento de una Interacción grabada por el usuario}}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Repositorios de la organización \texttt {panot-hq}}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gráfico de burndup de issues cerrados en el proyecto de PANOT}}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Issues cerradas en octubre de 2025}}{50}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Árbol de commits de octubre (y finales de septiembre) de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Issues cerradas en noviembre de 2025}}{52}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Árbol de commits de noviembre de 2025 en repositorio Git local de \texttt {panot-hq/mobile}}}{52}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Issues cerradas en diciembre de 2025}}{53}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Ejemplo de traza de ejecución en LangSmith del sistema multi-agentede PANOT}}{54}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Árbol de commits de diciembre de 2025 (y principios de enero de 2026) en repositorio Git local de \texttt {panot-hq/mobile}}}{55}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Issue cerrada en enero de 2026 (captura tomada a mediados de enero de 2026)}}{55}{figure.caption.50}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flujo de Registro de Usuario y Onboarding}}{59}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flujo de Inicio de Sesión}}{60}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Flujo de Creación de Contacto}}{61}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Traza de ejecución en LangSmith para la creación del contacto \textbf {Pedro}.}}{62}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Grafo de conocimiento resultante de la creación del contacto \textbf {Pedro}.}}{62}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Grafo de conocimiento resultante de la creación del contacto \textbf {Pepe} y la detección de nodos comunes con el contacto \textbf {Pedro}.}}{63}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Flujo de Grabación y Procesamiento de Interacción (I)}}{64}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Flujo de Grabación y Procesamiento de Interacción (II)}}{65}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Grafo de conocimiento resultante de los contactos \textbf {Pepe} y \textbf {Pedro} tras procesar las nuevas interacciones.}}{66}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Flujo de Soporte y Feedback}}{67}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Verificación de persistencia: Filas de la base de datos con los tickets de soporte enviados.}}{68}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Flujo de Configuración y Ajustes}}{68}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flujo de Registro de Usuario y Onboarding}}{59}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flujo de Inicio de Sesión}}{60}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flujo de Creación de Contacto}}{61}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Traza de ejecución en LangSmith para la creación del contacto \textbf {Pedro}.}}{62}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Grafo de conocimiento resultante de la creación del contacto \textbf {Pedro} en {\footnotesize \texttt {graph-visualizer}}.}}{62}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Grafo de conocimiento resultante de la creación del contacto \textbf {Pepe} y la detección de nodos comunes con el contacto \textbf {Pedro} en {\footnotesize \texttt {graph-visualizer}}.}}{63}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Flujo de Grabación y Procesamiento de Interacción (I)}}{64}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Flujo de Grabación y Procesamiento de Interacción (II)}}{65}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Grafo de conocimiento resultante de los contactos \textbf {Pepe} y \textbf {Pedro} tras procesar las nuevas interacciones en {\footnotesize \texttt {graph-visualizer}}.}}{65}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Flujo de Edición o Eliminación de Contacto}}{66}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Flujo de Búsqueda de Contacto}}{66}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Flujo de Soporte y Feedback}}{67}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Verificación de persistencia: Filas de la base de datos con los tickets de soporte enviados.}}{67}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Flujo de Configuración y Ajustes}}{68}{figure.caption.72}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Política RLS para las tablas \texttt {semantic\_edges} y \texttt {semantic\_nodes}.}}{72}{figure.caption.75}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Política RLS para la tabla \texttt {interactions}.}}{73}{figure.caption.76}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Política RLS para la tabla \texttt {profiles}.}}{73}{figure.caption.77}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Política RLS para la tabla \texttt {contacts}.}}{74}{figure.caption.78}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Política RLS para la tabla \texttt {workers}.}}{74}{figure.caption.79}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Política RLS para la tabla \texttt {process\_queue}.}}{75}{figure.caption.80}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Política RLS para la tabla \texttt {feedback\_tickets}.}}{75}{figure.caption.81}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Lista de trazas de ejecución en LangSmith.}}{76}{figure.caption.82}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Gráfica de latencia por traza en LangSmith. Listado de valores de latencia ($T_{e2e}$): 28.89; 37.34; 34.37; 46.75; 34.03; 40.45; 30.48; 29.06; 30.60; 31.19; 34.84; 31.96; 35.06; 32.99; 35.42; 37.17; 28.09; 45.99; 32.48; 29.69; 34.50; 7.75; 32.07; 32.42; 31.39; 34.37; 37.60}}{78}{figure.caption.84}%
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Gráfica de coste por traza en LangSmith. Listado de valores de coste ($C_i$) en USD: 0.0044; 0.0042; 0.0052; 0.0046; 0.0049; 0.0056; 0.0044; 0.0052; 0.0048; 0.0047; 0.0045; 0.0045; 0.0057; 0.0047; 0.0050; 0.0055; 0.0051; 0.0080; 0.0054; 0.0047; 0.0054; 0.0012; 0.0045; 0.0052; 0.0051; 0.0060; 0.0060.}}{79}{figure.caption.86}%
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Flujo de eventos recibido en el panel de PostHog.}}{81}{figure.caption.91}%
 \contentsfinish 
 \contentsfinish 

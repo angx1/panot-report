@@ -268,6 +268,10 @@ description={Human Interface Guidelines de Apple},
 longplural={Human Interface Guidelines}
 ]{hig}{HIG}{Human Interface Guidelines}
 
+\newacronym[
+description={Reglamento General de Protección de Datos},
+longplural={Reglamentos Generales de Protección de Datos}
+]{rgpd}{RGPD}{Reglamento General de Protección de Datos}
 
 \newacronym[
 description={Historias de Usuario},
@@ -277,6 +281,18 @@ longplural={Historias de Usuario}
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lenguaje TypeScript para listados (listings no lo incluye)
+%
+\lstdefinelanguage{TypeScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, switch, var, if, in, while, do, else, case, break, const, let, async, await, class, extends, export, default, import, from, try, throw, finally, capture},
+  ndkeywords={undefined, this},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]"
+}
 
 
 
@@ -291,5 +307,6 @@ longplural={Historias de Usuario}
 \input{chapter3-desarrollo/chapter3-desarrollo}
 \input{chapter4-resultados/chapter4-resultados}
 \input{chapter5-conclusiones/chapter5-conclusiones}
+\input{appendix}
 
 \end{document}
