@@ -56,7 +56,7 @@ El resultado es el siguiente grafo semántico (ver Figura \ref{fig:grafo-pedro})
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/grafo-inicial-pedro.png}
-    \caption{Grafo de conocimiento resultante de la creación del contacto \textbf{Pedro}.}
+    \caption{Grafo de conocimiento resultante de la creación del contacto \textbf{Pedro} en {\footnotesize \texttt{graph-visualizer}}.}
     \label{fig:grafo-pedro}
 \end{figure}
 
@@ -67,7 +67,7 @@ ha identificado de forma autónoma que ambos tienen los nodos comunes \textbf{Un
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/grafo-pedro-pepe.png}
-    \caption{Grafo de conocimiento resultante de la creación del contacto \textbf{Pepe} y la detección de nodos comunes con el contacto \textbf{Pedro}.}
+    \caption{Grafo de conocimiento resultante de la creación del contacto \textbf{Pepe} y la detección de nodos comunes con el contacto \textbf{Pedro} en {\footnotesize \texttt{graph-visualizer}}.}
     \label{fig:grafo-pedro-pepe-inicial}
 \end{figure}
 
@@ -86,7 +86,7 @@ contacto previo a aceptar la creación de la interacción. Mientras que la segun
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/user-flow-new-interaction-short.png}
+    \includegraphics[width=0.75\textwidth]{figures/user-flow-new-interaction-short.png}
     \caption{Flujo de Grabación y Procesamiento de Interacción (II)}
     \label{fig:new-interaction-short}
 \end{figure}
@@ -94,15 +94,32 @@ contacto previo a aceptar la creación de la interacción. Mientras que la segun
 La Figura \ref{fig:grafo-pedro-pepe-nueva-interaccion} muestra el grafo tras procesar las interacciones reflejando la actualización e incorporación 
 de los nuevos nodos concepto en ambos contactos.
 
-\vspace{.5cm}
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/grafo-pedro-pepe-ni.png}
-    \caption{Grafo de conocimiento resultante de los contactos \textbf{Pepe} y \textbf{Pedro} tras procesar las nuevas interacciones.}
+    \includegraphics[width=0.85\textwidth]{figures/grafo-pedro-pepe-ni.png}
+    \caption{Grafo de conocimiento resultante de los contactos \textbf{Pepe} y \textbf{Pedro} tras procesar las nuevas interacciones en {\footnotesize \texttt{graph-visualizer}}.}
     \label{fig:grafo-pedro-pepe-nueva-interaccion}
 \end{figure}
 
-\newpage
+\subsubsection{Flujo de Edición o Eliminación de Contacto - \hyperref[req:HU-05]{HU-05}}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/user-flow-contact-edit.png}
+    \caption{Flujo de Edición o Eliminación de Contacto}
+    \label{fig:contact-edit}
+\end{figure}
+
+\subsubsection{Flujo de Búsqueda de Contacto - \hyperref[req:HU-07]{HU-07}}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/user-flow-contact-search.png}
+    \caption{Flujo de Búsqueda de Contacto}
+    \label{fig:contact-search}
+\end{figure}
+
 \subsubsection{Flujo de Soporte y Feedback - \hyperref[req:HU-09]{HU-09}}
 
 El siguiente flujo corresponde al envío de un ticket de soporte para un bug (camino \textit{1 - 2 - 4 - 6 - 7}) o una sugerencia (camino \textit{1 - 2 - 3 - 5 - 6 - 7}).
@@ -129,7 +146,9 @@ confirmando que el reporte de errores y sugerencias llega correctamente al equip
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/user-flow-settings.png}
+    \includegraphics[width=0.9\textwidth]{figures/user-flow-settings.png}
     \caption{Flujo de Configuración y Ajustes}
     \label{fig:configuracion-ajustes}
 \end{figure}
+
+\clearpage

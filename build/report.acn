@@ -1,5 +1,5 @@
 \glossaryentry{WIP?\glossentry{wip}|setentrycounter[]{page}"\glsnumberformat}{III}
-\glossaryentry{PMV?\glossentry{mvp}|setentrycounter[]{page}"\glsnumberformat}{VI}
+\glossaryentry{PMV?\glossentry{mvp}|setentrycounter[]{page}"\glsnumberformat}{VII}
 \glossaryentry{CRM?\glossentry{crm}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{PRM?\glossentry{prm}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{IA?\glossentry{ia}|setentrycounter[]{page}"\glsnumberformat}{3}
@@ -42,3 +42,6 @@
 \glossaryentry{PMV?\glossentry{mvp}|setentrycounter[]{page}"\glsnumberformat}{56}
 \glossaryentry{HIG?\glossentry{hig}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{HIG?\glossentry{hig}|setentrycounter[]{page}"\glsnumberformat}{59}
+\glossaryentry{JWT?\glossentry{jwt}|setentrycounter[]{page}"\glsnumberformat}{70}
+\glossaryentry{CRUD?\glossentry{crud}|setentrycounter[]{page}"\glsnumberformat}{70}
+\glossaryentry{API?\glossentry{api}|setentrycounter[]{page}"\glsnumberformat}{77}

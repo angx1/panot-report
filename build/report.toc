@@ -35,46 +35,59 @@
 \contentsline {subsection}{\numberline {3.2.5}Requisitos No Funcionales}{32}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Diseño del Sistema}{33}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Visión general de la Arquitectura}{33}{subsection.3.3.1}%
-\contentsline {paragraph}{\colorbox {Apricot}{Capa Cliente (React Native / Expo)}}{34}{paragraph*.20}%
-\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{35}{paragraph*.21}%
-\contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{35}{paragraph*.22}%
+\contentsline {paragraph}{\colorbox {Apricot}{Capa Cliente (React Native / Expo)}}{34}{paragraph*.21}%
+\contentsline {paragraph}{\colorbox {CornflowerBlue}{Capa de Servidor (Supabase)}}{35}{paragraph*.22}%
+\contentsline {paragraph}{\colorbox {Salmon}{Capa de Procesamiento (Edge Functions)}}{35}{paragraph*.23}%
 \contentsline {subsection}{\numberline {3.3.2}Sistema Multi-Agente para Procesamiento de Información}{36}{subsection.3.3.2}%
-\contentsline {paragraph}{Agente Orquestador}{37}{paragraph*.24}%
-\contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{38}{paragraph*.25}%
-\contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{38}{paragraph*.26}%
-\contentsline {subsubsection}{Matching Semántico}{39}{subsubsection*.27}%
+\contentsline {paragraph}{Agente Orquestador}{37}{paragraph*.25}%
+\contentsline {paragraph}{Agente de Contactos - \texttt {manageContact}}{38}{paragraph*.26}%
+\contentsline {paragraph}{Agente de Grafo Contextual - \texttt {manageContextGraph}}{38}{paragraph*.27}%
+\contentsline {subsubsection}{Matching Semántico}{39}{subsubsection*.28}%
 \contentsline {subsection}{\numberline {3.3.3}Modelado de Datos}{41}{subsection.3.3.3}%
-\contentsline {subsubsection}{Entidades Principales}{42}{subsubsection*.29}%
-\contentsline {subsubsection}{Grafo Semántico}{43}{subsubsection*.30}%
-\contentsline {subsubsection}{Sistema de Procesamiento}{44}{subsubsection*.32}%
+\contentsline {subsubsection}{Entidades Principales}{42}{subsubsection*.30}%
+\contentsline {subsubsection}{Grafo Semántico}{43}{subsubsection*.31}%
+\contentsline {subsubsection}{Sistema de Procesamiento}{44}{subsubsection*.33}%
 \contentsline {section}{\numberline {3.4}Implementación del Sistema}{47}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Organización \texttt {panot-hq}}{47}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Ejes de Desarrollo}{48}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Evolución Cronológica}{49}{subsection.3.4.3}%
-\contentsline {subsubsection}{Octubre 2025}{50}{subsubsection*.38}%
-\contentsline {subsubsection}{Noviembre 2025}{51}{subsubsection*.41}%
-\contentsline {subsubsection}{Diciembre 2025}{53}{subsubsection*.44}%
-\contentsline {subsubsection}{Enero 2026}{55}{subsubsection*.48}%
+\contentsline {subsubsection}{Octubre 2025}{50}{subsubsection*.39}%
+\contentsline {subsubsection}{Noviembre 2025}{51}{subsubsection*.42}%
+\contentsline {subsubsection}{Diciembre 2025}{53}{subsubsection*.45}%
+\contentsline {subsubsection}{Enero 2026}{55}{subsubsection*.49}%
 \contentsline {section}{\numberline {3.5}Despliegue y Lanzamiento de PANOT}{56}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Preparación del Entorno y Adaptación Académica}{56}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Cumplimiento Normativo y Directrices de Apple}{57}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Estrategia de Lanzamiento y Visibilidad}{57}{subsection.3.5.3}%
 \contentsline {chapter}{\numberline {4}Resultados y Verificación}{59}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Interfaz de Usuario y Flujos del Sistema}{59}{section.4.1}%
-\contentsline {subsubsection}{Flujo de Registro de Usuario y Onboarding - \hyperref [req:HU-01]{HU-01}}{59}{subsubsection*.50}%
-\contentsline {subsubsection}{Flujo de Inicio de Sesión - \hyperref [req:HU-01]{HU-01}}{60}{subsubsection*.52}%
-\contentsline {subsubsection}{Flujo de Creación de Contacto - \hyperref [req:HU-02]{HU-02} y \hyperref [req:HU-03]{HU-03}}{60}{subsubsection*.54}%
-\contentsline {subsubsection}{Flujo de Grabación y Procesamiento de Interacción - \hyperref [req:HU-04]{HU-04}, \hyperref [req:HU-06]{HU-06} y \hyperref [req:HU-08]{HU-08}}{63}{subsubsection*.59}%
-\contentsline {subsubsection}{Flujo de Soporte y Feedback - \hyperref [req:HU-09]{HU-09}}{67}{subsubsection*.63}%
-\contentsline {subsubsection}{Flujo de Configuración y Ajustes}{68}{subsubsection*.66}%
+\contentsline {subsubsection}{Flujo de Registro de Usuario y Onboarding - \hyperref [req:HU-01]{HU-01}}{59}{subsubsection*.51}%
+\contentsline {subsubsection}{Flujo de Inicio de Sesión - \hyperref [req:HU-01]{HU-01}}{60}{subsubsection*.53}%
+\contentsline {subsubsection}{Flujo de Creación de Contacto - \hyperref [req:HU-02]{HU-02} y \hyperref [req:HU-03]{HU-03}}{60}{subsubsection*.55}%
+\contentsline {subsubsection}{Flujo de Grabación y Procesamiento de Interacción - \hyperref [req:HU-04]{HU-04}, \hyperref [req:HU-06]{HU-06} y \hyperref [req:HU-08]{HU-08}}{63}{subsubsection*.60}%
+\contentsline {subsubsection}{Flujo de Edición o Eliminación de Contacto - \hyperref [req:HU-05]{HU-05}}{66}{subsubsection*.64}%
+\contentsline {subsubsection}{Flujo de Búsqueda de Contacto - \hyperref [req:HU-07]{HU-07}}{66}{subsubsection*.66}%
+\contentsline {subsubsection}{Flujo de Soporte y Feedback - \hyperref [req:HU-09]{HU-09}}{67}{subsubsection*.68}%
+\contentsline {subsubsection}{Flujo de Configuración y Ajustes}{68}{subsubsection*.71}%
 \contentsline {section}{\numberline {4.2}Verificación de Requisitos}{69}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Verificación de Requisitos Funcionales}{69}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Verificación de Requisitos No Funcionales}{69}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Verificación de Requisitos No Funcionales}{70}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Cumplimiento de Objetivos}{70}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{71}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusiones Generales}{71}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Aplicación de Conocimientos Adquiridos en el Grado}{71}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Líneas de Trabajo Futuro}{71}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Evidencias de Verificación de Requisitos No Funcionales}{72}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}\hyperref [req:RNF-SEG-001]{RNF-SEG-001} - Seguridad}{72}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}\hyperref [req:RNF-REND-002]{RNF-REND-002} y \hyperref [req:RNF-EFI-003]{RNF-EFI-003} - Rendimiento y Eficiencia}{76}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {A.2.1}Análisis de Latencia - \hyperref [req:RNF-REND-002]{RNF-REND-002}}{77}{subsection.Alph1.2.1}%
+\contentsline {subsubsection}{Resultados}{78}{subsubsection*.83}%
+\contentsline {subsection}{\numberline {A.2.2}Análisis de Eficiencia Económica - \hyperref [req:RNF-EFI-003]{RNF-EFI-003}}{78}{subsection.Alph1.2.2}%
+\contentsline {subsubsection}{Resultados}{79}{subsubsection*.85}%
+\contentsline {section}{\numberline {A.3}\hyperref [req:RNF-MANT-008]{RNF-MANT-008} - Mantenibilidad}{80}{section.Alph1.3}%
+\contentsline {subsubsection}{Eventos de Captura}{80}{subsubsection*.87}%
+\contentsline {subsubsection}{Anonimización de Datos}{81}{subsubsection*.89}%
+\contentsline {subsubsection}{Verificación del Flujo de Datos}{81}{subsubsection*.90}%
 \contentsfinish 
-\contentsline {section}{Glosario}{73}{section*.71}%
-\contentsline {section}{Siglas}{75}{section*.72}%
+\contentsline {section}{Glosario}{83}{section*.94}%
+\contentsline {section}{Siglas}{85}{section*.95}%
