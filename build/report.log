@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  30 JAN 2026 17:46
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  31 JAN 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1583,9 +1583,9 @@ o Kanban implementado en GitHub
 [3
 
 ]
-Overfull \hbox (63.86127pt too wide) in paragraph at lines 19--19
+Overfull \hbox (15.98123pt too wide) in paragraph at lines 19--19
  [][] [][][]\TU/SourceSerif4(0)/m/n/12 Árbol de commits de noviembre de 2025 en
- repositorio Git local de \TU/Menlo(0)/m/n/12 panot-hq/mobile[][] [][]  
+ repositorio \TU/Menlo(0)/m/n/12 panot-hq/mobile 
  []
 
 
@@ -2289,7 +2289,7 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 Here is how much of TeX's memory you used:
  44328 strings out of 473832
  877138 string characters out of 5729480
- 2002219 words of memory out of 5000000
+ 2002211 words of memory out of 5000000
  66675 multiletter control sequences out of 15000+600000
  567601 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
