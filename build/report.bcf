@@ -2373,17 +2373,20 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">doumas2022theory</bcf:citekey>
     <bcf:citekey order="2" intorder="1">doumas2022theory</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">aepd2019privacidad</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">martin2017clean</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">tfg-mgsicilia</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">ries2011lean</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">doumas2022theory</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">aepd2019privacidad</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">martin2017clean</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">tfg-mgsicilia</bcf:citekey>
     <bcf:citekey order="7" intorder="1">ries2011lean</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">2012leanthinking</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">ries2011lean</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">apple-app-store-review-guidelines</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">apple-human-interface-guidelines</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">supabase-edge-functions</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">openai-models-compare</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">openai-models-compare</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ries2011lean</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">2012leanthinking</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">ries2011lean</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">apple-app-store-review-guidelines</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">apple-human-interface-guidelines</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

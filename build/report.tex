@@ -154,6 +154,14 @@
         }
 }
 
+\newglossaryentry{relay}{
+        name=Relay,
+        description={
+            Componente especializado que actúa como intermediario, permitiendo la comunicación entre un iniciador y un socio, 
+            generalmente a través de firewalls o proxies.
+        }
+}
+
 \newglossaryentry{pci-dss}{
         name=PCI DSS,
         description={
@@ -201,6 +209,14 @@
             Protocolo de comunicación bidireccional y full-duplex sobre una única conexión TCP que permite el 
             intercambio de mensajes en tiempo real entre cliente y servidor sin necesidad de realizar múltiples 
             peticiones HTTP.
+        }
+}
+
+\newglossaryentry{webhook}{
+        name=Webhook,
+        description={
+            Mecanismo de comunicación basado en eventos que permite a una aplicación enviar datos automáticamente a otra en tiempo real vía HTTP, 
+            eliminando la necesidad de consultas constantes (polling)
         }
 }
 
@@ -278,12 +294,35 @@ description={Historias de Usuario},
 longplural={Historias de Usuario}
 ]{hu}{HU}{Historias de Usuario}
 
+\newacronym[
+description={Banking-as-a-Service},
+longplural={Banking-as-a-Service}
+]{baas}{BaaS}{Banking-as-a-Service}
+
+\newacronym[
+description={Functions-as-a-Service},
+longplural={Functions-as-a-Service}
+]{faas}{FaaS}{Functions-as-a-Service}
+
+\newacronym[
+description={Content Delivery Network},
+longplural={Content Delivery Networks}
+]{cdn}{CDN}{Content Delivery Network}
+
+\newacronym[
+description={Tecnologías de Preservación de la Privacidad},
+longplural={Tecnologías de Preservación de la Privacidad}
+]{tpp}{TPP}{Tecnologías de Preservación de la Privacidad}
+
+\newacronym[
+description={Fully Homomorphic Encryption},
+longplural={Fully Homomorphic Encryptions}
+]{fhe}{FHE}{Fully Homomorphic Encryption}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Lenguaje TypeScript para listados (listings no lo incluye)
-%
+
+
 \lstdefinelanguage{TypeScript}{
   keywords={typeof, new, true, false, catch, function, return, null, switch, var, if, in, while, do, else, case, break, const, let, async, await, class, extends, export, default, import, from, try, throw, finally, capture},
   ndkeywords={undefined, this},
@@ -292,6 +331,14 @@ longplural={Historias de Usuario}
   morecomment=[s]{/*}{*/},
   morestring=[b]',
   morestring=[b]"
+}
+
+\lstdefinelanguage{JSON}{
+  keywords={},
+  ndkeywords={},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/}
 }
 
 
@@ -304,9 +351,10 @@ longplural={Historias de Usuario}
 
 \input{chapter1-intro/chapter1-intro}
 \input{chapter2-fundamentos/chapter2-fundamentos}
-\input{chapter3-desarrollo/chapter3-desarrollo}
-\input{chapter4-resultados/chapter4-resultados}
-\input{chapter5-conclusiones/chapter5-conclusiones}
+\input{chapter3-contexto/chapter3-contexto}
+\input{chapter4-desarrollo/chapter4-desarrollo}
+\input{chapter5-resultados/chapter5-resultados}
+\input{chapter6-conclusiones/chapter6-conclusiones}
 \input{appendix}
 
 \end{document}

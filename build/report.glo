@@ -1,28 +1,32 @@
+\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{III}
 \glossaryentry{Inferencia Analógica?\glossentry{inferencia-analogica}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{Generalización de Cero Disparos?\glossentry{generalizacion-de-cero-disparos}|setentrycounter[]{page}"\glsnumberformat}{3}
-\glossaryentry{AES-256?\glossentry{aes-256}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{Transport Layer Security?\glossentry{transport-layer-security}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{Row Level Security?\glossentry{row-level-security}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{Column Level Security?\glossentry{column-level-security}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{SOC 2 Type 2?\glossentry{soc-2-type-2}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{Construir-Medir-Aprender?\glossentry{construir-medir-aprender}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{AES-256?\glossentry{aes-256}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{Transport Layer Security?\glossentry{transport-layer-security}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{Row Level Security?\glossentry{row-level-security}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{Column Level Security?\glossentry{column-level-security}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{SOC 2 Type 2?\glossentry{soc-2-type-2}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{Construir-Medir-Aprender?\glossentry{construir-medir-aprender}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{WebSocket?\glossentry{websocket}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{17}
+\glossaryentry{Relay?\glossentry{relay}|setentrycounter[]{page}"\glsnumberformat}{17}
 \glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{18}
-\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{19}
-\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{19}
-\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{19}
-\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{19}
+\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{18}
+\glossaryentry{API Gateway?\glossentry{api-gateway}|setentrycounter[]{page}"\glsnumberformat}{18}
+\glossaryentry{Webhook?\glossentry{webhook}|setentrycounter[]{page}"\glsnumberformat}{21}
 \glossaryentry{PCI DSS?\glossentry{pci-dss}|setentrycounter[]{page}"\glsnumberformat}{21}
-\glossaryentry{Análisis de Cohorte?\glossentry{analisis-cohorte}|setentrycounter[]{page}"\glsnumberformat}{23}
-\glossaryentry{Embudos?\glossentry{embudos}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{Análisis de Cohorte?\glossentry{analisis-cohorte}|setentrycounter[]{page}"\glsnumberformat}{22}
+\glossaryentry{Embudos?\glossentry{embudos}|setentrycounter[]{page}"\glsnumberformat}{22}
+\glossaryentry{Construir-Medir-Aprender?\glossentry{construir-medir-aprender}|setentrycounter[]{page}"\glsnumberformat}{23}
+\glossaryentry{Optimizar el Todo?\glossentry{optimizar-todo}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{Construir-Medir-Aprender?\glossentry{construir-medir-aprender}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{Optimizar el Todo?\glossentry{optimizar-todo}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{Construir-Medir-Aprender?\glossentry{construir-medir-aprender}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{Eliminar Desperdicio?\glossentry{eliminar-desperdicio}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{Eliminar Desperdicio?\glossentry{eliminar-desperdicio}|setentrycounter[]{page}"\glsnumberformat}{27}
-\glossaryentry{WebSocket?\glossentry{websocket}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{Intenciones de Pago?\glossentry{payment-intent}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{Claves Efímeras?\glossentry{ephemeral-key}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{Clientes Temporales?\glossentry{stripe-customer}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{Eliminar Desperdicio?\glossentry{eliminar-desperdicio}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{Eliminar Desperdicio?\glossentry{eliminar-desperdicio}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{WebSocket?\glossentry{websocket}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Intenciones de Pago?\glossentry{payment-intent}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Claves Efímeras?\glossentry{ephemeral-key}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Clientes Temporales?\glossentry{stripe-customer}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Vendor Lock-In?\glossentry{vendor-lock-in}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Overhead?\glossentry{overhead}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{Vendor Lock-In?\glossentry{vendor-lock-in}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{Overhead?\glossentry{overhead}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{Vendor Lock-In?\glossentry{vendor-lock-in}|setentrycounter[]{page}"\glsnumberformat}{36}

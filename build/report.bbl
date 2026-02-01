@@ -50,8 +50,8 @@
       \strng{authornamehash}{5c77958d443ec2091267087c3b164069}
       \strng{authorfullhash}{93e64315a92181d18b95519bb1107345}
       \strng{authorfullhashraw}{93e64315a92181d18b95519bb1107345}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Edinburgh Research Explorer}
@@ -75,8 +75,8 @@
       \strng{authornamehash}{8e996482e2df3bd53e26d8f5b62920d2}
       \strng{authorfullhash}{8e996482e2df3bd53e26d8f5b62920d2}
       \strng{authorfullhashraw}{8e996482e2df3bd53e26d8f5b62920d2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{10}
@@ -102,8 +102,8 @@
       \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
       \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
       \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Clean Architecture}
@@ -130,8 +130,8 @@
       \strng{authornamehash}{a5357effe91d895bc9f1bc8662b9d20f}
       \strng{authorfullhash}{a5357effe91d895bc9f1bc8662b9d20f}
       \strng{authorfullhashraw}{a5357effe91d895bc9f1bc8662b9d20f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{7}
@@ -158,12 +158,66 @@
       \strng{authornamehash}{3ae634b261ee7bc5f734840abf4408e1}
       \strng{authorfullhash}{3ae634b261ee7bc5f734840abf4408e1}
       \strng{authorfullhashraw}{3ae634b261ee7bc5f734840abf4408e1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Lean Startup}
       \field{year}{2011}
+    \endentry
+    \entry{supabase-edge-functions}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={Supabase},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhashraw}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhashraw}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Edge Functions}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+    \endentry
+    \entry{openai-models-compare}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Compare Models}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://platform.openai.com/docs/models/compare
+      \endverb
+      \verb{url}
+      \verb https://platform.openai.com/docs/models/compare
+      \endverb
     \endentry
     \entry{2012leanthinking}{book}{}{}
       \name{author}{1}{}{%
@@ -186,8 +240,8 @@
       \strng{authornamehash}{4914c954a1aa46c419e3a1b52b981002}
       \strng{authorfullhash}{4914c954a1aa46c419e3a1b52b981002}
       \strng{authorfullhashraw}{4914c954a1aa46c419e3a1b52b981002}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Lean Thinking}
