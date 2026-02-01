@@ -3,25 +3,23 @@
 
 Los \textit{Sistemas de Gestión de Relaciones con Clientes} (\acrshort{crm}) convencionales, si bien útiles en entornos corporativos para la gestión masiva de clientes, presentan 
 limitaciones significativas cuando se trata de capturar la complejidad inherente a las relaciones humanas. Estos sistemas 
-operan principalmente con información descontextualizada, almacenando datos de contacto de manera estática y registrando 
-interacciones sin considerar su evolución temporal ni el contexto en el que ocurren.
+operan principalmente con información descontextualizada, almacenando datos de contacto de manera estática y tabular sin considerar su evolución temporal ni su contexto situacional.
 
 \subsection{Aplicaciones Similares}
 
-El paradigma actual de la gestión de contactos ha evolucionado desde simples agentas digitales, a lo que ahora se denomina \textit{Gestión de Relaciones Personales} (\acrshort{prm}).
+El paradigma actual de la gestión de contactos ha evolucionado desde simples agentas digitales, a lo que ahora se denominan sistemas de \textit{Gestión de Relaciones Personales} (\acrshort{prm}).
 Sin embargo, al analizar las soluciones líderes en el mercado, se han identificado patrones de diseño que limitan la capacidad de capturar la esencia de las relaciones humanas.
 
 Aplicaciones de código abierto como \textit{Monica} o soluciones más comerciales como \textit{Dex} o \textit{Clay} operan bajo la misma premisa de transformar un contacto en una entidad más compleja 
 y dinámica, no obstante, transfieren toda la carga cognitiva y administrativa al usuario, lo que inyecta cierta fricción a la hora de capturar información. 
 
 Algunas de estas herramientas introducen el uso de modelos de lenguaje para enriquecer automáticamente los perfiles, extrayendo datos de redes sociales y correos electrónicos. 
-Esto supone una propuesta de valor muy fuerte, pero, aunque 
-reduzcan la fricción de la insercción de datos, su enfoque es fundamentalmente 'archivístico'. Al operar sobre datos públicos y huellas digitales pasadas, carecen de 
+Esto supone una propuesta de valor muy fuerte, pero, aunque reduzcan la fricción de la insercción de datos, su enfoque es fundamentalmente 'archivístico'. Al operar sobre este tipo de fuentes de datos, carecen de 
 un contexto situacional profundo, es decir, saben donde trabaja un contacto, pero no saben cómo se sienten respecto a su nuevo empleo o qué matíz emocional tuvo la última conversación.
 
 El vacío que se considera que estas aplicaciones no logran cubrir radica en la disonancia entre la naturaleza de las relaciones humanas y la arquitectura 
 de las bases de datos que las contienen. Es decir, PANOT busca funcionar como una extensión cognitiva, y no una agenda perfecta. Por lo que la hipótesis de valor 
-que enmarca PANOT, se posicionaría en ese \textit{registro del entendimiento}.
+que enmarca PANOT, se posicionaría en el registro de \textit{Inteligencia Relacional}.
 
 \subsection{Inteligencia Relacional en el Contexto de la Inteligencia Artificial}
 
@@ -33,8 +31,8 @@ Para poder comprender el alcance de esta premisa, es necesario enmarcar el conce
 de la Inteligencia Artificial y analizar cómo se diferencia con los paradigmas tradicionales. 
 
 La diferencia fundamental entre la Inteligencia Relacional y los paradigmas tradicionales de Inteligencia Artificial (\acrshort{ia}) radica en que, mientras estos últimos 
-operan principalmente mediante la aproximación estadística de distribuciones de datos y patrones —optimizando funciones de pérdida sobre grandes volúmenes 
-de datos descontextualizados—, la Inteligencia Relacional se fundamenta en la construcción y manipulación de representaciones 
+operan principalmente mediante la aproximación estadística de distribuciones de datos y patrones (optimizando funciones de pérdida sobre grandes volúmenes 
+de datos descontextualizados), la Inteligencia Relacional se fundamenta en la construcción y manipulación de representaciones 
 estructurales de relaciones que permiten la generalización cruzada y la \gls{inferencia-analogica}. 
 La Inteligencia Relacional captura la estructura relacional subyacente que puede transferirse entre dominios aparentemente no relacionados, 
 tal como ocurre en el razonamiento humano, creando un contexto de conocimiento más amplio y generalizable o especfíco para un dominio en concreto.
@@ -47,20 +45,22 @@ entre entidades en contextos completamente diferentes.
 
 Traspasando la analogía de los videojuegos al contexto de PANOT, la Inteligencia Relacional como se menciona en \cite{doumas2022theory} permite que el sistema
 aprenda a reconocer y comprender patrones relacionales estructurados entre personas, eventos y contextos, más allá de las asociaciones estadísticas superficiales. 
-En lugar de simplemente almacenar datos estáticos de contactos, el sistema de PANOT puede construir representaciones relacionales dinámicas que capturan la estructura subyacente 
-de las relaciones humanas —como la evolución temporal de intereses comunes, la frecuencia contextual de interacciones, o los cambios en preferencias y circunstancias vitales—. 
+En lugar de simplemente almacenar datos estáticos de contactos, el sistema de PANOT podría construir representaciones relacionales dinámicas que capturan la estructura subyacente 
+de las relaciones del usuario que use la plataforma.
 
-Para ilustrar este proceso, consideremos un ejemplo práctico del flujo de procesamiento relacional en PANOT:
+Para ilustrar este proceso, consideremos un ejemplo práctico del flujo de procesamiento relacional que realizaría el sistema de PANOT:
 
-\textit{Input:} El usuario captura una interacción mediante nota de voz: ``Acabo de almorzar con María. Está muy emocionada 
+\vspace{1cm}
+\noindent \textbf{\textit{Entrada:}} El usuario captura la siguiente interacción mediante una nota de voz: ``Acabo de almorzar con María. Está muy emocionada 
 porque ha conseguido un nuevo trabajo como diseñadora en una startup tecnológica. Le interesa especialmente el trabajo remoto 
 y mencionó que está buscando un piso más cerca de su nueva oficina. Hablamos de proyectos de diseño colaborativo y se mostró 
-muy receptiva a la idea de futuros proyectos juntos.''
+muy receptiva a la idea de trabajar juntos en el futuro.''
 
-\textit{Procesamiento:} PANOT procesa esta entrada multimodal extrayendo múltiples capas de información relacional 
+\vspace{.5cm}
+\noindent \textbf{\textit{Procesamiento:}} PANOT procesa esta entrada extrayendo múltiples capas de información relacional 
 estructurada:
 
-{\small
+{\footnotesize
 \begin{itemize}
     \setlength{\itemsep}{0pt}
     \setlength{\parsep}{0pt}
@@ -70,23 +70,17 @@ estructurada:
     \item \textit{Cambio de estado}: transición profesional — nuevo trabajo como diseñadora
     \item \textit{Cambio de preferencias}: prioridad hacia trabajo remoto
     \item \textit{Necesidad emergente}: búsqueda de vivienda
-    \item \textit{Relaciones}: interés común en proyectos de diseño colaborativo, receptividad a futura colaboración
+    \item \textit{Relaciones}: interés común en proyectos de diseño colaborativo, receptividad a colaboración en el futuro 
     \item \textit{Contexto temporal}: estado emocional positivo, momento de transición vital
-\end{itemize}
-} 
+\end{itemize}}
 
-El sistema construye una representación relacional estructurada que conecta estas entidades (usuario-contacto)
-mediante relaciones semánticas. A modo ilustrativo, esta sería la representación en formato \texttt{JSON}:
 
-\begin{lstlisting}[
-    basicstyle=\ttfamily\scriptsize,
-    breaklines=true,
-    breakatwhitespace=false,
-    keepspaces=true,
-    showspaces=false,
-    showstringspaces=false,
-    tabsize=2
-]
+\noindent El sistema construye una representación relacional estructurada que conecta estas entidades (usuario-contacto)
+mediante relaciones semánticas. A modo ilustrativo, esta sería una posible representación en formato {\footnotesize \texttt{JSON}}:
+
+\clearpage
+{\scriptsize
+\begin{lstlisting}[language=JSON, caption=Posible representación relacional estructurada del contacto «María».]
 {
   "personal": {
     "necesidad_actual": "búsqueda de vivienda",
@@ -105,9 +99,10 @@ mediante relaciones semánticas. A modo ilustrativo, esta sería la representaci
     "dinámica": "receptiva a colaboración"
   }
 }
-\end{lstlisting}
+\end{lstlisting}}
 
-\textit{Output:} PANOT actualiza dinámicamente el contexto de María, integrando la nueva información estructurada directamente en su perfil relacional:
+\vspace{.5cm}
+\noindent \textbf{\textit{Salida:}} PANOT actualiza dinámicamente el contexto de «María», integrando la nueva información estructurada directamente en su perfil relacional:
 
 {\small
 \begin{itemize}
@@ -115,65 +110,28 @@ mediante relaciones semánticas. A modo ilustrativo, esta sería la representaci
     \setlength{\parsep}{0pt}
     \setlength{\topsep}{0pt}
     \setlength{\partopsep}{0pt}
-    \item \textit{Contexto Personal}: Se actualiza el estado vital reflejando la necesidad activa de ``búsqueda de vivienda'' y su preferencia de ubicación, además de capturar el estado emocional positivo asociado al cambio.
-    \item \textit{Contexto Profesional}: Se modifica la información laboral para incluir el nuevo rol de ``diseñadora en startup tecnológica'' y se añade el ``trabajo remoto'' como un interés profesional clave en esta etapa.
-    \item \textit{Contexto de la Relación}: Se enriquece la dinámica de la relación registrando los ``proyectos de diseño colaborativo'' como un nuevo eje de interés común y actualizando el estado de la relación hacia una posible colaboración futura.
-\end{itemize}
-}
+    \item \textit{Contexto Personal}: Se actualiza la información sobre su situación personal con ``búsqueda de vivienda'' y su preferencia de ubicación, además de capturar el estado emocional positivo asociado al cambio de trabajo.
+    \item \textit{Contexto Profesional}: Se modifica la información sobre su situación profesional para incluir el nuevo rol de ``diseñadora en startup tecnológica'' y se añade el ``trabajo remoto'' como un interés profesional clave en esta etapa.
+    \item \textit{Contexto de la Relación}: Se modifica la información sobre la dinámica de la relación registrando los ``proyectos de diseño colaborativo'' como un nuevo eje de interés común y actualizando el estado de la relación hacia una posible colaboración futura.
+\end{itemize}}
 
-Así, el contacto de María dentro de la base de datos de PANOT quedaría como un conjunto de nodos interconectados que representan 
-eventos, gustos, situaciones, necesidades, etc. —Ver \ref{fig:fig-gf-maria}— abstrayéndo el complejo contexto de la relación en una representación más simplificada.
-
-
-\iffalse
-\begin{figure}
-	\centering
-	\begin{subfigure}{.82\textwidth}
-		 \includegraphics[width=\textwidth]{figures/grafo-contexto-maria.png}
-	\end{subfigure}
-	\vfill
-	\begin{subfigure}{.82\textwidth}
-		\includegraphics[width=\textwidth]{figures/grafo-contexto-maria-simplificado.png}
-	\end{subfigure}
-	 \caption{\label{fig:fig-gf-maria} Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional. En el grafo de arriba con nodos CONTEXTO y en el de más abajo sin ellos.}
-\end{figure}
-\fi
+\noindent Así, el contacto de María dentro de la base de datos de PANOT quedaría como un conjunto de nodos interconectados que representan 
+eventos, gustos, situaciones, necesidades, etc. abstrayéndo el complejo contexto de la relación en una representación más simplificada \ref{fig:fig-gf-maria}.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{figures/grafo-contexto-maria.png}
-  \caption{\label{fig:fig-gf-maria} Representación orientativa en MemGraph Lab del contexto del contacto «María» en formato grafo relacional.}
+  \includegraphics[width=1\textwidth]{figures/grafo-contexto-maria.png}
+  \caption{\label{fig:fig-gf-maria} Representación orientativa usando MemGraph Lab del contexto del contacto «María» en formato de grafo relacional.}
 \end{figure}
 
 
-
-\subsection{Arquitecturas Similares: Grafos Contextuales en Sistemas de Agentes}
+\subsection{Grafos Contextuales en Sistemas de Agentes}
 \label{sec:grafos-contextuales}
 
 La representación relacional estructurada que utiliza PANOT encuentra un paralelismo arquitectónico significativo con sistemas de agentes 
 de inteligencia artificial que emplean grafos contextuales como mecanismo de memoria persistente. Estos sistemas, inspirados en arquitecturas 
 como GraphRAG (Graph Retrieval-Augmented Generation), implementan grafos de conocimiento que permiten a los agentes acceder de manera 
 eficiente a información estructurada y realizar razonamientos complejos mediante la navegación de relaciones semánticas.
-
-En arquitecturas de agentes modernas, el grafo contextual actúa como una memoria estructurada que almacena información sobre interacciones 
-pasadas, estados del entorno y relaciones entre diferentes entidades. Esta estructura permite a los agentes:
-
-\begin{itemize}
-    \setlength{\itemsep}{0pt}
-    \setlength{\parsep}{0pt}
-    \setlength{\topsep}{0pt}
-    \setlength{\partopsep}{0pt}
-    \item \textit{Almacenar información de forma estructurada}: Capturar y organizar datos sobre estados, eventos y relaciones de manera 
-    que preserve la estructura relacional subyacente, en lugar de almacenar información de forma descontextualizada.
-    \item \textit{Acceder rápidamente a información relevante}: Navegar eficientemente por el grafo para recuperar datos pertinentes según 
-    la situación actual, mejorando significativamente la eficiencia en la recuperación de información comparado con búsquedas en bases de datos 
-    relacionales tradicionales.
-    \item \textit{Facilitar el razonamiento complejo}: Utilizar la estructura del grafo para inferir nuevas relaciones y tomar decisiones 
-    informadas mediante razonamiento multihop —la capacidad de realizar inferencias a través de múltiples pasos siguiendo las conexiones 
-    del grafo—.
-    \item \textit{Adaptabilidad y aprendizaje continuo}: Actualizar y expandir el conocimiento de manera dinámica, incorporando nuevas 
-    interacciones y relaciones sin requerir reestructuración completa de la base de datos.
-\end{itemize}
 
 La eficiencia superior de las estructuras de grafo para la memoria de los agentes radica en la diferencia fundamental entre el modelo de 
 acceso a datos relacionales y el modelo de navegación por grafos. En las bases de datos relacionales, recuperar información sobre 
@@ -182,8 +140,8 @@ relaciones entre entidades requiere realizar múltiples operaciones que pueden c
 de relaciones involucradas, resultando en tiempos de consulta que pueden ser $\mathcal{O}(n \log n)$ o peor cuando se requieren múltiples uniones de tablas 
 anidadas. 
 
-Por el contrario, en una estructura de grafo, acceder a los vecinos directos de un nodo —es decir, recuperar todas las relaciones 
-de una entidad— es una operación de complejidad $\mathcal{O}(1)$ en promedio, ya que las conexiones están almacenadas directamente como parte de la 
+Por el contrario, en una estructura de grafo, acceder a los vecinos directos de un nodo, es decir, recuperar todas las relaciones 
+de una entidad, es una operación de complejidad $\mathcal{O}(1)$ en promedio, ya que las conexiones están almacenadas directamente como parte de la 
 estructura del nodo mediante listas de adyacencia o estructuras similares. Esta diferencia es crítica para sistemas de agentes que requieren 
 acceso frecuente y rápido a información relacional.
 

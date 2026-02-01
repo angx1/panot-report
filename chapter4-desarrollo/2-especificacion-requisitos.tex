@@ -1,0 +1,240 @@
+\section{Definición del PMV y Especificación de Requisitos}
+
+Siguiendo el marco teórico expuesto por \textit{Eric Ries} \cite{ries2011lean} el desarrollo de PANOT se fundamenta en la identificación y validación de \textit{Asunciones de Salto Fe}.
+Estas son las premisas de mayor incertidumbre y riesgo que, de resultar falsas, invalidarían la totalidad del proyecto.
+
+Las dos asunciones fundamentales en este marco son:
+
+{\small
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \item \textbf{Hipótesis de Valor:} Determina si un producto o servicio proporciona valor real a los usuarios una vez que lo utilizan. 
+    Se valida analizando la retención y el uso voluntario y respondería a la pregunta: \textit{¿El usuario percibe suficiente utilidad en el 
+    sistema como para incorporarlo a su vida diaria?}
+
+    \item \textbf{Hipótesis de Crecimiento:} Determina cómo los nuevos usuarios descubrirán el producto o servicio. Se valida analizando 
+    los motores de crecimiento (viral, pegajoso o remunerado). Responde a la pregunta: \textit{¿Existe un mecanismo sostenible para adquirir 
+    nuevos usuarios y escalar el producto?}
+\end{itemize}
+}
+
+A modo aclarativo, el esfuerzo de ingeniería de este Proyecto Fin de Grado se ha focalizado en la validación de la \textit{Hipótesis de Valor}, dejando
+la validación de la \textit{Hipótesis de Crecimiento} para estados futuros del ciclo de vida de la aplicación.
+
+\subsection{Hipótesis de Valor}
+
+Teniendo en cuenta lo anterior, el artefacto para validar la \textit{Hipótesis de Valor} es un \gls{mvp} que representa la versión mínima funcional de PANOT. 
+La hipótesis concreta es que los usuarios adoptarán el sistema porque resuelve la carga cognitiva y el esfuerzo manual que supone mantener relaciones 
+personales. Esta hipótesis general se desglosa en tres premisas clave:
+
+{\small
+\begin{enumerate}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \item \textbf{Valor de la Captura sin Fricción:} Se asume que los usuarios solo registrarán información de sus contactos si el esfuerzo requerido es 
+    cercano a cero. La captura mediante una interfaz \textit{voice-first} proporciona este valor al permitir registrar matices humanos al instante y en 
+    movimiento, eliminando la barrera del teclado y permitiendo que el usuario mantenga su atención en la interacción social.
+    
+    \item \textbf{Valor de la Continuidad Relacional:} Se asume que el usuario obtiene una utilidad crítica al disponer de una cronología estructurada 
+    (\textit{timeline}) de sus encuentros. Este registro histórico permite retomar conversaciones de forma natural, eliminando la 
+    incertidumbre del \textit{dónde lo dejamos} y transformando una lista estática de nombres en una historia relacional viva.
+    
+    \item \textbf{Valor del Entendimiento Contextual:} Se asume que el valor real de un contacto no reside en sus datos demográficos, sino en su contexto único y su 
+    relación con el usuario. Es por eso que un contacto pasa de ser una entidad tabular a ser una persona con un contexto específico que va evolucionando a lo largo del tiempo.
+\end{enumerate}
+\label{sec:valor-hipotesis}
+}
+
+
+\subsection{Historias de Usuario}
+
+Para traducir estas hipótesis en funcionalidades concretas y mantener un enfoque centrado en el usuario, se han definido una serie de Historias de 
+Usuario (\acrshort{hu}). Estas historias actúan como unidades de trabajo que describen el \textit{quién}, el \textit{qué} y el \textit{para qué} de cada capacidad del sistema. \\
+
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID} & \textit{Historia de Usuario} \\ \hline
+    \textbf{HU-01} \label{req:HU-01} & \textit{Como} usuario, \textit{quiero} registrarme y acceder de forma segura \textit{para} mantener mis relaciones personales organizadas y accesibles de manera segura y privada. \\ \hline
+    \textbf{HU-02} \label{req:HU-02} & \textit{Como} usuario, \textit{quiero} importar contactos de mi agenda nativa \textit{para} poder usar mis contactos ya existentes. \\ \hline
+    \textbf{HU-03} \label{req:HU-03} & \textit{Como} usuario, \textit{quiero} crear un contacto dictando su descripción o escribiéndolo manualmente \textit{para} permitir que ellos mismos lo hagan o hacerlo con el mínimo esfuerzo posible. \\ \hline
+    \textbf{HU-04} \label{req:HU-04} & \textit{Como} usuario, \textit{quiero} grabar una interacción por voz \textit{para} poder reducir el esfuerzo de registrarla y para hacerlo a mayor velocidad que escribiendo. \\ \hline
+    \textbf{HU-05} \label{req:HU-05} & \textit{Como} usuario, \textit{quiero} validar o corregir la información procesada por el sistema \textit{para} asegurar que el registro de mis relaciones sea siempre acorde a la realidad. \\ \hline
+    \textbf{HU-06} \label{req:HU-06} & \textit{Como} usuario, \textit{quiero} visualizar un historial cronológico por cada contacto \textit{para} recordar instantáneamente el contexto de nuestras últimas conversaciones. \\ \hline
+    \textbf{HU-07} \label{req:HU-07} & \textit{Como} usuario, \textit{quiero} buscar contactos por palabras clave del resumen \textit{para} localizarlos por su contexto y no solo por su nombre. \\ \hline
+    \textbf{HU-08} \label{req:HU-08} & \textit{Como} usuario, \textit{quiero} que el sistema extraiga datos de interés de las interacciones que registre y actualice los perfiles de mis contacts automáticamente \textit{para} reducir el esfuerzo manual de edición de fichas. \\ \hline
+    \textbf{HU-09} \label{req:HU-09} & \textit{Como} usuario, \textit{quiero} enviar reportes de error o sugerencias \textit{para} poder contribuir a la mejora del producto. \\ \hline
+\end{tabularx}
+\caption{Definición de las Historias de Usuario para el \gls{mvp} de PANOT}
+\label{tab:user-stories}
+\end{table}
+
+\subsection{Requisitos Funcionales}
+
+Se han establecido una serie de requisitos obligatorios que instrumentarán al sistema 
+con las capacidades para validar las premisas e historias de usuario planteadas. Estos requisitos de funcionalidad 
+se han agrupado en las siguientes características principales (Features): \\
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}          & \textit{Nombre}          & \textit{Requisitos Funcionales Asociados (IDs)}                                                                                                                                     \\ \hline
+\textbf{F1}          & Gestión de Usuario       & \hyperref[req:FR-01]{FR-01}, \hyperref[req:FR-02]{FR-02}, \hyperref[req:FR-03]{FR-03}                                                                                               \\ \hline
+\textbf{F2}          & Gestión de Contactos     & \hyperref[req:FR-04]{FR-04}, \hyperref[req:FR-05]{FR-05}, \hyperref[req:FR-06]{FR-06}, \hyperref[req:FR-07]{FR-07}, \hyperref[req:FR-08]{FR-08}, \hyperref[req:FR-09]{FR-09}        \\ \hline
+\textbf{F3}          & Gestión de Interacciones & \hyperref[req:FR-10]{FR-10}, \hyperref[req:FR-11]{FR-11}, \hyperref[req:FR-12]{FR-12}, \hyperref[req:FR-13]{FR-13}                                                                  \\ \hline
+\textbf{F4}          & Inteligencia Relacional  & \hyperref[req:FR-14]{FR-14}, \hyperref[req:FR-15]{FR-15}                                                                                                                            \\ \hline
+\textbf{F5}          & Soporte y Feedback       & \hyperref[req:FR-16]{FR-16}, \hyperref[req:FR-17]{FR-17}                                                                                                                            \\ \hline
+\end{tabular}
+\caption{Features del Sistema y los IDs de los Requisitos Funcionales Asociados}
+\label{tab:system-features}
+\end{table} 
+
+
+\begin{table}[H]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                            & \textit{Descripción} \\ \hline
+\textbf{FR-01} \label{req:FR-01}       & El sistema debe permitir el registro e inicio de sesión de usuarios de forma segura. \\ \hline
+\textbf{FR-02} \label{req:FR-02}       & El sistema debe permitir cerrar sesión al usuario de forma segura. \\ \hline
+\textbf{FR-03} \label{req:FR-03}       & El sistema debe permitir al usuario la eliminación completa de su cuenta y toda la información asociada a ella, lo que debe desencadenar el borrado de sus datos tanto en el dispositivo local como en el servidor remoto. \\ \hline
+\end{tabularx}
+\caption{Requisitos Funcionales de la \hyperref[tab:system-features]{\textit{Feature 1 - Gestión de Usuario}}}
+\label{tab:functional-requirements-f1}
+\end{table}
+
+\begin{table}[H]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                            & \textit{Descripción} \\ \hline
+\textbf{FR-04} \label{req:FR-04}       & El sistema debe permitir dar de alta un contacto manualmente introduciendo, al menos, un nombre identificativo y adicionalmente, un campo de detalles/descripción inicial. \\ \hline
+\textbf{FR-05} \label{req:FR-05}       & El sistema debe permitir al usuario importar contactos existentes desde la agenda nativa del dispositivo móvil para poblar la base de datos inicial sin entrada manual. \\ \hline
+\textbf{FR-06} \label{req:FR-06}       & El sistema debe permitir la creación de un nuevo perfil de contacto mediante dictado de voz en lenguaje natural. El usuario describirá a la persona y el sistema procesará el audio para inferir automáticamente el nombre y poblar el campo de detalles iniciales sin necesidad de escritura manual. \\ \hline
+\textbf{FR-07} \label{req:FR-07}       & El sistema debe permitir localizar contactos mediante una barra de búsqueda que filtre resultados tanto por coincidencia de nombre como por palabras clave contenidas en el campo de detalles/resumen del contacto. \\ \hline
+\textbf{FR-08} \label{req:FR-08}       & El sistema debe habilitar la modificación directa de los campos de un contacto (nombre, resumen, detalles) mediante entrada de texto estándar, permitiendo al usuario corregir posibles inexactitudes de la inferencia de IA o actualizar datos específicos bajo su propio criterio. \\ \hline
+\textbf{FR-09} \label{req:FR-09}       & El sistema debe permitir el borrado permanente de la ficha de un contacto existente. Esta acción debe desencadenar la eliminación del nodo correspondiente y asegurar que los datos asociados dejan de estar accesibles en la interfaz de usuario. \\ \hline
+\end{tabularx}
+\caption{Requisitos Funcionales de la \hyperref[tab:system-features]{\textit{Feature 2 - Gestión de Contactos}}}
+\label{tab:functional-requirements-f2}
+\end{table}
+
+\begin{table}[H]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                            & \textit{Descripción} \\ \hline
+\textbf{FR-10} \label{req:FR-10}       & El sistema debe disponer de una interfaz dedicada para iniciar, detener y gestionar la grabación de audio de una nueva interacción o evento. Este módulo actuará como la fuente de entrada principal para el motor de procesamiento, gestionando los permisos de hardware y el flujo de audio del dispositivo. \\ \hline
+\textbf{FR-11} \label{req:FR-11}       & El sistema debe permitir al usuario editar manualmente el texto transcrito antes de confirmar su envío al motor de procesamiento, garantizando la corrección de errores de transcripción o la eliminación de datos que no se deseen procesar. \\ \hline
+\textbf{FR-12} \label{req:FR-12}       & El sistema debe capturar audio a través del micrófono del dispositivo y convertirlo a texto en tiempo real, mostrando el resultado en pantalla para la revisión inmediata del usuario. \\ \hline
+\textbf{FR-13} \label{req:FR-13}       & El sistema debe ofrecer la funcionalidad explícita de descartar/eliminar una interacción. Esto permite al usuario eliminar tomas erróneas o accidentales sin que estas consuman recursos de procesamiento ni afecten al historial del contacto. \\ \hline
+\end{tabularx}
+\caption{Requisitos Funcionales de la \hyperref[tab:system-features]{\textit{Feature 3 - Gestión de Interacciones}}}
+\label{tab:functional-requirements-f3}
+\end{table}
+
+\begin{table}[H]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                            & \textit{Descripción} \\ \hline
+\textbf{FR-14} \label{req:FR-14}       & El sistema debe procesar la información de la interacción para actualizar los detalles del contacto almacenados en su grafo semántico, agregando la nueva información o eliminando la información obsoleta sin modificar el contexto histórico importante. \\ \hline
+\textbf{FR-15} \label{req:FR-15}       & El sistema debe ser capaz de generar relaciones entre los nodos semánticos de los contactos usando métodos de matching semántico. \\ \hline
+\end{tabularx}
+\caption{Requisitos Funcionales de la \hyperref[tab:system-features]{\textit{Feature 4 - Inteligencia Relacional}}}
+\label{tab:functional-requirements-f4}
+\end{table}
+
+\begin{table}[H]
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                            & \textit{Descripción} \\ \hline
+\textbf{FR-16} \label{req:FR-16}       & El sistema debe disponer de una interfaz accesible desde el menú de configuración que permita al usuario enviar un reporte de error o sugerencia, incluyendo la descripción del problema. \\ \hline
+\textbf{FR-17} \label{req:FR-17}       & El sistema debe proporcionar un mecanismo dedicado en la interfaz de configuración que permita al usuario enviar propuestas de mejora o solicitar nuevas capacidades funcionales. \\ \hline
+\end{tabularx}
+\caption{Requisitos Funcionales de la \hyperref[tab:system-features]{\textit{Feature 5 - Soporte y Feedback}}}
+\label{tab:functional-requirements-f5}
+\end{table}
+
+\subsection{Matriz de Trazabilidad}
+
+Para garantizar la integridad del sistema y asegurar que cada desarrollo técnico responde directamente a una necesidad del usuario, se ha elaborado 
+la siguiente matriz de trazabilidad. Esta herramienta vincula los \textit{Requisitos Funcionales} con las \textit{Historias de Usuario}. 
+Esta trazabilidad permite verificar la cobertura total del \acrshort{mvp} y asegura que el diseño del sistema 
+multi-agente y la arquitectura \textit{local-first} están plenamente justificados por el valor que aportan al usuario final.\\
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID Requisito Funcional} & \textit{ID Historia de Usuario} \\ \hline
+\hyperref[req:FR-01]{FR-01} & \hyperref[req:HU-01]{HU-01} \\ \hline
+\hyperref[req:FR-02]{FR-02} & \hyperref[req:HU-01]{HU-01} \\ \hline
+\hyperref[req:FR-03]{FR-03} & --- (necesidad técnica) \\ \hline
+\hyperref[req:FR-04]{FR-04} & \hyperref[req:HU-03]{HU-03} \\ \hline
+\hyperref[req:FR-05]{FR-05} & \hyperref[req:HU-02]{HU-02} \\ \hline
+\hyperref[req:FR-06]{FR-06} & \hyperref[req:HU-03]{HU-03} \\ \hline
+\hyperref[req:FR-07]{FR-07} & \hyperref[req:HU-07]{HU-07} \\ \hline
+\hyperref[req:FR-08]{FR-08} & \hyperref[req:HU-03]{HU-03}, \hyperref[req:HU-05]{HU-05}, \hyperref[req:HU-08]{HU-08} \\ \hline
+\hyperref[req:FR-09]{FR-09} & --- (necesidad técnica) \\ \hline
+\hyperref[req:FR-10]{FR-10} & \hyperref[req:HU-04]{HU-04} \\ \hline
+\hyperref[req:FR-11]{FR-11} & \hyperref[req:HU-05]{HU-05} \\ \hline
+\hyperref[req:FR-12]{FR-12} & \hyperref[req:HU-04]{HU-04} \\ \hline
+\hyperref[req:FR-13]{FR-13} & --- (necesidad técnica) \\ \hline
+\hyperref[req:FR-14]{FR-14} & \hyperref[req:HU-08]{HU-08} \\ \hline
+\hyperref[req:FR-15]{FR-15} & \hyperref[req:HU-08]{HU-08} \\ \hline
+\hyperref[req:FR-16]{FR-16} & \hyperref[req:HU-09]{HU-09} \\ \hline
+\hyperref[req:FR-17]{FR-17} & \hyperref[req:HU-09]{HU-09} \\ \hline
+\end{tabular}
+\caption{Matriz de Trazabilidad de Requisitos e Historias de Usuario}
+\label{tab:matriz-trazabilidad-unica}
+\end{table}
+
+\subsection{Requisitos No Funcionales} 
+
+Para complementar a la funcionalidad, es esencial que el sistema de PANOT mantenga cierto nivel de calidad. A continuación se enumeran los 
+indicadores de calidad establecidos para la plataforma: \\
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{|l|l|X|X|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textit{ID}                                       & \textit{Tipo}          & \textit{Descripción}                                                                                                                                                                                                                              & \textit{Criterio Aceptación}                                                                                                                                                        \\ \hline
+\textbf{RNF-SEG-001} \label{req:RNF-SEG-001}      & Seguridad              & El sistema debe garantizar que un usuario autenticado solo pueda acceder, leer o modificar los registros asociados a su propio ID de usuario en la base de datos remota.                                                                          & El 100\% de las consultas a Supabase deben estar protegidas por políticas Row Level Security (RLS) activas.                                                                         \\ \hline
+\textbf{RNF-REND-002} \label{req:RNF-REND-002}    & Rendimiento            & El tiempo total de ejecución para el análisis semántico de una interacción (extracción de entidades y actualización de los nodos del grafo en la base de datos) debe mantenerse dentro de límites tolerables para una operación en segundo plano. & El ciclo completo de procesamiento de inteligencia no debe exceder los 35 segundos de media para interacciones de longitud media (hasta 400 palabras).                                       \\ \hline
+\textbf{RNF-EFI-003} \label{req:RNF-EFI-003}      & Eficiencia / Coste     & El sistema debe optimizar la gestión del contexto y la selección del modelo de lenguaje para garantizar la viabilidad económica del proyecto a escala.                                                                                            & El coste medio de procesamiento de operaciones individuales no debe superar las 0,01 unidades monetarias.                                                                           \\ \hline
+\textbf{RNF-DISP-004} \label{req:RNF-DISP-004}    & Disponibilidad         & El sistema debe permitir la creación, lectura y edición de contactos e interacciones sin necesidad de conexión a internet.                                                                                                                        & Disponibilidad del 100\% de las funcionalidades Core (Crear Interacción, Ver Contacto, Grabar Interacción, Asociar Interacción) con el dispositivo en "Modo Avión".                 \\ \hline
+\textbf{RNF-DISP-005} \label{req:RNF-DISP-005}    & Disponibilidad         & El sistema debe asegurar la consistencia eventual de los datos entre el dispositivo local y el servidor remoto tras periodos de desconexión.                                                                                                      & Los datos creados offline deben reflejarse en el servidor en un tiempo < 30 segundos tras la recuperación de una conexión estable.                                                  \\ \hline
+\textbf{RNF-USAB-006} \label{req:RNF-USAB-006}    & Usabilidad             & El proceso para crear un contacto o interacción debe requerir el mínimo esfuerzo cognitivo y físico por parte del usuario                                                                                                                         & El usuario debe poder iniciar una grabación desde la pantalla de inicio en máximo 2 acciones.                                                                                       \\ \hline
+\textbf{RNF-USAB-007} \label{req:RNF-USAB-007}    & Usabilidad             & El sistema debe informar al usuario sobre el estado de procesos largos para evitar incertidumbre.                                                                                                                                                 & Cualquier operación que supere los 500 ms debe mostrar un indicador visual de carga.                                                                                                \\ \hline
+\textbf{RNF-MANT-008} \label{req:RNF-MANT-008}    & Mantenibilidad         & El sistema debe capturar métricas de uso para validar las hipótesis de valor definidas en el proyecto.                                                                                                                                            & El 100\% de los eventos críticos definidos (Login, Interacción Creada, Error de API) deben registrarse correctamente en la plataforma de analítica.                                 \\ \hline
+\end{tabularx}
+\caption{Requisitos No Funcionales del sistema: ID, Tipo, Descripción y Criterio de Aceptación}
+\label{tab:non-functional-requirements}
+\end{table}
+
+\newpage
+
+

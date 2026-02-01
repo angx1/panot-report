@@ -1,0 +1,32 @@
+
+\section{Capa del Cliente Móvil}
+
+Para el desarrollo de la aplicación móvil PANOT se ha seleccionado \textit{Expo}, un framework construido sobre 
+\textit{React Native} que simplifica significativamente el proceso de desarrollo de aplicaciones multiplataforma. 
+Esta elección se fundamenta en varios factores clave:
+
+{\small
+\begin{itemize}
+    \item \textbf{Rapidez de desarrollo}: \textit{Expo} proporciona un conjunto de herramientas e Interfaces de Programación de Aplicaciones (\acrshort{api}s) preconfiguradas que 
+    reducen la complejidad de configuración del proyecto y aceleran el tiempo de desarrollo, permitiendo enfocar 
+    los esfuerzos en la implementación de las funcionalidades. Además \textit{Expo} es un framework basado en 
+    \textit{React}, lo que facilita el desarrollo modular, la reutilización de componentes y el tipado de los artefactos del proyecto debido a la naturaleza de este lenguaje.
+    
+    \item \textbf{Compatibilidad multiplataforma}: Aunque el proyecto se centra inicialmente en iOS, \textit{Expo} facilita 
+    la extensión futura a Android con mínimos cambios en el código base, garantizando una base sólida para el crecimiento 
+    del producto.
+    
+    \item \textbf{Ecosistema Open Source}: \textit{Expo} cuenta con una comunidad activa y documentación muy completa, lo que 
+    facilita el aprendizaje y la resolución de problemas.
+    
+    \item \textbf{Acceso a funcionalidades nativas}: A través de módulos nativos y \acrshort{api}s expuestas por \textit{Expo}, se mantiene 
+    acceso a capacidades del dispositivo como notificaciones push, o almacenamiento local, sin requerir la 
+    complejidad del desarrollo nativo puro.
+\end{itemize}
+}
+
+Se analizaron otras alternativas para el desarrollo del cliente móvil: en primer lugar, el desarrollo nativo con \textit{Swift} y \textit{SwiftUI}, que habría ofrecido un rendimiento 
+mayor y acceso completo a las capacidades de iOS, pero se descartó por su mayor complejidad de configuración, tiempo de desarrollo más extenso y 
+limitación a una única plataforma, lo que no se alineaba con los objetivos de eficiencia y escalabilidad del proyecto. Asimismo, se consideró \textit{Flutter}, un framework desarrollado por \textit{Google} 
+que permite el desarrollo de aplicaciones multiplataforma con \textit{Dart} y compilación a código nativo, similar a \textit{Expo}, pero también se descartó por la poca familiaridad 
+con este lenguaje.
