@@ -1,1 +1,18 @@
-28.89; 37.34; 34.37; 46.75; 34.03; 40.45; 30.48; 29.06; 30.60; 31.19; 34.84; 31.96; 35.06; 32.99; 35.42; 37.17; 28.09; 45.99; 32.48; 29.69; 34.50; 7.75; 32.07; 32.42; 31.39; 34.37; 37.60
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fuentes
+%
+\RequirePackage{fontspec}  % Para importar fuentes externas
+\RequirePackage{microtype} % Mejoras tipográficas generales
+% TODO Cambiar los tipos de letra según la guía de estilos de la escuela
+%\setmainfont{TeX Gyre PagellaX}
+
+\setmainfont{Source Serif Pro}
+\setsansfont{Nimbus Sans}
+\setmonofont{Source Code Pro}
+%\setmainfont{Source Serif 4}[
+%  BoldFont=Source Serif 4 Bold,
+%  BoldItalicFont=Source Serif 4 Bold Italic
+%]
+
+%\setsansfont{Helvetica}
+%\setmonofont{Menlo}
