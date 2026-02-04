@@ -1,5 +1,7 @@
 \appendix
 
+\chapter{Impácto del Proyecto}
+
 \chapter{Evidencias de Verificación de Requisitos No Funcionales}
 
 \section{\hyperref[req:RNF-SEG-001]{RNF-SEG-001} - Seguridad}
@@ -7,14 +9,14 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/rls-graph.png}
+    \includegraphics[width=.8\textwidth]{figures/rls-graph.png}
     \caption{Política RLS para las tablas \texttt{semantic\_edges} y \texttt{semantic\_nodes}.}
     \label{fig:rls-graph}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/rls-interactions.png}
+    \includegraphics[width=.8\textwidth]{figures/rls-interactions.png}
     \caption{Política RLS para la tabla \texttt{interactions}.}
     \label{fig:rls-interactions}
 \end{figure}
@@ -22,14 +24,21 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/rls-profiles.png}
+    \includegraphics[width=.8\textwidth]{figures/rls-profiles.png}
     \caption{Política RLS para la tabla \texttt{profiles}.}
     \label{fig:rls-profiles}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/rls-contacts.png}
+    \includegraphics[width=.8\textwidth]{figures/rls-process-queue.png}
+    \caption{Política RLS para la tabla \texttt{process\_queue}.}
+    \label{fig:rls-process-queue}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{figures/rls-contacts.png}
     \caption{Política RLS para la tabla \texttt{contacts}.}
     \label{fig:rls-contacts}
 \end{figure}
@@ -37,24 +46,20 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figures/rls-workers.png}
+    \includegraphics[width=.8\textwidth]{figures/rls-tickets.png}
+    \caption{Política RLS para la tabla \texttt{feedback\_tickets}.}
+    \label{fig:rls-tickets}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{figures/rls-workers.png}
     \caption{Política RLS para la tabla \texttt{workers}.}
     \label{fig:rls-workers}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/rls-process-queue.png}
-    \caption{Política RLS para la tabla \texttt{process\_queue}.}
-    \label{fig:rls-process-queue}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/rls-tickets.png}
-    \caption{Política RLS para la tabla \texttt{feedback\_tickets}.}
-    \label{fig:rls-tickets}
-\end{figure}
 
 
 \newpage
@@ -199,6 +204,7 @@ desde que inicia una acción hasta que esta se completa con éxito:
 
 \subsubsection{Anonimización de Datos}
 
+\label{appendix:posthog-anonimizacion}
 En cumplimiento con los principios de \textit{Privacidad desde el Diseño}, se ha implementado una capa de abstracción en el envío de métricas 
 para que se desabiliten los campos de información sensible o geolocalización del usuario. Como se observa en el siguiente fragmento de código, se han desactivado explícitamente los 
 campos de \textit{GeoIP} (ciudad, país, latitud/longitud), la dirección IP, la zona horaria y la configuración de idioma local (\textit{locale}). Esta medida asegura que las 
@@ -219,6 +225,7 @@ posthog.capture(event_name, {
 \end{lstlisting}}
 
 \subsubsection{Verificación del Flujo de Datos}
+\label{appendix:posthog-verificacion-flujo-datos}
 
 La Figura \ref{fig:evidencia-posthog-stream} muestra el flujo de eventos en tiempo real capturado durante una prueba de uso. Se confirma la recepción de los eventos 
 lo que permite validar que el sistema de monitorización es plenamente funcional y capaz de impulsar el ciclo de aprendizaje validado de la metodología \textit{Lean Startup} (fases \textit{Medir-Aprender}).

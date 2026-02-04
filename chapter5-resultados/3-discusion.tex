@@ -1,0 +1,14 @@
+\section{Discusión de Resultados}
+
+El \acrshort{mvp} construido en este proyecto es la fase \textit{Construir} del ciclo \gls{construir-medir-aprender}. Por tanto, la discusión no es sobre si PANOT es un éxito comercial, sino sobre 
+si el artefacto construido es capaz de \textit{Medir} para permitir el \textit{Aprender} de manera eficiente y segura de cara al usuario.
+
+En primer lugar, los resultados mostrados en el \hyperref[sec:latencia]{Apéndice B.2.1} (33.2s de latencia media por operación) resultan inaceptables para una aplicación convencional. No obstante, la 
+implementación de la arquitectura asíncrona (cola de trabajos) y la interfaz \textit{local-first} junto con el feedback visual de la aplicación, demuestran que el usuario no percibe esta espera como fricción. 
+Esta implicación tampoco resulta alarmante, ya que el valor de PANOT no reside en la inmediatez de la respuesta de los procesamientos, sino en la liberación de la carga cognitiva de la captura.
+
+Por otro lado, el coste medio de 0,0049 USD (resultados del \hyperref[sec:eficiencia-economica]{Apéndice B.2.2}) por operación demuestra cierta viabilidad económica ya que permite confirmar que el sistema 
+puede ofrecerse bajo un modelo freemium sin riesgo de quiebra operativa inmediata.
+
+Por último, la verificación de las políticas \acrshort{rls} (\hyperref[appendix:seguridad]{Apéndice B.1}) y la anonimización de las métricas en \textit{PostHog} (\hyperref[appendix:posthog-anonimizacion]{Apéndice B.3}) 
+demuestra que es posible recolectar métricas de producto para \textit{Medir} sin comprometer la soberanía del dato del usuario. Esto permite garantizar la privacidad y seguridad del usuario desde el diseño.

@@ -53,14 +53,14 @@ Para validar la calidad y robustez del sistema, se han sometido los indicadores 
 \hline
 \rowcolor[HTML]{EFEFEF} 
 \textit{ID} & \textit{Tipo} & \textit{Resultado de la Prueba} & \textit{Estado} & \textit{Evidencia} \\ \hline
-\textbf{\hyperref[req:RNF-SEG-001]{RNF-SEG-001}} & Seguridad & Validación de políticas RLS. El acceso es denegado si el id de usuario del \acrshort{jwt} no coincide con el {\scriptsize \texttt{owner\_id}} o el {\scriptsize \texttt{user\_id}}. & Logrado & \textbf{\hyperref[appendix:seguridad]{Apéndice A.1}} \\ \hline
-\textbf{\hyperref[req:RNF-REND-002]{RNF-REND-002}} & Rendimiento & Resultados del análisis de latencia en \hyperref[sec:latencia]{Apéndice A.2.1}. & Logrado & \textbf{\hyperref[sec:rendimiento-eficiencia]{Apéndice A.2}} \\ \hline
-\textbf{\hyperref[req:RNF-EFI-003]{RNF-EFI-003}} & Eficiencia & Resultados del análisis de eficiencia económica en \hyperref[sec:eficiencia-economica]{Apéndice A.2.2}. & Logrado & \textbf{\hyperref[sec:rendimiento-eficiencia]{Apéndice A.2}} \\ \hline
+\textbf{\hyperref[req:RNF-SEG-001]{RNF-SEG-001}} & Seguridad & Validación de políticas RLS. El acceso es denegado si el id de usuario del \acrshort{jwt} no coincide con el {\scriptsize \texttt{owner\_id}} o el {\scriptsize \texttt{user\_id}}. & Logrado & \textbf{\hyperref[appendix:seguridad]{Apéndice B.1}} \\ \hline
+\textbf{\hyperref[req:RNF-REND-002]{RNF-REND-002}} & Rendimiento & Resultados del análisis de latencia en \hyperref[sec:latencia]{Apéndice B.2.1}. & Logrado & \textbf{\hyperref[sec:rendimiento-eficiencia]{Apéndice B.2}} \\ \hline
+\textbf{\hyperref[req:RNF-EFI-003]{RNF-EFI-003}} & Eficiencia & Resultados del análisis de eficiencia económica en \hyperref[sec:eficiencia-economica]{Apéndice B.2.2}. & Logrado & \textbf{\hyperref[sec:rendimiento-eficiencia]{Apéndice B.2}} \\ \hline
 \textbf{\hyperref[req:RNF-DISP-004]{RNF-DISP-004}} & Disponibilidad (I) & Operatividad completa de operaciones \acrshort{crud} en modo avión verificada. & Logrado & User Acceptance Testing \\ \hline
 \textbf{\hyperref[req:RNF-DISP-005]{RNF-DISP-005}} & Disponibilidad (II) & Sincronización automática tras recuperación de red en <10 segundos. & Logrado & User Acceptance Testing \\ \hline
 \textbf{\hyperref[req:RNF-USAB-006]{RNF-USAB-006}} & Usabilidad (I) & Inicio de grabación accesible en 1 o 2 \textit{movimientos} desde la \textit{home}. & Logrado & Flujos \ref{fig:new-interaction-long} y \ref{fig:new-interaction-short} \\ \hline
 \textbf{\hyperref[req:RNF-USAB-007]{RNF-USAB-007}} & Usabilidad (II) & Feedback visual mediante \textit{spinners} y etiquetas de estado en tareas largas. & Logrado & Flujo \ref{fig:new-interaction-long} paso 11 \\ \hline
-\textbf{\hyperref[req:RNF-MANT-008]{RNF-MANT-008}} & Mantenibilidad & Registro del 100\% de eventos en PostHog. & Logrado & Apéndice A.3 \\ \hline
+\textbf{\hyperref[req:RNF-MANT-008]{RNF-MANT-008}} & Mantenibilidad & Registro del 100\% de eventos en PostHog. & Logrado & \textbf{\hyperref[appendix:posthog-verificacion-flujo-datos]{Apéndice B.3}} \\ \hline
 \end{tabularx}
 \caption{Tabla de verificación del cumplimiento de Requisitos No Funcionales.}
 \label{tab:verificacion-no-funcional}

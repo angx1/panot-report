@@ -1,0 +1,21 @@
+\section{Líneas de Trabajo Futuro}
+La publicación del \acrshort{mvp} marca el inicio de una etapa de recolección de métricas y \textit{feedback} cualitativo que permitirá pivotar o perseverar en la propuesta de valor. De 
+cara a la evolución tecnológica del sistema, se proponen las siguientes líneas de trabajo:
+
+En primer lugar, resulta imperativo alcanzar la paridad de plataformas mediante el desarrollo de la versión para Android. Aunque la lógica de negocio y la gestión de estado con 
+\textit{Legend-State} son compatibles, la migración requerirá el desarrollo del módulo nativo de grabación y transcripción fuera del ecosistema de \textit{Apple Speech}, 
+permitiendo así ampliar el embudo de captación de usuarios y obtener una muestra de datos más diversa para la fase de aprendizaje.
+
+En segundo lugar, se plantea la transición hacia una IA descentralizada y privada. Se investigará la integración de modelos de lenguaje locales (\textit{On-device LLMs}), 
+aprovechando tecnologías emergentes como \textit{Apple Intelligence}. El objetivo es permitir que la inferencia semántica ocurra íntegramente en el hardware del usuario, 
+eliminando los costes operativos de \acrshort{api} externas y permitiendo un modelo de uso totalmente gratuito y \textit{offline}. Como paso intermedio, se contempla permitir 
+que el usuario configure su propia \textit{API Key} de forma segura, delegando la elección del modelo y el control del gasto al propio usuario, culminando así un modelo de sistema totalmente privado por diseño.
+
+Por último, se prevé una rearquitectura de la infraestructura de backend. Para eliminar el \textit{vendor lock-in} asociado actualmente a Supabase y mejorar la escalabilidad 
+horizontal del sistema, se propone migrar hacia una solución basada en microservicios propietarios desplegados en contenedores. Esta evolución permitiría un control total sobre 
+el motor de grafos y las colas de procesamiento, facilitando la integración de nuevas capacidades de análisis proactivo sin las limitaciones de los entornos de 
+ejecución \textit{serverless} actuales.
+
+Se propone el la siguiente arquitectura a modo de base para la posible nueva infraestructura:
+
+[inlcuir esquema]
