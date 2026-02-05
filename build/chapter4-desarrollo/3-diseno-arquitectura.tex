@@ -162,7 +162,7 @@ nuevas capacidades en forma de herramientas o agentes sin necesidad de modificar
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{figures/multi-agent-diagram.png}
-    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT}
+    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT. En naranje se representa el esquema de la petición enviada al sistema, en morado el Agente \"orquestados\", en Rosa los agentes \"especializados\" y en azul las tablas abstraidas de la base de datos.}
     \label{fig:diagrama-multi-agente}
 \end{figure}
 
@@ -259,7 +259,7 @@ latencia y se optimizan los costes operativos del sistema.
 El sistema utiliza búsqueda vectorial para determinar si existe relación semántica con conceptos ya existentes, 
 o si el concepto nuevo debe reutilizar un nodo ya existente o crear uno nuevo. 
 
-Para cada concepto entrante, se genera un \textit{embedding} combinando tres atributos: la etiqueta del nodo, 
+Para cada concepto entrante, se genera un vector, o \textit{embedding} combinando tres atributos: la etiqueta del nodo, 
 su categoría y el tipo de relación (usando el modelo \textit{text-embedding-3-small} de OpenAI). 
 Este vector se almacena en PostgreSQL y se compara con los nodos existentes mediante \textit{pgvector}, 
 calculando la \textit{similitud coseno} $s$ entre el embedding entrante y los ya almacenados. El 
@@ -278,9 +278,7 @@ comportamiento del matching se define formalmente mediante la función:
 \end{cases}
 \end{gathered}
 \]
-
-\footnotesize
-\noindent Donde $n^* = \arg\max_{n \in \mathcal{N}} \text{sim}(\mathbf{e}_{\text{nuevo}}, \mathbf{e}_n)$ 
+\noindent Donde $s$ es la similitud coseno, $n^* = \arg\max_{n \in \mathcal{N}} \text{sim}(\mathbf{e}_{\text{nuevo}}, \mathbf{e}_n)$ 
 es el nodo con mayor similitud, $\mathcal{N}$ es el conjunto de nodos semánticos existentes, 
 y $\mathcal{A} = \{\text{REUTILIZAR}, \text{CREAR}, \text{RELACIONAR}\}$ es el conjunto de acciones. 
 En el primer caso (\textit{match exacto}), se incrementa el peso del nodo $n^*$ y se establece 
@@ -338,8 +336,8 @@ A continuación, se explicarán las entidades del schema \textit{<<public>>}:
     mediante \texttt{contact\_id} o permanecer sin asignar. El campo 
     \texttt{status} indica el estado de procesamiento, que puede ser:
     \begin{itemize}
-        \item \texttt{UNPROCESSED}: pendiente de procesar,
-        \item \texttt{PROCESSING}: en proceso,
+        \item \texttt{UNPROCESSED}: pendiente de procesar.
+        \item \texttt{PROCESSING}: en proceso.
         \item \texttt{PROCESSED}: completado.
     \end{itemize}
 \end{itemize}
@@ -434,7 +432,7 @@ en dos entidades:
 \end{itemize}
 }
 
-A continuación, se presenta el diagrama de actividad de este sistea de procesamienton por cola. Para mantener la simplicidad se han obviado
+A continuación, se presenta el diagrama de actividad de este sistema de procesamiento por cola. Para mantener la simplicidad se han obviado
 datos como actualización de tiempos (\texttt{last\_activity\_at}, \texttt{processed\_at}, \texttt{created\_at} y \texttt{updated\_at}) y el tipo 
 de \texttt{PAYLOAD} usado para invocar a \texttt{relational-agent} en función del tipo de trabajo (\texttt{job\_type}). Para ver cómo funciona 
 el sistema Multi-Agente, se puede consultar el apartado \ref{sec:sistema-multiagente} anterior.

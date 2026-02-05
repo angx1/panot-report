@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  4 FEB 2026 14:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  5 FEB 2026 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1599,7 +1599,7 @@ LaTeX Info: Redefining \sptext on input line 49.
 LaTeX Info: Redefining \. on input line 49.
 LaTeX Info: Redefining \% on input line 49.
 [5]
-Overfull \hbox (8.66881pt too wide) in paragraph at lines 57--57
+Overfull \hbox (8.66881pt too wide) in paragraph at lines 58--58
  \TU/SourceSerif4(0)/m/n/12 0.0048; 0.0047; 0.0045; 0.0045; 0.0057; 0.0047; 0.0
 050; 0.0055; 0.0051; 0.0080; 
  []
@@ -1896,17 +1896,17 @@ LaTeX Info: Redefining \. on input line 280.
 LaTeX Info: Redefining \% on input line 280.
 [40]
 
-LaTeX Info: Redefining \. on input line 300.
-LaTeX Info: Redefining \% on input line 300.
+LaTeX Info: Redefining \. on input line 298.
+LaTeX Info: Redefining \% on input line 298.
 [41]
 File: figures/db-modeled.png Graphic file (type bmp)
 <figures/db-modeled.png>
 
 
-LaTeX Info: Redefining \. on input line 315.
-LaTeX Info: Redefining \% on input line 315.
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
 [42]
-Overfull \hbox (4.942pt too wide) in paragraph at lines 335--341
+Overfull \hbox (4.942pt too wide) in paragraph at lines 333--339
 []\TU/Menlo(0)/m/n/10.95 interactions\TU/SourceSerif4(0)/m/n/10.95 : Transcripc
 iones de voz grabadas por el usuario. El campo \TU/Menlo(0)/m/n/10.95 raw_conte
 nt
@@ -1914,19 +1914,27 @@ nt
 
 
 
-LaTeX Info: Redefining \. on input line 353.
-LaTeX Info: Redefining \% on input line 353.
+LaTeX Info: Redefining \. on input line 351.
+LaTeX Info: Redefining \% on input line 351.
 [43]
 File: figures/graph-on-sql-showcase.png Graphic file (type bmp)
 <figures/graph-on-sql-showcase.png>
 
 
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 390.
+LaTeX Info: Redefining \% on input line 390.
 [44]
+Overfull \hbox (4.48714pt too wide) in paragraph at lines 435--439
+\TU/SourceSerif4(0)/m/n/12 ción de tiempos (\TU/Menlo(0)/m/n/12 last_activity_a
+t\TU/SourceSerif4(0)/m/n/12 , \TU/Menlo(0)/m/n/12 processed_at\TU/SourceSerif4(
+0)/m/n/12 , \TU/Menlo(0)/m/n/12 created_at \TU/SourceSerif4(0)/m/n/12 y \TU/Men
+lo(0)/m/n/12 updated_at\TU/SourceSerif4(0)/m/n/12 )
+ []
 
-LaTeX Info: Redefining \. on input line 441.
-LaTeX Info: Redefining \% on input line 441.
+
+
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
 [45]
 File: figures/processing-system-activity-diagram.png Graphic file (type bmp)
 <figures/processing-system-activity-diagram.png>
@@ -2018,8 +2026,8 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 [56]
 
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 [57
 
 ]
@@ -2027,15 +2035,15 @@ File: figures/appstore-connect-approval.png Graphic file (type bmp)
 <figures/appstore-connect-approval.png>
 
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 [58]
 File: figures/appstore-connect-history.png Graphic file (type bmp)
 <figures/appstore-connect-history.png>
 
 
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 [59]
 File: figures/product-hunt-launch.png Graphic file (type bmp)
 <figures/product-hunt-launch.png>
@@ -2059,287 +2067,9 @@ File: figures/user-flow-new-contact.png Graphic file (type bmp)
 <figures/user-flow-new-contact.png>
 
 
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 [62]
 
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
-[63]
-File: figures/traza-ejemplo-pedro.png Graphic file (type bmp)
-<figures/traza-ejemplo-pedro.png>
-File: figures/grafo-inicial-pedro.png Graphic file (type bmp)
-<figures/grafo-inicial-pedro.png>
-
-
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
-[64]
-File: figures/grafo-pedro-pepe.png Graphic file (type bmp)
-<figures/grafo-pedro-pepe.png>
-File: figures/user-flow-new-interaction-long.png Graphic file (type bmp)
-<figures/user-flow-new-interaction-long.png>
-
-
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-[65]
-File: figures/user-flow-new-interaction-short.png Graphic file (type bmp)
-<figures/user-flow-new-interaction-short.png>
-
-
-LaTeX Info: Redefining \. on input line 93.
-LaTeX Info: Redefining \% on input line 93.
-[66]
-File: figures/grafo-pedro-pepe-ni.png Graphic file (type bmp)
-<figures/grafo-pedro-pepe-ni.png>
-File: figures/user-flow-contact-edit.png Graphic file (type bmp)
-<figures/user-flow-contact-edit.png>
-
-
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
-[67]
-File: figures/user-flow-contact-search.png Graphic file (type bmp)
-<figures/user-flow-contact-search.png>
-File: figures/user-flow-support.png Graphic file (type bmp)
-<figures/user-flow-support.png>
-
-
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
-[68]
-File: figures/db-feedback-tickets.png Graphic file (type bmp)
-<figures/db-feedback-tickets.png>
-File: figures/user-flow-settings.png Graphic file (type bmp)
-<figures/user-flow-settings.png>
-
-
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
-[69]
-
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
-[70]) (./chapter5-resultados/2-verificacion-requisitos.tex
-
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
-[71
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\TU/SourceSerif4(0)/m/n/8 Operatividad completa de operaciones
- []
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 64--64
-[]|\TU/SourceSerif4(0)/m/n/8 Sincronización automática tras recupera-
- []
-
-) (./chapter5-resultados/3-discusion.tex
-
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-[72])) (./chapter6-conclusiones/chapter6-conclusiones.tex
-
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[73]
-Capítulo 6.
-(./chapter6-conclusiones/1-conclusiones-generales.tex)
-(./chapter6-conclusiones/2-lineas-trabajo-futuro.tex
-
-[74
-
-])) (./appendix.tex
-
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-[75]
-Apéndice A.
-
-
-[76
-
-]
-Apéndice B.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 7.
-
-File: figures/rls-graph.png Graphic file (type bmp)
-<figures/rls-graph.png>
-File: figures/rls-interactions.png Graphic file (type bmp)
-<figures/rls-interactions.png>
-
-
-[77
-
-]
-File: figures/rls-profiles.png Graphic file (type bmp)
-<figures/rls-profiles.png>
-
-
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
-[78]
-File: figures/rls-process-queue.png Graphic file (type bmp)
-<figures/rls-process-queue.png>
-
-
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
-[79]
-File: figures/rls-contacts.png Graphic file (type bmp)
-<figures/rls-contacts.png>
-File: figures/rls-tickets.png Graphic file (type bmp)
-<figures/rls-tickets.png>
-
-
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
-[80]
-File: figures/rls-workers.png Graphic file (type bmp)
-<figures/rls-workers.png>
-
-
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
-[81]
-Overfull \hbox (2.43486pt too wide) in paragraph at lines 66--66
-|[][][]\TU/Helvetica(0)/m/n/20.74 RNF-REND-002[][] y [][]RNF-EFI-003[][] - Rend
-imien-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 66.
-
-File: figures/lista-trazas.png Graphic file (type bmp)
-<figures/lista-trazas.png>
-
-
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
-[82]
-File: figures/latencia-trazas.png Graphic file (type bmp)
-<figures/latencia-trazas.png>
-
-
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-[83]
-
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
-[84]
-File: figures/coste-trazas.png Graphic file (type bmp)
-<figures/coste-trazas.png>
-
-
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
-[85]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 158.
-
-
-
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
-[86]
-File: figures/posthog-event-stream.png Graphic file (type bmp)
-<figures/posthog-event-stream.png>
-)
-
-LaTeX Info: Redefining \. on input line 365.
-LaTeX Info: Redefining \% on input line 365.
-[87]
-
-Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 365.
-
-
-Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 365.
-
-
-Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 365.
-
-
-Package biblatex Warning: No driver for 'url'.
-(biblatex)                Using fallback driver on input line 365.
-
-
-Overfull \hbox (10.2307pt too wide) in paragraph at lines 365--365
-[]\TU/SourceSerif4(0)/m/n/12 Apple, \TU/SourceSerif4(0)/m/it/12 Human Interface
- Guidelines\TU/SourceSerif4(0)/m/n/12 , 2025. dirección: [][]$[][][][][] [] [] 
-[] [][][][][][][][][] [] [][][][][] []
- []
-
-
-
-[88
-
-
-] (./report.gls
-
-[89
-
-]
-
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-[90]) (./report.acr
-
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
-[91])
-
-LaTeX Info: Redefining \. on input line 365.
-LaTeX Info: Redefining \% on input line 365.
-[92]
-File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
-<use upm-report/images/etsisi-isotipo-white.pdf>
-
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
-File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-)
-[93
-
-] (./report.aux
-LaTeX Info: Redefining \sptext on input line 20.
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
-)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 53029C8828C341E98A49A4310AC165D9;6797.
-Package logreq Info: Writing requests to 'report.run.xml'.
-\openout1 = `report.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 44741 strings out of 473832
- 884874 string characters out of 5729480
- 1989135 words of memory out of 5000000
- 67078 multiletter control sequences out of 15000+600000
- 567609 words of font info for 134 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on report.pdf (107 pages).
+LaTeX Info: Redefining \. on input line 43.
+La
