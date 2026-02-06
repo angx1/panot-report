@@ -162,7 +162,7 @@ nuevas capacidades en forma de herramientas o agentes sin necesidad de modificar
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{figures/multi-agent-diagram.png}
-    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT. En naranje se representa el esquema de la petición enviada al sistema, en morado el Agente \"orquestados\", en Rosa los agentes \"especializados\" y en azul las tablas abstraidas de la base de datos.}
+    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT. En naranje se representa el esquema de la petición enviada al sistema, en morado el agente orquestador, en rosa los agentes especializados y en azul las tablas abstraidas de la base de datos.}
     \label{fig:diagrama-multi-agente}
 \end{figure}
 
@@ -278,20 +278,22 @@ comportamiento del matching se define formalmente mediante la función:
 \end{cases}
 \end{gathered}
 \]
+}
+
 \noindent Donde $s$ es la similitud coseno, $n^* = \arg\max_{n \in \mathcal{N}} \text{sim}(\mathbf{e}_{\text{nuevo}}, \mathbf{e}_n)$ 
 es el nodo con mayor similitud, $\mathcal{N}$ es el conjunto de nodos semánticos existentes, 
-y $\mathcal{A} = \{\text{REUTILIZAR}, \text{CREAR}, \text{RELACIONAR}\}$ es el conjunto de acciones. 
+y $\mathcal{A} = \{ \text{REUTILIZAR}, \text{CREAR}, \\ \text{RELACIONAR }\}$ es el conjunto de acciones. 
 En el primer caso (\textit{match exacto}), se incrementa el peso del nodo $n^*$ y se establece 
 la relación desde el contacto. En el segundo caso (\textit{match relacionado}), se crea un nodo 
-nuevo con una arista \texttt{RELACIONADO\_CON} hacia $n^*$, preservando la conexión semántica. Y en el 
+nuevo con una arista {\footnotesize \texttt{RELACIONADO\_CON}} hacia $n^*$, preservando la conexión semántica. Y en el 
 tercer caso, se crea un nodo nuevo sin conexiones adicionales.
-}
+
 
 \vspace{.5cm}
 Esta estrategia permite descubrir \textbf{conexiones compartidas} entre contactos 
 mediante el análisis de caminos en el grafo: dos contactos $C_1$ y $C_2$ están 
 conectados cuando comparten un nodo adyacente común (escenario 1, $d(C_1, C_2) = 2$) 
-o cuando sus nodos están enlazados mediante una arista \texttt{RELACIONADO\_CON} 
+o cuando sus nodos están enlazados mediante una arista {\footnotesize \texttt{RELACIONADO\_CON}} 
 (escenario 2, $d(C_1, C_2) = 3$), priorizando las conexiones de menor distancia 
 como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino más corto entre los contactos en el grafo.
 
