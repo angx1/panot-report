@@ -1,0 +1,340 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{thiel2014zerotoone}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=685c493a8b8ce2c3d102d037b340e67e}{%
+           family={Thiel},
+           familyi={T\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=30eb1150ff3d1dc994f623213de24842}{%
+           family={Masters},
+           familyi={M\bibinitperiod},
+           given={Blake},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Crown Currency}%
+      }
+      \strng{namehash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{fullhash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{fullhashraw}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{bibnamehash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{authorbibnamehash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{authornamehash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{authorfullhash}{d9418cda185d500faacd262d9bfa35a1}
+      \strng{authorfullhashraw}{d9418cda185d500faacd262d9bfa35a1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Zero to One: Notes on Startups, Or How to Build the Future}
+      \field{year}{2014}
+    \endentry
+    \entry{doumas2022theory}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6fce154dabc3e15b0737fd1e2821b400}{%
+           family={Doumas},
+           familyi={D\bibinitperiod},
+           given={L.\bibnamedelimi A.\bibnamedelimi A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b63a156aa6a570356d931589e022dcbe}{%
+           family={Puebla},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cf7c5e9c1b096fb4dbc1d78c6d00966c}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=2ef0717269ed935b2780090e07d8e328}{%
+           family={Hummel},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c77958d443ec2091267087c3b164069}
+      \strng{fullhash}{93e64315a92181d18b95519bb1107345}
+      \strng{fullhashraw}{93e64315a92181d18b95519bb1107345}
+      \strng{bibnamehash}{93e64315a92181d18b95519bb1107345}
+      \strng{authorbibnamehash}{93e64315a92181d18b95519bb1107345}
+      \strng{authornamehash}{5c77958d443ec2091267087c3b164069}
+      \strng{authorfullhash}{93e64315a92181d18b95519bb1107345}
+      \strng{authorfullhashraw}{93e64315a92181d18b95519bb1107345}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Edinburgh Research Explorer}
+      \field{title}{A theory of relation learning and cross-domain generalization}
+      \field{year}{2022}
+    \endentry
+    \entry{aepd2019privacidad}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=8e996482e2df3bd53e26d8f5b62920d2}{%
+           family={{Agencia Española de Protección de Datos}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Agencia Española de Protección de Datos}%
+      }
+      \strng{namehash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{fullhash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{fullhashraw}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{bibnamehash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{authorbibnamehash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{authornamehash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{authorfullhash}{8e996482e2df3bd53e26d8f5b62920d2}
+      \strng{authorfullhashraw}{8e996482e2df3bd53e26d8f5b62920d2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Guía de Privacidad desde el Diseño}
+      \field{year}{2019}
+    \endentry
+    \entry{martin2017clean}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhashraw}{6f41df64eb0dc4855be70172368604c2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Clean Architecture}
+      \field{year}{2017}
+    \endentry
+    \entry{tfg-mgsicilia}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=a5357effe91d895bc9f1bc8662b9d20f}{%
+           family={Sicilia\bibnamedelima García},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           suffix={M.A.\bibnamedelimi y\bibnamedelimb Amador\bibnamedelima Domínguez},
+           suffixi={M\bibinitperiod\bibinitdelim y\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {E.T.S. de Ingeniería de Sistemas Informáticos}%
+      }
+      \strng{namehash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{fullhash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{fullhashraw}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{bibnamehash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{authorbibnamehash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{authornamehash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{authorfullhash}{a5357effe91d895bc9f1bc8662b9d20f}
+      \strng{authorfullhashraw}{a5357effe91d895bc9f1bc8662b9d20f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{PROVISIÓN DE MODELOS PREDICTIVOS EN EL SECTOR SALUD CON PRESERVACIÓN DE LA PRIVACIDAD}
+      \field{type}{Proyecto Fin de Grado}
+      \field{year}{2025}
+    \endentry
+    \entry{ries2011lean}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=3ae634b261ee7bc5f734840abf4408e1}{%
+           family={Ries},
+           familyi={R\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Crown Currency}%
+      }
+      \strng{namehash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{fullhash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{fullhashraw}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{bibnamehash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{authorbibnamehash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{authornamehash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{authorfullhash}{3ae634b261ee7bc5f734840abf4408e1}
+      \strng{authorfullhashraw}{3ae634b261ee7bc5f734840abf4408e1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Lean Startup}
+      \field{year}{2011}
+    \endentry
+    \entry{supabase-edge-functions}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={Supabase},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhashraw}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhashraw}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Edge Functions}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+    \endentry
+    \entry{openai-models-compare}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Compare Models}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://platform.openai.com/docs/models/compare
+      \endverb
+      \verb{url}
+      \verb https://platform.openai.com/docs/models/compare
+      \endverb
+    \endentry
+    \entry{2012leanthinking}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4914c954a1aa46c419e3a1b52b981002}{%
+           family={James\bibnamedelimb P.\bibnamedelimi Womack},
+           familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Daniel\bibnamedelimb T.\bibnamedelimi Jones},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           prefix={y},
+           prefixi={y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Gestión 2000}%
+      }
+      \strng{namehash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{fullhash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{fullhashraw}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{bibnamehash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{authorbibnamehash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{authornamehash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{authorfullhash}{4914c954a1aa46c419e3a1b52b981002}
+      \strng{authorfullhashraw}{4914c954a1aa46c419e3a1b52b981002}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lean Thinking}
+      \field{year}{2012}
+    \endentry
+    \entry{apple-app-store-review-guidelines}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
+           family={Apple},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhashraw}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{bibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorbibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authornamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhashraw}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{App Review Guidelines}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://developer.apple.com/app-store/review/guidelines/
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/app-store/review/guidelines/
+      \endverb
+    \endentry
+    \entry{apple-human-interface-guidelines}{url}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
+           family={Apple},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhashraw}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{bibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorbibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authornamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhashraw}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Human Interface Guidelines}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://developer.apple.com/design/human-interface-guidelines
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/design/human-interface-guidelines
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
