@@ -14,7 +14,7 @@ El flujo de ejecución de una función es el siguiente:
 {\small
 \begin{enumerate}
     \item \textbf{Entrada de solicitud en el edge gateway}: El \gls{api-gateway} actúa como \gls{relay} que enruta el tráfico, gestiona los 
-    headers de autenticación, valida los JSON Web Tokens (\acrshort{jwt}) y aplica reglas de enrutamiento y control de tráfico. De esta manera, se centralizan las comprobaciones de 
+    headers de autenticación, valida los \acrfull{jwt} y aplica reglas de enrutamiento y control de tráfico. De esta manera, se centralizan las comprobaciones de 
     seguridad antes de ejecutar el código, lo que garantiza que solo solicitudes autenticadas y autorizadas accedan a los servicios.
     
     \item \textbf{Ejecución en el edge runtime}: La función se ejecuta en el nodo \textit{Edge Runtime} más cercano al usuario, minimizando la latencia de procesamiento.
@@ -91,7 +91,7 @@ de computación sustancialmente mayor. No obstante, se decidió elegir \textit{O
 \subsection{Subcapa de Infraestructura de Pagos}
 
 Para la integración de funcionalidades de pago y suscripciones, se ha seleccionado \textit{Stripe} como proveedor de los servicios 
-de pasarela de pagos. \textit{Stripe} es una plataforma Banking-as-a-Service (\acrshort{baas}) que proporciona \acrshort{api}s robustas y seguras para procesar pagos, 
+de pasarela de pagos. \textit{Stripe} es una plataforma \acrfull{baas} que proporciona \acrshort{api}s robustas y seguras para procesar pagos, 
 gestionar suscripciones recurrentes y manejar la facturación.
 
 La integración con \textit{Stripe} se realiza también mediante \textit{Supabase Edge Functions} que gestionan la creación 
@@ -102,7 +102,7 @@ como \gls{pci-dss} (Payment Card Industry Data Security Standard) lo que garanti
 Como alternativa a \textit{Stripe} se evaluó \textit{Polar}, otra plataforma \acrshort{baas} que ofrece funcionalidades similares para el 
 procesamiento de transacciones. La principal diferencia entre ambas plataformas radica en que \textit{Polar}, aunque ofrece una mejor experiencia de 
 desarrollo y una simplicidad de implementación mayor a \textit{Stripe}, está desarrollada fundamentalmente para aplicaciones web, mientras que \textit{Stripe} 
-proporciona un soporte nativo y para aplicaciones móviles con Kit de Desarrollo de Software (\acrshort{sdk}s) específicos para \textit{Expo}. \textit{Polar} 
+proporciona un soporte nativo y para aplicaciones móviles con \acrfull{sdk}s específicos para \textit{Expo}. \textit{Polar} 
 no cuenta con suficiente adopción en el ecosistema de aplicaciones móviles, lo que se traduce en documentación limitada, menos ejemplos de integración y 
 una comunidad de desarrolladores más reducida para este tipo de aplicaciones. Esto incrementaría el tiempo de desarrollo y el riesgo de problemas de compatibilidad. 
 

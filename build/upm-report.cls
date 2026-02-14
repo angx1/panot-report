@@ -706,7 +706,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Glosario
 %
-\RequirePackage[acronym,section,nowarn]{glossaries-extra}
+\RequirePackage[acronym,nowarn]{glossaries-extra}
 % Hacemos que no haya salto de página entre glosario y siglas
 \renewcommand*{\glsclearpage}{}
 % Desactivamos de forma global la s del plural de los acrónimos
@@ -769,8 +769,7 @@
     \backmatter
 
     \renewcommand\bibname{Referencias}
-    \printbibliography
-    \chapter*{Índice de términos}
+    \printbibliography[heading=bibintoc]
     \printglossaries
     %\printindex  TODO Hacer el índice (por supuesto opcional)
     \makebackcover

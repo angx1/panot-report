@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Metodología y Flujo de Desarrollo}{26}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Definición del PMV y Especificación de Requisitos}{28}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Hipótesis de Valor}{29}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Historias de Usuario}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Historias de Usuario}{29}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Requisitos Funcionales}{30}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Matriz de Trazabilidad}{32}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Requisitos No Funcionales}{33}{subsection.4.2.5}%
@@ -74,18 +74,22 @@
 \contentsline {chapter}{\numberline {6}Conclusiones y Trabajo Futuro}{74}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Conclusiones Generales}{74}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Líneas de Trabajo Futuro}{74}{section.6.2}%
-\contentsline {chapter}{\numberline {A}Impácto del Proyecto}{76}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Evidencias de Verificación de Requisitos No Funcionales}{77}{appendix.Alph2}%
-\contentsline {section}{\numberline {B.1}\hyperref [req:RNF-SEG-001]{RNF-SEG-001} - Seguridad}{77}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}\hyperref [req:RNF-REND-002]{RNF-REND-002} y \hyperref [req:RNF-EFI-003]{RNF-EFI-003} - Rendimiento y Eficiencia}{82}{section.Alph2.2}%
-\contentsline {subsection}{\numberline {B.2.1}Análisis de Latencia - \hyperref [req:RNF-REND-002]{RNF-REND-002}}{83}{subsection.Alph2.2.1}%
-\contentsline {subsubsection}{Resultados}{84}{subsubsection*.88}%
-\contentsline {subsection}{\numberline {B.2.2}Análisis de Eficiencia Económica - \hyperref [req:RNF-EFI-003]{RNF-EFI-003}}{84}{subsection.Alph2.2.2}%
-\contentsline {subsubsection}{Resultados}{85}{subsubsection*.90}%
-\contentsline {section}{\numberline {B.3}\hyperref [req:RNF-MANT-008]{RNF-MANT-008} - Mantenibilidad}{86}{section.Alph2.3}%
-\contentsline {subsubsection}{Eventos de Captura}{86}{subsubsection*.92}%
-\contentsline {subsubsection}{Anonimización de Datos}{87}{subsubsection*.94}%
-\contentsline {subsubsection}{Verificación del Flujo de Datos}{87}{subsubsection*.95}%
+\contentsline {chapter}{\numberline {A}Análisis de Impacto}{76}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Impacto Personal y Académico}{76}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Impacto Social}{76}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Impacto Medioambiental}{77}{section.Alph1.3}%
+\contentsline {chapter}{\numberline {B}Evidencias de Verificación de Requisitos No Funcionales}{78}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}\hyperref [req:RNF-SEG-001]{RNF-SEG-001} - Seguridad}{78}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}\hyperref [req:RNF-REND-002]{RNF-REND-002} y \hyperref [req:RNF-EFI-003]{RNF-EFI-003} - Rendimiento y Eficiencia}{83}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {B.2.1}Análisis de Latencia - \hyperref [req:RNF-REND-002]{RNF-REND-002}}{84}{subsection.Alph2.2.1}%
+\contentsline {subsubsection}{Resultados}{85}{subsubsection*.89}%
+\contentsline {subsection}{\numberline {B.2.2}Análisis de Eficiencia Económica - \hyperref [req:RNF-EFI-003]{RNF-EFI-003}}{85}{subsection.Alph2.2.2}%
+\contentsline {subsubsection}{Resultados}{86}{subsubsection*.91}%
+\contentsline {section}{\numberline {B.3}\hyperref [req:RNF-MANT-008]{RNF-MANT-008} - Mantenibilidad}{87}{section.Alph2.3}%
+\contentsline {subsubsection}{Eventos de Captura}{87}{subsubsection*.93}%
+\contentsline {subsubsection}{Anonimización de Datos}{88}{subsubsection*.95}%
+\contentsline {subsubsection}{Verificación del Flujo de Datos}{88}{subsubsection*.96}%
 \contentsfinish 
-\contentsline {section}{Glosario}{89}{section*.99}%
-\contentsline {section}{Siglas}{91}{section*.100}%
+\contentsline {chapter}{Referencias}{89}{appendix*.98}%
+\contentsline {chapter}{Glosario}{89}{section*.99}%
+\contentsline {chapter}{Siglas}{92}{section*.101}%

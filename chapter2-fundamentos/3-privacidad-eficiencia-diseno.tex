@@ -13,7 +13,7 @@ La \textit{Privacidad desde el Diseño} (Privacy by Design, PbD) constituye un e
 la protección de datos personales desde las primeras fases de desarrollo de productos, servicios o procesos. 
 Este concepto, desarrollado inicialmente por Ann Cavoukian en la década de los 90 y reconocido internacionalmente 
 en la 32ª Conferencia Internacional de Comisionados de Protección de Datos y Privacidad celebrada en Jerusalén en 2010, 
-ha sido consolidado legalmente en el Reglamento General de Protección de Datos (RGPD) mediante su artículo 25, 
+ha sido consolidado legalmente en el \acrfull{rgpd} mediante su artículo 25, 
 que establece la obligación de implementar medidas técnicas y organizativas apropiadas para garantizar la 
 protección de datos desde el diseño y por defecto en productos y servicios de software.
 
@@ -87,12 +87,12 @@ principios y reglas del sistema. De esta manera, se favorece la creación de sis
 funcionalidad y adaptabilidad en el tiempo.
 
 En la práctica, las empresas de software modernas implementan el principio de eficiencia por diseño mediante diversas 
-estrategias arquitectónicas. Por ejemplo, la adopción de arquitecturas serverless y funciones como servicio (\acrshort{faas}) permite 
+estrategias arquitectónicas. Por ejemplo, la adopción de arquitecturas serverless y \acrfull{faas} permite 
 a empresas como Netflix optimizar el consumo de recursos computacionales, pagando únicamente por el tiempo de ejecución 
 real en lugar de mantener servidores activos de forma continua. Otras empresas, como Spotify, han implementado 
 arquitecturas de microservicios con auto-escalado horizontal, permitiendo que la infraestructura se adapte dinámicamente 
 a la carga de trabajo sin sobre-provisionamiento de recursos. Asimismo, la implementación de estrategias de caching 
-distribuido y \acrshort{cdn} (Content Delivery Network) en empresas como Amazon Web Services permite reducir la latencia y el 
+distribuido y \acrfull{cdn} en empresas como Amazon Web Services permite reducir la latencia y el 
 consumo de ancho de banda mediante el almacenamiento de contenido en ubicaciones geográficamente cercanas a los usuarios finales.
 
 \subsection{Aplicación en Sistemas con Modelos de Lenguaje}
@@ -104,10 +104,9 @@ y a los elevados costes computacionales asociados con el procesamiento de lengua
 En el contexto de aplicaciones que utilizan modelos de lenguaje, la protección de la privacidad presenta desafíos 
 únicos derivados de la necesidad de procesar información personal, a menudo sensible, mediante servicios externos 
 o infraestructuras en la nube. Para abordar estos desafíos, se han desarrollado diversas 
-\textit{Tecnologías de Preservación de la Privacidad} (\acrshort{tpp}) que permiten procesar datos manteniendo su confidencialidad.
+\Acrfull{tpp} que permiten procesar datos manteniendo su confidencialidad.
 
-Una de las técnicas más prometedoras en este ámbito es el \textit{Cifrado Totalmente Homomórfico} 
-(\acrshort{fhe}), un paradigma criptográfico que, diferencia del 
+Una de las técnicas más prometedoras en este ámbito es el \acrfull{fhe}, un paradigma criptográfico que, diferencia del 
 cifrado tradicional, donde los datos deben descifrarse antes de ser procesados, 
 permite que un servidor o servicio externo procese información cifrada y devuelva resultados también 
 cifrados, manteniendo la confidencialidad de los datos en todo momento. Este enfoque es especialmente 
