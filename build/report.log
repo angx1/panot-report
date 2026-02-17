@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  14 FEB 2026 12:00
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.12)  17 FEB 2026 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2323,8 +2323,14 @@ Overfull \hbox (10.2307pt too wide) in paragraph at lines 395--395
 
 ]
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
+File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
 [91]) (./report.acr
 
 LaTeX Info: Redefining \. on input line 1.
@@ -2338,15 +2344,14 @@ File: upm-report/images/etsisi-isotipo-white.pdf Graphic file (type pdf)
 <use upm-report/images/etsisi-isotipo-white.pdf>
 
 
-(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
-File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-)
 [94
 
-] (./report.aux
+]
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (105 not 108).
+               Rerun to correct this.
+
+(./report.aux
 LaTeX Info: Redefining \sptext on input line 20.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
@@ -2368,6 +2373,6 @@ Here is how much of TeX's memory you used:
  67124 multiletter control sequences out of 15000+600000
  567609 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 95i,15n,107p,2414b,32882s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,15n,107p,2414b,33324s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on report.pdf (108 pages).
