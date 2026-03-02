@@ -162,13 +162,13 @@ nuevas capacidades en forma de herramientas o agentes sin necesidad de modificar
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{figures/multi-agent-diagram.png}
-    \caption{Diagrama de la arquitecturadel sistema multi-agente de PANOT. En naranje se representa el esquema de la petición enviada al sistema, en morado el agente orquestador, en rosa los agentes especializados y en azul las tablas abstraidas de la base de datos.}
+    \caption{Diagrama de la arquitectura del sistema multi-agente de PANOT. En naranja se representa el esquema de la petición enviada al sistema, en morado el agente orquestador, en rosa los agentes especializados y en azul las tablas abstraídas de la base de datos.}
     \label{fig:diagrama-multi-agente}
 \end{figure}
 
 \newpage
 
-El sistema Multi-Agente de PANOT sigue una arquitectura vertical[INCLUIR REFERENCIA], donde un agente orquestador actúa como coordinador central, delegando 
+El sistema Multi-Agente de PANOT sigue una arquitectura vertical \cite{mohamed-fadi-2025-agentic-ai}, donde un agente orquestador actúa como coordinador central, delegando 
 tareas a agentes especializados que reportan sus resultados de vuelta. Esta estructura proporciona control 
 centralizado sobre el flujo de ejecución, aislando, como ya se ha comentado, a cada agente en su dominio específico.
 
@@ -305,7 +305,7 @@ como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino m
     \centering
     \includegraphics[width=.9\textwidth]{figures/db-modeled.png}
     \caption{Diagrama del modelado de datos de PANOT con los schemas de Supabase \textit{<<public>>} y \textit{<<auth>>}. 
-    En el diagrama del schema \textit{<<auth>>} solo se ha incluido la tabla \textit{auth.users} ya que es la unica tabla de el 
+    En el diagrama del schema \textit{<<auth>>} solo se ha incluido la tabla \textit{auth.users} ya que es la única tabla de el 
     schema que se ha modificado. Y en el diagrama del schema \textit{<<public>>} se ha obviado del diagrama que las claves 
     foráneas \texttt{user\_id} o \texttt{owner\_id} de las tablas provienen del \texttt{id} de la tabla \texttt{users} del 
     schema \textit{<<auth>>}. A modo de ejemplo, solo se ha añadido en la tabla \texttt{profiles} para mantener el diagrama más legible.}
@@ -314,7 +314,7 @@ como indicadores de mayor afinidad. Siendo $d(C_1, C_2)$ la distancia o camino m
 
 \newpage
 
-El modelo de datos de PANOT se organiza en dos schemas: \textit{<<auth>>} (gestionado por Supabase) y \textit{<<public>>} (lógica de negocio). 
+El modelo de datos de PANOT se organiza en dos schemas: \textit{<<auth>>} (autenticación y gestión de usuarios gestionado por Supabase) y \textit{<<public>>} (lógica de negocio). 
 A continuación, se explicarán las entidades del schema \textit{<<public>>}:
 
 \subsubsection{Entidades Principales}
